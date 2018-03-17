@@ -1,0 +1,35 @@
+{
+  "name": "jay-co",
+  "version": "1.0.0",
+  "description": "Example of a company blog via nextjs, react and a cms made with postgres and sequelize",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Jaygles/jay-co.git"
+  },
+  "keywords": [
+    "cms",
+    "postgres",
+    "next",
+    "react"
+  ],
+  "author": "Jacob Sullivan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Jaygles/jay-co/issues"
+  },
+  "homepage": "https://github.com/Jaygles/jay-co#readme",
+  "dependencies": {
+    "next": "^5.0.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  },
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  }
+}
