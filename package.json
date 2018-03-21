@@ -1,10 +1,14 @@
 {
   "name": "jay-co",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Example of a company blog via nextjs, react and a cms made with postgres and sequelize",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "babel-node index.js --presets es2015,stage-1,stage-2,stage-3",
+    "build": "NODE_ENV=production next build && npm run migrate",
+    "migrate": "NODE_ENV=production npm install -g sequelize-cli && sequelize db:migrate",
+    "heroku-postbuild": "NODE_ENV=production npm run build",
+    "start": "NODE_ENV=production babel-node index.js --presets es2015"
   },
   "repository": {
     "type": "git",
@@ -23,13 +27,33 @@
   },
   "homepage": "https://github.com/Jaygles/jay-co#readme",
   "dependencies": {
-    "next": "^5.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-preset-stage-3": "^6.24.1",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "emotion": "^9.0.2",
+    "emotion-server": "^9.0.2",
+    "express": "^4.16.3",
+    "has-flag": "^3.0.0",
+    "isomorphic-fetch": "^2.2.1",
+    "next": "^4.2.3",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
     "react": "^16.2.0",
-    "react-dom": "^16.2.0"
-  },
-  "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "react-dom": "^16.2.0",
+    "react-emotion": "^9.0.2",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "sequelize": "^4.37.1",
+    "webpack": "^3.10.1"
   }
 }
