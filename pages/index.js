@@ -1,14 +1,29 @@
-import React from "react";
-import { Provider } from "react-redux";
-import { initStore } from "../common/store";
-import LoginForm from "../Components/LoginForm";
+import * as React from 'react';
+import Document from '../Components/Document';
+import LoginForm from '../Components/LoginForm';
+import SignupForm from '../Components/SignupForm';
+import withData from './withData';
 
-function Index() {
-  return (
-    <Provider store={initStore()}>
-      <LoginForm />
-    </Provider>
-  );
+class Index extends React.Component {
+  renderLoggedIn = () => {
+    return (
+      <div>
+        <p>logged in</p>
+      </div>
+    );
+  };
+
+  renderLoggedOut = () => {
+    return [<LoginForm />, <SignupForm />];
+  };
+
+  render() {
+    let subview = !this.props.isAuthenticated
+      ? this.renderLoggedOut()
+      : this.renderLoggedIn();
+
+    return <Document>{subview}</Document>;
+  }
 }
 
-export default Index;
+export default withData({}, (state) => state)(Index);

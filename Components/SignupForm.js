@@ -1,15 +1,15 @@
-import * as React from "react";
+import React, { Component } from "react";
+import * as Actions from "../common/actions";
+import { connect } from "react-redux";
 import Input from "../Components/Input";
 import Button from "../Components/Button";
 import Border from "../Components/Border";
-import * as Actions from "../common/actions";
-import * as Strings from "../common/strings";
-import { connect } from "react-redux";
 
-class AuthLoginForm extends React.Component {
+class SignupForm extends Component {
   state = {
     username: "",
-    password: ""
+    password: "",
+    verify: ""
   };
 
   _handleChange = e => {
@@ -17,15 +17,14 @@ class AuthLoginForm extends React.Component {
   };
 
   _handleSubmit = e => {
-    this.props.dispatch(Actions.requestLogin(this.state));
+    console.log("Submit clicked");
+    this.props.dispatch(Actions.requestSignup(this.state));
   };
-
   render() {
     return (
       <div style={this.props.style}>
         <Input
           label="Username"
-          autoFocus
           value={this.state.username}
           name="username"
           onChange={this._handleChange}
@@ -34,18 +33,26 @@ class AuthLoginForm extends React.Component {
         <Input
           label="Password"
           value={this.state.password}
-          type="password"
           name="password"
+          type="password"
+          onChange={this._handleChange}
+        />
+        <Border />
+        <Input
+          label="Verify your password"
+          value={this.state.verify}
+          name="verify"
+          type="password"
           onChange={this._handleChange}
           onSubmit={this._handleSubmit}
         />
         <Border />
         <Button onClick={this._handleSubmit} style={{ marginTop: 16 }}>
-          Log in
+          Sign up
         </Button>
       </div>
     );
   }
 }
 
-export default connect(state => state)(AuthLoginForm);
+export default connect(state => state)(SignupForm);

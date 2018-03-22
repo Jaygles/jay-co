@@ -15,6 +15,7 @@ const ORM = new sequelize(
 );
 
 db.User = ORM.import(path.join(__dirname, "user.js"));
+db.Post = ORM.import(path.join(__dirname, "post.js"));
 
 Object.keys(db).forEach(modelName => {
   if (db[modelName].associate) {

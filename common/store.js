@@ -10,6 +10,18 @@ const INITIAL_STATE = {
   isAuthenticated: false
 };
 
+const mergeUpdatedKeys = (data, state) => {
+  return { ...state, ...data };
+};
+
+const mergeAuthState = ({ isAuthenticated, viewer }, state) => {
+  return { ...state, isAuthenticated, viewer };
+};
+
+const mergeLogoutState = state => {
+  return { ...state, isAuthenticated: false, viewer: undefined };
+};
+
 export const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "UPDATE_STORE_KEYS":

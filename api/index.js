@@ -1,5 +1,5 @@
 import user from "./controllers/user";
-// import post from "./controllers/post";
+import post from "./controllers/post";
 // import comment from "./controllers/comment";
 import passport from "passport";
 
@@ -40,13 +40,13 @@ module.exports = app => {
   app.get("/api/users", user.list);
   app.get("/api/users/:userId", user.get);
   app.put("/api/users/:userId", authMiddleware, user.update);
-  // app.delete("/api/viewer/delete", authMiddleware, user.deleteViewer);
+  app.delete("/api/viewer/delete", authMiddleware, user.deleteViewer);
 
-  // app.post("/api/posts", authMiddleware, post.create);
-  // app.get("/api/posts", post.list);
-  // app.get("/api/posts/:postId", post.get);
-  // app.put("/api/posts/:postId", authMiddleware, post.update);
-  // app.delete("/api/posts/:postId", authMiddleware, post.delete);
+  app.post("/api/posts", authMiddleware, post.create);
+  app.get("/api/posts", post.list);
+  app.get("/api/posts/:postId", post.get);
+  app.put("/api/posts/:postId", authMiddleware, post.update);
+  app.delete("/api/posts/:postId", authMiddleware, post.delete);
 
   // app.get("/api/comments", comment.list);
   // app.post("/api/comments", authMiddleware, comment.create);
