@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { Provider, connect } from 'react-redux';
 import { initStore } from '../common/store';
-import App from '../Components/App';
 import * as HTTP from '../common/http';
 
 const skipMerge = ['initialState', 'initialProps', 'isServer', 'store'];
@@ -14,11 +13,11 @@ const getInitialStateData = async (ctx) => {
   const postsRequest = await HTTP.getAllPosts();
   const posts = await postsRequest.json();
 
-  // const commentsRequest = await HTTP.getAllComments();
-  // const comments = await commentsRequest.json();
-  console.log(posts);
+  const commentsRequest = await HTTP.getAllComments();
+  const comments = await commentsRequest.json();
+
   let post;
-  if (ctx.query) {
+  if (ctx.query.id) {
     post = posts.find((p) => {
       return `${p.id}` === ctx.query.id;
     });
@@ -28,7 +27,7 @@ const getInitialStateData = async (ctx) => {
     post,
     users,
     posts,
-    // comments,
+    comments,
     isAuthenticated: ctx.req.isAuthenticated(),
     viewer: ctx.req.user,
   };

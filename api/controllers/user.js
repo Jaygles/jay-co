@@ -1,19 +1,19 @@
-import bcrypt from "bcrypt";
-import queries from "./queries";
-import passport from "passport";
-import { User } from "../models";
+import bcrypt from 'bcrypt';
+import queries from './queries';
+import passport from 'passport';
+import { User, Comment, Post } from '../models';
 
-const isEmptyOrNull = string => {
+const isEmptyOrNull = (string) => {
   return !string || !string.trim();
 };
 
-const getUserProps = user => {
+const getUserProps = (user) => {
   return {
     id: user.id,
     username: user.username,
     email: user.email,
     createdAt: user.createdAt,
-    updatedAt: user.updatedAt
+    updatedAt: user.updatedAt,
   };
 };
 
@@ -29,13 +29,13 @@ module.exports = {
       isEmptyOrNull(verify)
     ) {
       return res.status(500).send({
-        message: "Please fill out all fields."
+        message: 'Please fill out all fields.',
       });
     }
 
     if (password !== verify) {
       return res.status(500).send({
-        message: "Your passwords do not match."
+        message: 'Your passwords do not match.',
       });
     }
 
@@ -46,16 +46,16 @@ module.exports = {
       const user = await User.create({
         username: username.toLowerCase(),
         salt: salt,
-        password: hash
+        password: hash,
       });
 
-      return req.login(user, err => {
+      return req.login(user, (err) => {
         if (!err) {
           return res.status(200).send(getUserProps(user));
         }
 
         return res.status(500).send({
-          message: "Auth error"
+          message: 'Auth error',
         });
       });
     } catch (err) {
@@ -64,20 +64,20 @@ module.exports = {
   },
 
   auth(req, res) {
-    return passport.authenticate("local", (err, user, info) => {
+    return passport.authenticate('local', (err, user, info) => {
       if (err) {
         return res.status(500).send({
-          message: "500: Authentication failed, try again."
+          message: '500: Authentication failed, try again.',
         });
       }
 
       if (!user) {
         return res.status(404).send({
-          message: "404: Authentication failed, try again."
+          message: '404: Authentication failed, try again.',
         });
       }
 
-      req.login(user, err => {
+      req.login(user, (err) => {
         if (!err) {
           res.status(200).send(user);
         }
@@ -88,14 +88,14 @@ module.exports = {
   logout(req, res) {
     req.logout();
     return res.status(200).send({
-      message: "You are successfully logged out"
+      message: 'You are successfully logged out',
     });
   },
 
   async list(req, res) {
     try {
       const users = await User.findAll(
-        queries.users.list({ req, User, Post, Comment })
+        queries.users.list({ req, User, Post, Comment }),
       );
 
       return res.status(200).send(users);
@@ -108,12 +108,12 @@ module.exports = {
     try {
       const user = await User.findById(
         req.params.userId,
-        queries.users.get({ req, User, Post, Comment })
+        queries.users.get({ req, User, Post, Comment }),
       );
 
       if (!user) {
         return res.status(404).send({
-          message: "404 on user get"
+          message: '404 on user get',
         });
       }
 
@@ -126,7 +126,7 @@ module.exports = {
   async update(req, res) {
     if (isEmptyOrNull(req.body.password)) {
       return res.status(500).send({
-        message: "You must provide a password."
+        message: 'You must provide a password.',
       });
     }
 
@@ -135,14 +135,14 @@ module.exports = {
 
       if (!user) {
         return res.status(404).send({
-          message: "404 no user on update"
+          message: '404 no user on update',
         });
       }
 
       const updatedUser = await user.update({
         email: req.body.email || user.email,
         username: req.body.username || user.username,
-        password: req.body.password || user.password
+        password: req.body.password || user.password,
       });
 
       return res.status(200).send(getUserProps(updatedUser));
@@ -157,7 +157,7 @@ module.exports = {
 
       if (!user) {
         return res.status(403).send({
-          message: "Forbidden: User Not Found"
+          message: 'Forbidden: User Not Found',
         });
       }
 
@@ -165,10 +165,10 @@ module.exports = {
       await user.destroy();
 
       return res.status(200).send({
-        viewer: null
+        viewer: null,
       });
     } catch (err) {
       return res.status(500).send(err);
     }
-  }
+  },
 };

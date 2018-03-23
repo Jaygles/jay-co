@@ -3,29 +3,29 @@ module.exports = {
     list: ({ req, User, Post, Comment }) => {
       return {
         attributes: {
-          exclude: ["salt", "password"]
+          exclude: ['salt', 'password'],
         },
-        order: [["createdAt", "DESC"]]
+        order: [['createdAt', 'DESC']],
       };
     },
     get: ({ req, User, Post, Comment }) => {
       return {
         attributes: {
-          exclude: ["salt", "password"]
+          exclude: ['salt', 'password'],
         },
         include: [
           {
             model: Post,
-            as: "posts"
+            as: 'posts',
           },
           {
             model: Comment,
-            as: "comments"
-          }
+            as: 'comments',
+          },
         ],
-        order: [["createdAt", "DESC"]]
+        order: [['createdAt', 'DESC']],
       };
-    }
+    },
   },
   posts: {
     list: ({ req, User, Post, Comment }) => {
@@ -33,43 +33,43 @@ module.exports = {
         include: [
           {
             model: Comment,
-            as: "comments",
+            as: 'comments',
             include: [
               {
                 model: User,
-                as: "user",
+                as: 'user',
                 attributes: {
-                  exclude: ["salt", "password"]
-                }
+                  exclude: ['salt', 'password'],
+                },
               },
               {
                 model: Post,
-                as: "post"
+                as: 'post',
               },
               {
                 model: Comment,
-                as: "replies",
+                as: 'replies',
                 include: [
                   {
                     model: User,
-                    as: "user",
+                    as: 'user',
                     attributes: {
-                      exclude: ["salt", "password"]
-                    }
-                  }
-                ]
-              }
-            ]
+                      exclude: ['salt', 'password'],
+                    },
+                  },
+                ],
+              },
+            ],
           },
           {
             model: User,
-            as: "user",
+            as: 'user',
             attributes: {
-              exclude: ["salt", "password"]
-            }
-          }
+              exclude: ['salt', 'password'],
+            },
+          },
         ],
-        order: [["createdAt", "DESC"]]
+        order: [['createdAt', 'DESC']],
       };
     },
     get: ({ req, User, Post, Comment }) => {
@@ -77,119 +77,119 @@ module.exports = {
         include: [
           {
             model: Comment,
-            as: "comments",
+            as: 'comments',
             where: {
-              commentId: null
+              commentId: null,
             },
             include: [
               {
                 model: User,
-                as: "user",
+                as: 'user',
                 attributes: {
-                  exclude: ["salt", "password"]
-                }
+                  exclude: ['salt', 'password'],
+                },
               },
               {
                 model: Post,
-                as: "post"
+                as: 'post',
               },
               {
                 model: Comment,
-                as: "replies",
+                as: 'replies',
                 include: [
                   {
                     model: User,
-                    as: "user",
+                    as: 'user',
                     attributes: {
-                      exclude: ["salt", "password"]
-                    }
-                  }
-                ]
-              }
-            ]
+                      exclude: ['salt', 'password'],
+                    },
+                  },
+                ],
+              },
+            ],
           },
           {
             model: User,
-            as: "user",
+            as: 'user',
             attributes: {
-              exclude: ["salt", "password"]
-            }
-          }
-        ]
+              exclude: ['salt', 'password'],
+            },
+          },
+        ],
       };
-    }
+    },
   },
   comments: {
     list: ({ req, User, Post, Comment }) => {
       return {
-        order: [["createdAt", "DESC"]],
+        order: [['createdAt', 'DESC']],
         include: [
           {
             model: User,
-            as: "user",
+            as: 'user',
             attributes: {
-              exclude: ["salt", "password"]
-            }
+              exclude: ['salt', 'password'],
+            },
           },
           {
             model: Post,
-            as: "post"
+            as: 'post',
           },
           {
             model: Comment,
-            as: "replies",
-            order: [["createdAt"]],
+            as: 'replies',
+            order: [['createdAt']],
             include: [
               {
                 model: User,
-                as: "user",
+                as: 'user',
                 attributes: {
-                  exclude: ["salt", "password"]
-                }
-              }
-            ]
+                  exclude: ['salt', 'password'],
+                },
+              },
+            ],
           },
           {
             model: Comment,
-            as: "parent",
+            as: 'parent',
             include: [
               {
                 model: User,
-                as: "user",
+                as: 'user',
                 attributes: {
-                  exclude: ["salt", "password"]
-                }
-              }
-            ]
-          }
-        ]
+                  exclude: ['salt', 'password'],
+                },
+              },
+            ],
+          },
+        ],
       };
     },
     listForUser: ({ req, User, Post, Comment }) => {
       return {
         where: {
           id: req.params.commentId,
-          userId: req.user.id
+          userId: req.user.id,
         },
         include: [
           {
             model: User,
-            as: "user",
+            as: 'user',
             attributes: {
-              exclude: ["salt", "password"]
-            }
+              exclude: ['salt', 'password'],
+            },
           },
           {
             model: Post,
-            as: "post"
+            as: 'post',
           },
           {
             model: Comment,
-            as: "replies",
-            order: [["createdAt"]]
-          }
+            as: 'replies',
+            order: [['createdAt']],
+          },
         ],
-        order: [["createdAt", "DESC"]]
+        order: [['createdAt', 'DESC']],
       };
     },
     get: ({ req, User, Post, Comment }) => {
@@ -197,36 +197,36 @@ module.exports = {
         where: {
           id: req.params.commentId,
           postId: req.params.postId,
-          userId: req.user.id
+          userId: req.user.id,
         },
         include: [
           {
             model: User,
-            as: "user",
+            as: 'user',
             attributes: {
-              exclude: ["salt", "password"]
-            }
+              exclude: ['salt', 'password'],
+            },
           },
           {
             model: Post,
-            as: "post"
+            as: 'post',
           },
           {
             model: Comment,
-            as: "replies",
-            order: [["createdAt"]],
+            as: 'replies',
+            order: [['createdAt']],
             include: [
               {
                 model: User,
-                as: "user",
+                as: 'user',
                 attributes: {
-                  exclude: ["salt", "password"]
-                }
-              }
-            ]
-          }
-        ]
+                  exclude: ['salt', 'password'],
+                },
+              },
+            ],
+          },
+        ],
       };
-    }
-  }
+    },
+  },
 };

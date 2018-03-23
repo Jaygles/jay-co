@@ -36,9 +36,25 @@ var _LoginForm = require('../Components/LoginForm');
 
 var _LoginForm2 = _interopRequireDefault(_LoginForm);
 
+var _LogoutButton = require('../Components/LogoutButton');
+
+var _LogoutButton2 = _interopRequireDefault(_LogoutButton);
+
 var _SignupForm = require('../Components/SignupForm');
 
 var _SignupForm2 = _interopRequireDefault(_SignupForm);
+
+var _PostForm = require('../Components/PostForm');
+
+var _PostForm2 = _interopRequireDefault(_PostForm);
+
+var _Button = require('../Components/Button');
+
+var _Button2 = _interopRequireDefault(_Button);
+
+var _actions = require('../common/actions');
+
+var Actions = _interopRequireWildcard(_actions);
 
 var _withData = require('./withData');
 
@@ -65,28 +81,55 @@ var Index = function (_React$Component) {
       args[_key] = arguments[_key];
     }
 
-    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Index.__proto__ || (0, _getPrototypeOf2.default)(Index)).call.apply(_ref, [this].concat(args))), _this), _this.renderLoggedIn = function () {
+    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = Index.__proto__ || (0, _getPrototypeOf2.default)(Index)).call.apply(_ref, [this].concat(args))), _this), _this.state = {
+      title: '',
+      content: ''
+    }, _this._handleChangeTitle = function (e) {
+      _this.setState({ title: e.target.value });
+    }, _this._handleChangeContent = function (e) {
+      _this.setState({ content: e.target.value });
+    }, _this._handleSave = function () {
+      _this.props.dispatch(Actions.requestSavePost(_this.state));
+    }, _this.renderLoggedIn = function () {
       return React.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 30
         }
       }, React.createElement('p', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 31
         }
-      }, 'logged in'));
+      }, 'logged in'), React.createElement(_LogoutButton2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 32
+        }
+      }), React.createElement(_PostForm2.default, {
+        title: _this.state.title,
+        content: _this.state.content,
+        onTitleChange: _this._handleChangeTitle,
+        onContentChange: _this._handleChangeContent,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        }
+      }), React.createElement(_Button2.default, { onClick: _this._handleSave, __source: {
+          fileName: _jsxFileName,
+          lineNumber: 39
+        }
+      }, 'Publish'));
     }, _this.renderLoggedOut = function () {
       return [React.createElement(_LoginForm2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 45
         }
       }), React.createElement(_SignupForm2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 45
         }
       })];
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
@@ -100,7 +143,7 @@ var Index = function (_React$Component) {
       return React.createElement(_Document2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 25
+          lineNumber: 53
         }
       }, subview);
     }
@@ -112,4 +155,4 @@ var Index = function (_React$Component) {
 exports.default = (0, _withData2.default)({}, function (state) {
   return state;
 })(Index);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiRG9jdW1lbnQiLCJMb2dpbkZvcm0iLCJTaWdudXBGb3JtIiwid2l0aERhdGEiLCJJbmRleCIsInJlbmRlckxvZ2dlZEluIiwicmVuZGVyTG9nZ2VkT3V0Iiwic3VidmlldyIsInByb3BzIiwiaXNBdXRoZW50aWNhdGVkIiwiQ29tcG9uZW50Iiwic3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQWU7Ozs7QUFDdEIsQUFBTyxBQUFnQjs7OztBQUN2QixBQUFPLEFBQWM7Ozs7Ozs7Ozs7O0ksQUFFZjs7Ozs7Ozs7Ozs7Ozs7ME0sQUFDSixpQkFBaUIsWUFBTSxBQUNyQjttQkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0UsY0FBQTs7b0JBQUE7c0JBQUE7QUFBQTtBQUFBLFNBRkosQUFDRSxBQUNFLEFBR0w7QSxhQUVELEEsa0JBQWtCLFlBQU0sQUFDdEI7b0JBQVEsQUFBQzs7b0JBQUQ7c0JBQUQsQUFBQztBQUFBO0FBQUEsT0FBQSxDQUFELFFBQWdCLEFBQUM7O29CQUFEO3NCQUF2QixBQUFPLEFBQWdCLEFBQ3hCO0FBRHdCO0FBQUEsT0FBQTtBOzs7Ozs2QkFHaEIsQUFDUDtVQUFJLFVBQVUsQ0FBQyxLQUFBLEFBQUssTUFBTixBQUFZLGtCQUN0QixLQURVLEFBQ1YsQUFBSyxvQkFDTCxLQUZKLEFBRUksQUFBSyxBQUVUOzttQkFBTyxBQUFDOztvQkFBRDtzQkFBQSxBQUFXO0FBQVg7QUFBQSxPQUFBLEVBQVAsQUFBTyxBQUNSOzs7OztFQW5CaUIsTSxBQUFNLEFBc0IxQjs7MENBQWUsQUFBUyxJQUFJLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUF4QixDQUFBLEVBQWYsQUFBZSxBQUErQiIsImZpbGUiOiJpbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiRG9jdW1lbnQiLCJMb2dpbkZvcm0iLCJMb2dvdXRCdXR0b24iLCJTaWdudXBGb3JtIiwiUG9zdEZvcm0iLCJCdXR0b24iLCJBY3Rpb25zIiwid2l0aERhdGEiLCJJbmRleCIsInN0YXRlIiwidGl0bGUiLCJjb250ZW50IiwiX2hhbmRsZUNoYW5nZVRpdGxlIiwiZSIsInNldFN0YXRlIiwidGFyZ2V0IiwidmFsdWUiLCJfaGFuZGxlQ2hhbmdlQ29udGVudCIsIl9oYW5kbGVTYXZlIiwicHJvcHMiLCJkaXNwYXRjaCIsInJlcXVlc3RTYXZlUG9zdCIsInJlbmRlckxvZ2dlZEluIiwicmVuZGVyTG9nZ2VkT3V0Iiwic3VidmlldyIsImlzQXV0aGVudGljYXRlZCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBZTs7OztBQUN0QixBQUFPLEFBQWtCOzs7O0FBQ3pCLEFBQU8sQUFBZ0I7Ozs7QUFDdkIsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPOztJQUFQLEFBQVksQUFBYTs7QUFDekIsQUFBTyxBQUFjOzs7Ozs7Ozs7OztJLEFBRWY7Ozs7Ozs7Ozs7Ozs7OzBNQUNKLEE7YUFBUSxBQUNDLEFBQ1A7ZUFGTSxBLEFBRUc7QUFGSCxBQUNOLGFBSUYsQSxxQkFBcUIsVUFBQSxBQUFDLEdBQU0sQUFDMUI7WUFBQSxBQUFLLFNBQVMsRUFBRSxPQUFPLEVBQUEsQUFBRSxPQUF6QixBQUFjLEFBQWtCLEFBQ2pDO0EsYSxBQUVELHVCQUF1QixVQUFBLEFBQUMsR0FBTSxBQUM1QjtZQUFBLEFBQUssU0FBUyxFQUFFLFNBQVMsRUFBQSxBQUFFLE9BQTNCLEFBQWMsQUFBb0IsQUFDbkM7QSxhQUVELEEsY0FBYyxZQUFNLEFBQ2xCO1lBQUEsQUFBSyxNQUFMLEFBQVcsU0FBUyxRQUFBLEFBQVEsZ0JBQWdCLE1BQTVDLEFBQW9CLEFBQTZCLEFBQ2xEO0EsYUFDRCxBLGlCQUFpQixZQUFNLEFBQ3JCO21CQUNFLGNBQUE7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRSxjQUFBOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FERixBQUNFLEFBQ0Esb0JBQUEsQUFBQzs7b0JBQUQ7c0JBRkYsQUFFRSxBQUNBO0FBREE7QUFBQSxnQkFDQSxBQUFDO2VBQ1EsTUFBQSxBQUFLLE1BRGQsQUFDb0IsQUFDbEI7aUJBQVMsTUFBQSxBQUFLLE1BRmhCLEFBRXNCLEFBQ3BCO3VCQUFlLE1BSGpCLEFBR3NCLEFBQ3BCO3lCQUFpQixNQUpuQixBQUl3Qjs7b0JBSnhCO3NCQUhGLEFBR0UsQUFNQTtBQU5BO0FBQ0UsZ0JBS0YsQUFBQyxrQ0FBTyxTQUFTLE1BQWpCLEFBQXNCO29CQUF0QjtzQkFBQTtBQUFBO1NBVkosQUFDRSxBQVNFLEFBR0w7QSxhQUVELEEsa0JBQWtCLFlBQU0sQUFDdEI7b0JBQVEsQUFBQzs7b0JBQUQ7c0JBQUQsQUFBQztBQUFBO0FBQUEsT0FBQSxDQUFELFFBQWdCLEFBQUM7O29CQUFEO3NCQUF2QixBQUFPLEFBQWdCLEFBQ3hCO0FBRHdCO0FBQUEsT0FBQTtBOzs7Ozs2QkFHaEIsQUFDUDtVQUFJLFVBQVUsQ0FBQyxLQUFBLEFBQUssTUFBTixBQUFZLGtCQUN0QixLQURVLEFBQ1YsQUFBSyxvQkFDTCxLQUZKLEFBRUksQUFBSyxBQUVUOzttQkFBTyxBQUFDOztvQkFBRDtzQkFBQSxBQUFXO0FBQVg7QUFBQSxPQUFBLEVBQVAsQUFBTyxBQUNSOzs7OztFQTNDaUIsTUFBTSxBQThDMUIsQTs7MENBQWUsQUFBUyxJQUFJLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUF4QixDQUFBLEVBQWYsQUFBZSxBQUErQiIsImZpbGUiOiJpbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=
