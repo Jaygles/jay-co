@@ -19,7 +19,7 @@ var requestHeaders = {
 };
 
 var ENV = process.env.NODE_ENV || 'development';
-var SERVER_PATH = ENV === 'development' ? 'http://localhost:8000' : 'https://next-postgres.herokuapp.com';
+var SERVER_PATH = ENV === 'development' ? 'http://localhost:8000' : 'https://jay-co.herokuapp.com';
 
 var getAllComments = exports.getAllComments = function getAllComments() {
   var options = {

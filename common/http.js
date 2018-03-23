@@ -9,7 +9,7 @@ const ENV = process.env.NODE_ENV || 'development';
 const SERVER_PATH =
   ENV === 'development'
     ? 'http://localhost:8000'
-    : 'https://next-postgres.herokuapp.com';
+    : 'https://jay-co.herokuapp.com';
 
 export const getAllComments = () => {
   const options = {
