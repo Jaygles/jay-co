@@ -4,9 +4,9 @@ import * as React from 'react';
 
 class Document extends React.Component {
   static defaultProps = {
-    title: 'Next-postgres',
+    title: 'Jay-Co',
     description:
-      'This is an example of a forum web application with posts and comments. It is built with NextJS, Postgres, has local authentication, and deploys easily to Heroku.',
+      'This is an example of a front-facing company website. It is built with NextJS, Postgres, has local authentication, and deploys easily to Heroku.',
   };
 
   render() {
@@ -21,7 +21,6 @@ class Document extends React.Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
-          <link rel="shortcut icon" href="/static/favicon.png" />
         </Head>
         {this.props.children}
       </div>

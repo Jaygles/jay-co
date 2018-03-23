@@ -17,7 +17,7 @@ const getInitialStateData = async (ctx) => {
   const comments = await commentsRequest.json();
 
   let post;
-  if (ctx.query.id) {
+  if (ctx.query) {
     post = posts.find((p) => {
       return `${p.id}` === ctx.query.id;
     });
@@ -29,7 +29,7 @@ const getInitialStateData = async (ctx) => {
     posts,
     comments,
     isAuthenticated: ctx.req.isAuthenticated(),
-    viewer: ctx.req.user,
+    // viewer: ctx.req.user,
   };
 };
 

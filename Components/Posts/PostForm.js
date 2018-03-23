@@ -1,6 +1,6 @@
 import * as React from 'react';
-import Textarea from '../Components/Textarea';
-import Button from '../Components/Button';
+import Textarea from '../Textarea';
+import Button from '../Button';
 import { connect } from 'react-redux';
 
 class PostForm extends React.Component {

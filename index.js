@@ -12,7 +12,7 @@ import setupAuth from './api/auth';
 import setupApi from './api';
 
 const dev = process.env.NODE_ENV !== 'production';
-const port = parseInt(process.env.PORT, 10) || 8000;
+const port = process.env.PORT || 8000;
 const app = next({ dev, quiet: false });
 const nextRequestHandler = app.getRequestHandler();
 

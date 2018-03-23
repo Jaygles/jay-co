@@ -2,13 +2,9 @@ import * as React from 'react';
 import Document from '../Components/Document';
 import LoginForm from '../Components/LoginForm';
 import LogoutButton from '../Components/LogoutButton';
-import SignupForm from '../Components/SignupForm';
-import PostForm from '../Components/Posts/PostForm';
+import PostForm from '../Components/PostForm';
 import Button from '../Components/Button';
-import PostList from '../Components/Posts/PostList';
-import Header from '../Components/Header';
-import Nav from '../Components/Nav';
-import GridContainer from '../Components/GridContainer';
+import PostList from '../Components/PostList';
 import * as Actions from '../common/actions';
 import withData from '../higher-order/withData';
 
@@ -47,15 +43,7 @@ class Index extends React.Component {
   };
 
   renderLoggedOut = () => {
-    return (
-      <div>
-        <Header />
-        <GridContainer key="layout">
-          <Nav />
-          <PostList />
-        </GridContainer>
-      </div>
-    );
+    return [<LoginForm />];
   };
 
   render() {

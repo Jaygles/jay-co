@@ -1,4 +1,4 @@
-import { css } from "react-emotion";
+import { css } from 'react-emotion';
 
 const buttonStyle = css`
   font-size: 12px;
@@ -19,7 +19,7 @@ const buttonStyle = css`
   }
 `;
 
-export default props => (
+export default (props) => (
   <button {...props} className={buttonStyle}>
     » {props.children}
   </button>
