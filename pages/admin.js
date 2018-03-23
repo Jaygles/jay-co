@@ -2,9 +2,9 @@ import * as React from 'react';
 import Document from '../Components/Document';
 import LoginForm from '../Components/LoginForm';
 import LogoutButton from '../Components/LogoutButton';
-import PostForm from '../Components/PostForm';
+import PostForm from '../Components/Posts/PostForm';
 import Button from '../Components/Button';
-import PostList from '../Components/PostList';
+import PostList from '../Components/Posts/PostList';
 import * as Actions from '../common/actions';
 import withData from '../higher-order/withData';
 
