@@ -1,8 +1,8 @@
-import expressSession from "cookie-session";
-import bcrypt from "bcrypt";
-import { Strategy } from "passport-local";
-import { session } from "../config.js";
-import { User } from "./models";
+import expressSession from 'cookie-session';
+import bcrypt from 'bcrypt';
+import { Strategy } from 'passport-local';
+import { session } from '../config.js';
+import { User } from './models';
 
 module.exports = (app, passport) => {
   const newExpressSession = expressSession({
@@ -12,8 +12,8 @@ module.exports = (app, passport) => {
     cookie: {
       secure: false,
       httpOnly: false,
-      maxAge: 600000
-    }
+      maxAge: 600000,
+    },
   });
 
   app.use(newExpressSession);
@@ -21,9 +21,9 @@ module.exports = (app, passport) => {
   app.use(passport.session());
 
   const newLocalStrategyOptions = {
-    usernameField: "username",
-    passwordField: "password",
-    session: true
+    usernameField: 'username',
+    passwordField: 'password',
+    session: true,
   };
 
   const newLocalStrategy = new Strategy(
@@ -32,13 +32,13 @@ module.exports = (app, passport) => {
       try {
         const user = await User.findOne({
           where: {
-            username: username
-          }
+            username: username,
+          },
         });
 
         if (!user) {
           return done(null, false, {
-            message: "Incorrect credentials."
+            message: 'Incorrect credentials.',
           });
         }
 
@@ -48,14 +48,14 @@ module.exports = (app, passport) => {
         }
 
         return done(null, false, {
-          message: "Incorrect credentials."
+          message: 'Incorrect credentials.',
         });
       } catch (err) {
         done(null, false, {
-          message: "Failed"
+          message: 'Failed',
         });
       }
-    }
+    },
   );
 
   passport.use(newLocalStrategy);
@@ -68,17 +68,17 @@ module.exports = (app, passport) => {
     try {
       const user = await User.findOne({
         where: {
-          id: id
-        }
+          id: id,
+        },
       });
 
       if (!user) {
-        return done(null, false, { message: "User does not exist" });
+        return done(null, false, { message: 'User does not exist' });
       }
 
       return done(null, user);
     } catch (err) {
-      return done(null, false, { message: "Failed" });
+      return done(null, false, { message: 'Failed' });
     }
   });
 };
