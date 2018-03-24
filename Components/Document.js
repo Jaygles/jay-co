@@ -1,12 +1,12 @@
 import Head from 'next/head';
 import * as React from 'react';
-// import withEmotion from '../higher-order/withEmotion';
+import withEmotion from '../higher-order/withEmotion';
 
 class Document extends React.Component {
   static defaultProps = {
-    title: 'Jay-Co',
+    title: "Jay's Blog",
     description:
-      'This is an example of a front-facing company website. It is built with NextJS, Postgres, has local authentication, and deploys easily to Heroku.',
+      "Kansas City Web Developer Jay Sullivan's blog. It is built with NextJS, Postgres with Sequelize, and React with Redux",
   };
 
   render() {
@@ -28,4 +28,4 @@ class Document extends React.Component {
   }
 }
 
-export default Document;
+export default withEmotion()(Document);

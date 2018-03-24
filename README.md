@@ -1,6 +1,6 @@
-# JayCO
+# Personal Blog
 
-A mock company website to broadcast news and press releases
+My second take on a personal website
 
 Stack -
 Next.js with custom express
