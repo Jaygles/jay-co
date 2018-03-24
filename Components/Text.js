@@ -1,7 +1,7 @@
 import styled, { css } from 'react-emotion';
 import Link from './Link';
 
-export const PostBody = styled('p')`
+export const PostBody = styled('div')`
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
     helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   font-size: 16px;

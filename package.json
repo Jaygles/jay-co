@@ -56,6 +56,7 @@
     "react-redux": "^5.0.7",
     "redux": "^3.7.2",
     "redux-thunk": "^2.2.0",
+    "sanitize-html": "^1.18.2",
     "sequelize": "^4.37.1",
     "webpack": "^3.10.1"
   }

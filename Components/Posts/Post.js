@@ -5,6 +5,8 @@ import * as Strings from '../../common/strings';
 import * as Actions from '../../common/actions';
 import Button from '../Button';
 import Textarea from '../Textarea';
+import SinglePostWrap from './SinglePostWrap';
+import sanitizeHtml from 'sanitize-html';
 
 export default class Post extends React.Component {
   state = {
@@ -49,8 +51,11 @@ export default class Post extends React.Component {
 
   renderLoggedOut = () => {
     const { post } = this.props;
+    const sanitizedPost = sanitizeHtml(post.content, {
+      allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h2']),
+    });
     return (
-      <div>
+      <SinglePostWrap>
         <Text.Heading1>{post.title ? post.title : 'untitled'}</Text.Heading1>
         <PostLockup
           commentLength={post.comments.length}
@@ -58,19 +63,22 @@ export default class Post extends React.Component {
           username={post.user.username}
         />
         <Text.PostBody style={{ marginTop: 24 }}>
-          {post.content}
+          <div dangerouslySetInnerHTML={{ __html: sanitizedPost }} />
           <br />
           <br />
         </Text.PostBody>
-      </div>
+      </SinglePostWrap>
     );
   };
 
   renderLoggedIn = () => {
     const { post } = this.props;
     const { isEditing } = this.state;
+    const sanitizedPost = sanitizeHtml(post.content, {
+      allowedTags: sanitizeHtml.defaults.allowedTags.concat(['h2']),
+    });
     return (
-      <div>
+      <SinglePostWrap>
         <div>
           {!isEditing ? (
             <Button onClick={this._handleEdit}>Edit Post</Button>
@@ -117,12 +125,12 @@ export default class Post extends React.Component {
         )}
         {!isEditing ? (
           <Text.PostBody style={{ margin: '16px 0 88px 0' }}>
-            {this.state.content}
+            <div dangerouslySetInnerHTML={{ __html: sanitizedPost }} />
           </Text.PostBody>
         ) : (
           undefined
         )}
-      </div>
+      </SinglePostWrap>
     );
   };
 
