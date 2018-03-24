@@ -5,6 +5,7 @@ const INITIAL_STATE = {
   users: [],
   posts: [],
   comments: [],
+  portfolios: [],
   post: undefined,
   viewer: undefined,
   isAuthenticated: false,

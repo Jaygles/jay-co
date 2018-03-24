@@ -1,5 +1,4 @@
 'use strict';
-
 module.exports = {
   up: function(queryInterface, Sequelize) {
     return queryInterface.createTable('Portfolios', {
@@ -13,6 +12,9 @@ module.exports = {
         type: Sequelize.TEXT,
       },
       description: {
+        type: Sequelize.TEXT,
+      },
+      img: {
         type: Sequelize.TEXT,
       },
       createdAt: {

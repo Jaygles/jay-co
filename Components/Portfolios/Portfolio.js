@@ -1,18 +1,19 @@
 import * as React from 'react';
-import PostLockup from './PostLockup';
 import * as Text from '../Bits/Text';
 import * as Strings from '../../common/strings';
 import * as Actions from '../../common/actions';
 import Button from '../Bits/Button';
 import Textarea from '../Bits/Textarea';
-import SinglePostWrap from './SinglePostWrap';
-import sanitizeHtml from 'sanitize-html';
+import Link from '../Bits/Link';
+import * as PortfolioGrid from '../Grids/PortfolioGrid';
 
-export default class Post extends React.Component {
+export default class Portfolio extends React.Component {
   state = {
     isEditing: false,
-    content: this.props.post ? this.props.post.content : undefined,
-    title: this.props.post ? this.props.post.title : undefined,
+    description: this.props.portfolio
+      ? this.props.portfolio.description
+      : undefined,
+    title: this.props.portfolio ? this.props.portfolio.title : undefined,
   };
 
   _handleEdit = () => {
@@ -22,8 +23,8 @@ export default class Post extends React.Component {
   _handleCancel = () => {
     this.setState({
       isEditing: false,
-      content: this.props.post.content,
-      title: this.props.post.title,
+      description: this.props.portfolio.description,
+      title: this.props.portfolio.title,
     });
   };
 
@@ -32,101 +33,51 @@ export default class Post extends React.Component {
   };
 
   _handleContentChange = (e) => {
-    this.setState({ content: e.target.value });
+    this.setState({ description: e.target.value });
   };
 
   _handleSave = () => {
     this.props.dispatch(
-      Actions.requestUpdatePost({
-        postId: this.props.post.id,
-        content: this.state.content,
+      Actions.requestUpdatePortfolio({
+        portfolioId: this.props.portfolio.id,
+        description: this.state.description,
         title: this.state.title,
       }),
     );
   };
 
   _handleDelete = () => {
-    this.props.dispatch(Actions.requestDeletePost(this.props.post.id));
+    this.props.dispatch(
+      Actions.requestDeletePortfolio(this.props.portfolio.id),
+    );
   };
 
   renderLoggedOut = () => {
-    const { post } = this.props;
-    const sanitizedPost = sanitizeHtml(post.content);
+    const { portfolio } = this.props;
     return (
-      <SinglePostWrap>
-        <Text.Heading1>{post.title ? post.title : 'untitled'}</Text.Heading1>
-        <PostLockup
-          commentLength={post.comments.length}
-          createdAt={post.createdAt}
-          username={post.user.username}
-        />
-        <Text.PostBody style={{ marginTop: 24 }}>
-          <div dangerouslySetInnerHTML={{ __html: sanitizedPost }} />
-          <br />
-          <br />
-        </Text.PostBody>
-      </SinglePostWrap>
+      <PortfolioGrid.single>
+        <Text.Heading2>
+          {portfolio.title ? portfolio.title : null}
+        </Text.Heading2>
+        <Link href="https://www.google.com">
+          <img src="via.placeholder.com/250x150" />
+        </Link>
+      </PortfolioGrid.single>
     );
   };
 
   renderLoggedIn = () => {
-    const { post } = this.props;
+    const { portfolio } = this.props;
     const { isEditing } = this.state;
-    const sanitizedPost = sanitizeHtml(post.content);
     return (
-      <SinglePostWrap>
-        <div>
-          {!isEditing ? (
-            <Button onClick={this._handleEdit}>Edit Post</Button>
-          ) : (
-            undefined
-          )}
-          {isEditing ? (
-            <Button onClick={this._handleCancel}>Cancel</Button>
-          ) : (
-            undefined
-          )}
-          {isEditing ? (
-            <Button onClick={this._handleSave}>Save</Button>
-          ) : (
-            undefined
-          )}
-          <Button onClick={this._handleDelete}>Delete</Button>
-        </div>
-        {isEditing ? (
-          <Textarea
-            value={this.state.title}
-            placeholder="Optional title"
-            fontWeight={600}
-            lineHeight="2.8rem"
-            fontSize="2.618rem"
-            onChange={this._handleTitleChange}
-          />
-        ) : (
-          <Text.Heading1>{this.state.title}</Text.Heading1>
-        )}
-        <PostLockup
-          commentLength={post.comments.length}
-          createdAt={post.createdAt}
-          username={post.user.username}
-        />
-        {isEditing ? (
-          <Textarea
-            value={this.state.content}
-            placeholder="Start writing..."
-            onChange={this._handleContentChange}
-          />
-        ) : (
-          undefined
-        )}
-        {!isEditing ? (
-          <Text.PostBody style={{ margin: '16px 0 88px 0' }}>
-            <div dangerouslySetInnerHTML={{ __html: sanitizedPost }} />
-          </Text.PostBody>
-        ) : (
-          undefined
-        )}
-      </SinglePostWrap>
+      <PortfolioGrid.single>
+        <Text.Heading2>
+          {portfolio.title ? portfolio.title : null}
+        </Text.Heading2>
+        <Link href="https://www.google.com">
+          <img src="http://via.placeholder.com/250x150" />
+        </Link>
+      </PortfolioGrid.single>
     );
   };
 

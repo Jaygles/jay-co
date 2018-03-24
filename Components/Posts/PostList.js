@@ -1,6 +1,6 @@
 import * as React from 'react';
 import Post from './Post';
-import PostGrid from './PostGrid';
+import PostGrid from '../Grids/PostGrid';
 import { connect } from 'react-redux';
 
 class PostList extends React.Component {

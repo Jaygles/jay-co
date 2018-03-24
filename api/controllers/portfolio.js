@@ -1,5 +1,5 @@
 import queries from './queries';
-import { Portfolio } from '../models/portfolio';
+import { Portfolio } from '../models';
 
 module.exports = {
   async create(req, res) {
@@ -7,7 +7,7 @@ module.exports = {
       const portfolio = await Portfolio.create({
         title: req.body.title,
         description: req.body.description,
-        userId: req.user.id,
+        img: req.body.img,
       });
 
       return res.status(200).send(portfolio);
@@ -17,12 +17,8 @@ module.exports = {
   },
 
   async list(req, res) {
-    try {
-      const portfolios = await Portfolio.findAll();
-      return res.status(200).send(portfolios);
-    } catch (err) {
-      return res.status(500).send(err);
-    }
+    const portfolios = await Portfolio.findAll();
+    return res.status(200).send(portfolios);
   },
 
   async get(req, res) {
@@ -31,7 +27,7 @@ module.exports = {
 
       if (!portfolio) {
         return res.status(404).send({
-          message: 'Post Not Found',
+          message: 'Portfolio Not Found',
         });
       }
 
@@ -58,6 +54,7 @@ module.exports = {
       const updatedPortfolio = await portfolio.update({
         title: req.body.title || portfolio.title,
         description: req.body.description || portfolio.description,
+        img: req.body.img || portfolio.img,
       });
 
       return res.status(200).send(updatedPortfolio);

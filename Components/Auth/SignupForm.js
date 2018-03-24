@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import * as Actions from '../common/actions';
+import * as Actions from '../../common/actions';
 import { connect } from 'react-redux';
-import Input from '../Components/Bits/Input';
-import Button from '../Components/Bits/Button';
-import Border from '../Components/Bits/Border';
+import Input from '../Bits/Input';
+import Button from '../Bits/Button';
+import Border from '../Bits/Border';
 
 class SignupForm extends Component {
   state = {

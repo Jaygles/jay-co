@@ -2,6 +2,7 @@ import * as React from 'react';
 import Document from '../Components/Document';
 import Header from '../Components/Header/Header';
 import Nav from '../Components/Nav/Nav';
+import PortfolioList from '../Components/Portfolios/PortfolioList';
 import MainGrid from '../Components/Grids/MainGrid';
 import withData from '../higher-order/withData';
 
@@ -13,6 +14,7 @@ class Index extends React.Component {
         <Header />
         <MainGrid>
           <Nav isAuthenticated={isAuthenticated} />
+          <PortfolioList />
         </MainGrid>
       </Document>
     );

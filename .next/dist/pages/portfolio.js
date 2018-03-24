@@ -40,6 +40,10 @@ var _Nav = require('../Components/Nav/Nav');
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
+var _PortfolioList = require('../Components/Portfolios/PortfolioList');
+
+var _PortfolioList2 = _interopRequireDefault(_PortfolioList);
+
 var _MainGrid = require('../Components/Grids/MainGrid');
 
 var _MainGrid2 = _interopRequireDefault(_MainGrid);
@@ -72,21 +76,26 @@ var Index = function (_React$Component) {
       return React.createElement(_Document2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 12
+          lineNumber: 13
         }
       }, React.createElement(_Header2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 13
+          lineNumber: 14
         }
       }), React.createElement(_MainGrid2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 14
+          lineNumber: 15
         }
       }, React.createElement(_Nav2.default, { isAuthenticated: isAuthenticated, __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
+        }
+      }), React.createElement(_PortfolioList2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
         }
       })));
     }
@@ -98,4 +107,4 @@ var Index = function (_React$Component) {
 exports.default = (0, _withData2.default)({}, function (state) {
   return state;
 })(Index);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3BvcnRmb2xpby5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkRvY3VtZW50IiwiSGVhZGVyIiwiTmF2IiwiTWFpbkdyaWQiLCJ3aXRoRGF0YSIsIkluZGV4IiwiaXNBdXRoZW50aWNhdGVkIiwicHJvcHMiLCJDb21wb25lbnQiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPLEFBQVM7Ozs7QUFDaEIsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBYzs7Ozs7Ozs7Ozs7SSxBQUVmOzs7Ozs7Ozs7Ozs2QkFDSztVQUFBLEFBQ0Msa0JBQW9CLEtBRHJCLEFBQzBCLE1BRDFCLEFBQ0MsQUFDUjs7bUJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxRQUNFLEFBQUM7O29CQUFEO3NCQURGLEFBQ0UsQUFDQTtBQURBO0FBQUEsZ0JBQ0EsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxBQUFDLCtCQUFJLGlCQUFMLEFBQXNCO29CQUF0QjtzQkFKTixBQUNFLEFBRUUsQUFDRSxBQUlQO0FBSk87Ozs7OztFQVBVLE0sQUFBTSxBQWMxQjs7MENBQWUsQUFBUyxJQUFJLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUF4QixDQUFBLEVBQWYsQUFBZSxBQUErQiIsImZpbGUiOiJwb3J0Zm9saW8uanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3BvcnRmb2xpby5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkRvY3VtZW50IiwiSGVhZGVyIiwiTmF2IiwiUG9ydGZvbGlvTGlzdCIsIk1haW5HcmlkIiwid2l0aERhdGEiLCJJbmRleCIsImlzQXV0aGVudGljYXRlZCIsInByb3BzIiwiQ29tcG9uZW50Iiwic3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQVk7Ozs7QUFDbkIsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBbUI7Ozs7QUFDMUIsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBYzs7Ozs7Ozs7Ozs7SSxBQUVmOzs7Ozs7Ozs7Ozs2QkFDSztVQUFBLEFBQ0Msa0JBQW9CLEtBRHJCLEFBQzBCLE1BRDFCLEFBQ0MsQUFDUjs7bUJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxRQUNFLEFBQUM7O29CQUFEO3NCQURGLEFBQ0UsQUFDQTtBQURBO0FBQUEsZ0JBQ0EsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxBQUFDLCtCQUFJLGlCQUFMLEFBQXNCO29CQUF0QjtzQkFERixBQUNFLEFBQ0E7QUFEQTtnQkFDQSxBQUFDOztvQkFBRDtzQkFMTixBQUNFLEFBRUUsQUFFRSxBQUlQO0FBSk87QUFBQTs7Ozs7RUFSVSxNQUFNLEEsQUFlMUI7OzBDQUFlLEFBQVMsSUFBSSxVQUFBLEFBQUMsT0FBRDtTQUFBLEFBQVc7QUFBeEIsQ0FBQSxFQUFmLEFBQWUsQUFBK0IiLCJmaWxlIjoicG9ydGZvbGlvLmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
