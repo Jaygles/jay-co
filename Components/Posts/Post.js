@@ -1,10 +1,10 @@
 import * as React from 'react';
 import PostLockup from './PostLockup';
-import * as Text from '../Text';
+import * as Text from '../Bits/Text';
 import * as Strings from '../../common/strings';
 import * as Actions from '../../common/actions';
-import Button from '../Button';
-import Textarea from '../Textarea';
+import Button from '../Bits/Button';
+import Textarea from '../Bits/Textarea';
 import SinglePostWrap from './SinglePostWrap';
 import sanitizeHtml from 'sanitize-html';
 
@@ -70,6 +70,7 @@ export default class Post extends React.Component {
         'strong',
         'em',
         'strike',
+        's',
         'code',
         'hr',
         'br',
@@ -141,6 +142,7 @@ export default class Post extends React.Component {
         'strong',
         'em',
         'strike',
+        's',
         'code',
         'hr',
         'br',

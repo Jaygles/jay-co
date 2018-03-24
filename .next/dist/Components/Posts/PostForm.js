@@ -28,11 +28,11 @@ var _react = require('react');
 
 var React = _interopRequireWildcard(_react);
 
-var _Textarea = require('../Textarea');
+var _Textarea = require('../Bits/Textarea');
 
 var _Textarea2 = _interopRequireDefault(_Textarea);
 
-var _Button = require('../Button');
+var _Button = require('../Bits/Button');
 
 var _Button2 = _interopRequireDefault(_Button);
 

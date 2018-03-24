@@ -1,7 +1,7 @@
 import * as React from 'react';
 import * as Strings from '../../common/strings';
-import * as Text from '../Text';
-import BorderedItem from '../BorderedItem';
+import * as Text from '../Bits/Text';
+import BorderedItem from '../Bits/BorderedItem';
 
 export default class PostLockup extends React.Component {
   render() {

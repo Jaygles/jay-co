@@ -16,6 +16,9 @@ const getInitialStateData = async (ctx) => {
   const commentsRequest = await HTTP.getAllComments();
   const comments = await commentsRequest.json();
 
+  const portfoliosRequest = await HTTP.getAllPortfolios();
+  const portfolios = await portfoliosRequest.json();
+
   let post;
   if (ctx.query) {
     post = posts.find((p) => {
@@ -28,6 +31,7 @@ const getInitialStateData = async (ctx) => {
     users,
     posts,
     comments,
+    portfolios,
     isAuthenticated: ctx.req.isAuthenticated(),
     // viewer: ctx.req.user,
   };

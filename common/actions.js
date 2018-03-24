@@ -129,6 +129,46 @@ export const requestSavePost = (data) => {
   };
 };
 
+export const requestDeletePortfolio = (id) => {
+  return async (dispatch) => {
+    const response = await HTTP.deletePortfolio(id);
+
+    if (response.status !== 200) {
+      return exception('error');
+    }
+
+    window.location.reload();
+  };
+};
+
+export const requestUpdatePortfolio = (data) => {
+  return async (dispatch) => {
+    const response = await HTTP.updatePortfolio(data);
+
+    if (response.status !== 200) {
+      return exception('error');
+    }
+
+    window.location.reload();
+  };
+};
+
+export const requestSavePortfolio = (data) => {
+  return async (dispatch) => {
+    const response = await HTTP.savePortfolio(data);
+
+    if (response.status === 200) {
+      return redirect('/');
+    }
+
+    if (response.status === 403) {
+      return dispatch(requestLogout());
+    }
+
+    return exception('error');
+  };
+};
+
 export const requestLogout = () => {
   return async (dispatch) => {
     const response = await HTTP.logout();

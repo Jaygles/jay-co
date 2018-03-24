@@ -90,16 +90,6 @@ export const getPostById = (id) => {
   return fetch(`${SERVER_PATH}/api/posts/${id}`, options);
 };
 
-export const deleteViewer = () => {
-  const options = {
-    method: 'DELETE',
-    headers: requestHeaders,
-    credentials: 'include',
-  };
-
-  return fetch(`${SERVER_PATH}/api/viewer/delete`, options);
-};
-
 export const deletePost = (id) => {
   const options = {
     method: 'DELETE',
@@ -130,6 +120,68 @@ export const savePost = ({ content, title }) => {
   };
 
   return fetch(`${SERVER_PATH}/api/posts`, options);
+};
+
+export const getAllPortfolios = () => {
+  const options = {
+    method: 'GET',
+    headers: requestHeaders,
+    credentials: 'include',
+  };
+
+  return fetch(`${SERVER_PATH}/api/portfolios`, options);
+};
+
+export const getPortfolioById = (id) => {
+  const options = {
+    method: 'GET',
+    headers: requestHeaders,
+    credentials: 'include',
+  };
+
+  return fetch(`${SERVER_PATH}/api/portfolios/${id}`, options);
+};
+
+export const deletePortfolio = (id) => {
+  const options = {
+    method: 'DELETE',
+    headers: requestHeaders,
+    credentials: 'include',
+  };
+
+  return fetch(`${SERVER_PATH}/api/portfolios/${id}`, options);
+};
+
+export const updatePortfolio = ({ description, title, portfolioId }) => {
+  const options = {
+    method: 'PUT',
+    credentials: 'include',
+    headers: requestHeaders,
+    body: JSON.stringify({ description, title }),
+  };
+
+  return fetch(`${SERVER_PATH}/api/portfolios/${portfolioId}`, options);
+};
+
+export const savePortfolio = ({ description, title }) => {
+  const options = {
+    method: 'POST',
+    credentials: 'include',
+    headers: requestHeaders,
+    body: JSON.stringify({ description, title }),
+  };
+
+  return fetch(`${SERVER_PATH}/api/portfolios`, options);
+};
+
+export const deleteViewer = () => {
+  const options = {
+    method: 'DELETE',
+    headers: requestHeaders,
+    credentials: 'include',
+  };
+
+  return fetch(`${SERVER_PATH}/api/viewer/delete`, options);
 };
 
 export const getAllUsers = () => {

@@ -1,6 +1,7 @@
 import user from './controllers/user';
 import post from './controllers/post';
 import comment from './controllers/comment';
+import portfolio from './controllers/portfolio';
 import passport from 'passport';
 
 const authMiddleware = (req, res, next) => {
@@ -47,6 +48,12 @@ module.exports = (app) => {
   app.get('/api/posts/:postId', post.get);
   app.put('/api/posts/:postId', authMiddleware, post.update);
   app.delete('/api/posts/:postId', authMiddleware, post.delete);
+
+  app.post('/api/portfolios', authMiddleware, portfolio.create);
+  app.get('/api/portfolios', portfolio.list);
+  app.get('/api/portfolios/:portfolioId', portfolio.get);
+  app.put('/api/portfolios/:portfolioId', authMiddleware, portfolio.update);
+  app.delete('/api/portfolios/:portfolioId', authMiddleware, portfolio.delete);
 
   app.get('/api/comments', comment.list);
   app.post('/api/comments', authMiddleware, comment.create);

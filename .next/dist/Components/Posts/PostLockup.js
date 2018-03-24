@@ -32,11 +32,11 @@ var _strings = require('../../common/strings');
 
 var Strings = _interopRequireWildcard(_strings);
 
-var _Text = require('../Text');
+var _Text = require('../Bits/Text');
 
 var Text = _interopRequireWildcard(_Text);
 
-var _BorderedItem = require('../BorderedItem');
+var _BorderedItem = require('../Bits/BorderedItem');
 
 var _BorderedItem2 = _interopRequireDefault(_BorderedItem);
 

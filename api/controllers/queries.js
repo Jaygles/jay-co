@@ -229,4 +229,30 @@ module.exports = {
       };
     },
   },
+  portfolios: {
+    list: ({ req, Portfolio }) => {
+      return {
+        order: [['createdAt', 'DESC']],
+        include: [
+          {
+            model: Portfolio,
+            as: 'portfolio',
+          },
+        ],
+      };
+    },
+    get: ({ req, Portfolio }) => {
+      return {
+        where: {
+          id: req.params.portfolioId,
+        },
+        include: [
+          {
+            model: Portfolio,
+            as: 'portfolio',
+          },
+        ],
+      };
+    },
+  },
 };

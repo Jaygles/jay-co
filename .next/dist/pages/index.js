@@ -32,23 +32,15 @@ var _Document = require('../Components/Document');
 
 var _Document2 = _interopRequireDefault(_Document);
 
-var _LoginForm = require('../Components/LoginForm');
-
-var _LoginForm2 = _interopRequireDefault(_LoginForm);
-
-var _LogoutButton = require('../Components/LogoutButton');
+var _LogoutButton = require('../Components/Auth/LogoutButton');
 
 var _LogoutButton2 = _interopRequireDefault(_LogoutButton);
-
-var _SignupForm = require('../Components/SignupForm');
-
-var _SignupForm2 = _interopRequireDefault(_SignupForm);
 
 var _PostForm = require('../Components/Posts/PostForm');
 
 var _PostForm2 = _interopRequireDefault(_PostForm);
 
-var _Button = require('../Components/Button');
+var _Button = require('../Components/Bits/Button');
 
 var _Button2 = _interopRequireDefault(_Button);
 
@@ -56,17 +48,17 @@ var _PostList = require('../Components/Posts/PostList');
 
 var _PostList2 = _interopRequireDefault(_PostList);
 
-var _Header = require('../Components/Header');
+var _Header = require('../Components/Header/Header');
 
 var _Header2 = _interopRequireDefault(_Header);
 
-var _Nav = require('../Components/Nav');
+var _Nav = require('../Components/Nav/Nav');
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
-var _GridContainer = require('../Components/GridContainer');
+var _MainGrid = require('../Components/Grids/MainGrid');
 
-var _GridContainer2 = _interopRequireDefault(_GridContainer);
+var _MainGrid2 = _interopRequireDefault(_MainGrid);
 
 var _actions = require('../common/actions');
 
@@ -110,61 +102,51 @@ var Index = function (_React$Component) {
       return React.createElement('div', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
-        }
-      }, React.createElement('p', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 35
-        }
-      }, 'logged in'), React.createElement(_LogoutButton2.default, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        }
-      }), React.createElement(_PostForm2.default, {
-        title: _this.state.title,
-        content: _this.state.content,
-        onTitleChange: _this._handleChangeTitle,
-        onContentChange: _this._handleChangeContent,
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        }
-      }), React.createElement(_Button2.default, { onClick: _this._handleSave, __source: {
-          fileName: _jsxFileName,
-          lineNumber: 43
-        }
-      }, 'Publish'), React.createElement(_PostList2.default, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 44
-        }
-      }));
-    }, _this.renderLoggedOut = function () {
-      return React.createElement('div', {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 51
+          lineNumber: 32
         }
       }, React.createElement(_Header2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 52
+          lineNumber: 33
         }
-      }), React.createElement(_GridContainer2.default, { key: 'layout', __source: {
+      }), React.createElement(_MainGrid2.default, { key: 'layout', __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 34
         }
-      }, React.createElement(_Nav2.default, {
-        __source: {
+      }, React.createElement(_Nav2.default, { isAuthenticated: _this.props.isAuthenticated, __source: {
           fileName: _jsxFileName,
-          lineNumber: 54
+          lineNumber: 35
         }
       }), React.createElement(_PostList2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 55
+          lineNumber: 36
+        }
+      })));
+    }, _this.renderLoggedOut = function () {
+      return React.createElement('div', {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 44
+        }
+      }, React.createElement(_Header2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        }
+      }), React.createElement(_MainGrid2.default, { key: 'layout', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        }
+      }, React.createElement(_Nav2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        }
+      }), React.createElement(_PostList2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
         }
       })));
     }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
@@ -178,7 +160,7 @@ var Index = function (_React$Component) {
       return React.createElement(_Document2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 66
+          lineNumber: 59
         }
       }, subview);
     }
@@ -190,4 +172,4 @@ var Index = function (_React$Component) {
 exports.default = (0, _withData2.default)({}, function (state) {
   return state;
 })(Index);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiRG9jdW1lbnQiLCJMb2dpbkZvcm0iLCJMb2dvdXRCdXR0b24iLCJTaWdudXBGb3JtIiwiUG9zdEZvcm0iLCJCdXR0b24iLCJQb3N0TGlzdCIsIkhlYWRlciIsIk5hdiIsIkdyaWRDb250YWluZXIiLCJBY3Rpb25zIiwid2l0aERhdGEiLCJJbmRleCIsInN0YXRlIiwidGl0bGUiLCJjb250ZW50IiwiX2hhbmRsZUNoYW5nZVRpdGxlIiwiZSIsInNldFN0YXRlIiwidGFyZ2V0IiwidmFsdWUiLCJfaGFuZGxlQ2hhbmdlQ29udGVudCIsIl9oYW5kbGVTYXZlIiwicHJvcHMiLCJkaXNwYXRjaCIsInJlcXVlc3RTYXZlUG9zdCIsInJlbmRlckxvZ2dlZEluIiwicmVuZGVyTG9nZ2VkT3V0Iiwic3VidmlldyIsImlzQXV0aGVudGljYXRlZCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBZTs7OztBQUN0QixBQUFPLEFBQWtCOzs7O0FBQ3pCLEFBQU8sQUFBZ0I7Ozs7QUFDdkIsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPLEFBQW1COzs7O0FBQzFCLEFBQU87O0lBQVAsQUFBWSxBQUFhOztBQUN6QixBQUFPLEFBQWM7Ozs7Ozs7Ozs7O0lBRWYsQTs7Ozs7Ozs7Ozs7Ozs7ME1BQ0osQTthQUFRLEFBQ0MsQUFDUDtlQUZNLEFBRUcsQTtBQUZILEFBQ04sYUFJRixBLHFCQUFxQixVQUFBLEFBQUMsR0FBTSxBQUMxQjtZQUFBLEFBQUssU0FBUyxFQUFFLE9BQU8sRUFBQSxBQUFFLE9BQXpCLEFBQWMsQUFBa0IsQUFDakM7QSxhQUVELEEsdUJBQXVCLFVBQUEsQUFBQyxHQUFNLEFBQzVCO1lBQUEsQUFBSyxTQUFTLEVBQUUsU0FBUyxFQUFBLEFBQUUsT0FBM0IsQUFBYyxBQUFvQixBQUNuQztBLGFBRUQsQSxjQUFjLFlBQU0sQUFDbEI7WUFBQSxBQUFLLE1BQUwsQUFBVyxTQUFTLFFBQUEsQUFBUSxnQkFBZ0IsTUFBNUMsQUFBb0IsQUFBNkIsQUFDbEQ7QSxhQUNELEEsaUJBQWlCLFlBQU0sQUFDckI7bUJBQ0UsY0FBQTs7b0JBQUE7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxRQUNFLGNBQUE7O29CQUFBO3NCQUFBO0FBQUE7QUFBQSxTQURGLEFBQ0UsQUFDQSxvQkFBQSxBQUFDOztvQkFBRDtzQkFGRixBQUVFLEFBQ0E7QUFEQTtBQUFBLGdCQUNBLEFBQUM7ZUFDUSxNQUFBLEFBQUssTUFEZCxBQUNvQixBQUNsQjtpQkFBUyxNQUFBLEFBQUssTUFGaEIsQUFFc0IsQUFDcEI7dUJBQWUsTUFIakIsQUFHc0IsQUFDcEI7eUJBQWlCLE1BSm5CLEFBSXdCOztvQkFKeEI7c0JBSEYsQUFHRSxBQU1BO0FBTkE7QUFDRSxnQkFLRixBQUFDLGtDQUFPLFNBQVMsTUFBakIsQUFBc0I7b0JBQXRCO3NCQUFBO0FBQUE7U0FURixBQVNFLEFBQ0Esa0JBQUEsQUFBQzs7b0JBQUQ7c0JBWEosQUFDRSxBQVVFLEFBR0w7QUFISztBQUFBO0EsYUFLTixBLGtCQUFrQixZQUFNLEFBQ3RCO21CQUNFLGNBQUE7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRSxBQUFDOztvQkFBRDtzQkFERixBQUNFLEFBQ0E7QUFEQTtBQUFBLGdCQUNBLEFBQUMseUNBQWMsS0FBZixBQUFtQjtvQkFBbkI7c0JBQUEsQUFDRTtBQURGO2VBQ0UsQUFBQzs7b0JBQUQ7c0JBREYsQUFDRSxBQUNBO0FBREE7QUFBQSxnQkFDQSxBQUFDOztvQkFBRDtzQkFMTixBQUNFLEFBRUUsQUFFRSxBQUlQO0FBSk87QUFBQTtBOzs7Ozs2QkFNQyxBQUNQO1VBQUksVUFBVSxDQUFDLEtBQUEsQUFBSyxNQUFOLEFBQVksa0JBQ3RCLEtBRFUsQUFDVixBQUFLLG9CQUNMLEtBRkosQUFFSSxBQUFLLEFBRVQ7O21CQUFPLEFBQUM7O29CQUFEO3NCQUFBLEFBQVc7QUFBWDtBQUFBLE9BQUEsRUFBUCxBQUFPLEFBQ1I7Ozs7O0VBcERpQixNQUFNLEFBdUQxQixBOzswQ0FBZSxBQUFTLElBQUksVUFBQSxBQUFDLE9BQUQ7U0FBQSxBQUFXO0FBQXhCLENBQUEsRUFBZixBQUFlLEFBQStCIiwiZmlsZSI6ImluZGV4LmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2luZGV4LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiRG9jdW1lbnQiLCJMb2dvdXRCdXR0b24iLCJQb3N0Rm9ybSIsIkJ1dHRvbiIsIlBvc3RMaXN0IiwiSGVhZGVyIiwiTmF2IiwiTWFpbkdyaWQiLCJBY3Rpb25zIiwid2l0aERhdGEiLCJJbmRleCIsInN0YXRlIiwidGl0bGUiLCJjb250ZW50IiwiX2hhbmRsZUNoYW5nZVRpdGxlIiwiZSIsInNldFN0YXRlIiwidGFyZ2V0IiwidmFsdWUiLCJfaGFuZGxlQ2hhbmdlQ29udGVudCIsIl9oYW5kbGVTYXZlIiwicHJvcHMiLCJkaXNwYXRjaCIsInJlcXVlc3RTYXZlUG9zdCIsInJlbmRlckxvZ2dlZEluIiwiaXNBdXRoZW50aWNhdGVkIiwicmVuZGVyTG9nZ2VkT3V0Iiwic3VidmlldyIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBa0I7Ozs7QUFDekIsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBWTs7OztBQUNuQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTzs7SUFBUCxBQUFZLEFBQWE7O0FBQ3pCLEFBQU8sQUFBYzs7Ozs7Ozs7Ozs7SUFFZixBOzs7Ozs7Ozs7Ozs7OzswTSxBQUNKO2FBQVEsQUFDQyxBQUNQO2UsQUFGTSxBQUVHO0FBRkgsQUFDTixhQUlGLEEscUJBQXFCLFVBQUEsQUFBQyxHQUFNLEFBQzFCO1lBQUEsQUFBSyxTQUFTLEVBQUUsT0FBTyxFQUFBLEFBQUUsT0FBekIsQUFBYyxBQUFrQixBQUNqQztBLGEsQUFFRCx1QkFBdUIsVUFBQSxBQUFDLEdBQU0sQUFDNUI7WUFBQSxBQUFLLFNBQVMsRUFBRSxTQUFTLEVBQUEsQUFBRSxPQUEzQixBQUFjLEFBQW9CLEFBQ25DO0EsYUFFRCxBLGNBQWMsWUFBTSxBQUNsQjtZQUFBLEFBQUssTUFBTCxBQUFXLFNBQVMsUUFBQSxBQUFRLGdCQUFnQixNQUE1QyxBQUFvQixBQUE2QixBQUNsRDtBLGFBQ0QsQSxpQkFBaUIsWUFBTSxBQUNyQjttQkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0UsQUFBQzs7b0JBQUQ7c0JBREYsQUFDRSxBQUNBO0FBREE7QUFBQSxnQkFDQSxBQUFDLG9DQUFTLEtBQVYsQUFBYztvQkFBZDtzQkFBQSxBQUNFO0FBREY7ZUFDRSxBQUFDLCtCQUFJLGlCQUFpQixNQUFBLEFBQUssTUFBM0IsQUFBaUM7b0JBQWpDO3NCQURGLEFBQ0UsQUFDQTtBQURBO2dCQUNBLEFBQUM7O29CQUFEO3NCQUxOLEFBQ0UsQUFFRSxBQUVFLEFBSVA7QUFKTztBQUFBO0EsYUFNUixBLGtCQUFrQixZQUFNLEFBQ3RCO21CQUNFLGNBQUE7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRSxBQUFDOztvQkFBRDtzQkFERixBQUNFLEFBQ0E7QUFEQTtBQUFBLGdCQUNBLEFBQUMsb0NBQVMsS0FBVixBQUFjO29CQUFkO3NCQUFBLEFBQ0U7QUFERjtlQUNFLEFBQUM7O29CQUFEO3NCQURGLEFBQ0UsQUFDQTtBQURBO0FBQUEsZ0JBQ0EsQUFBQzs7b0JBQUQ7c0JBTE4sQUFDRSxBQUVFLEFBRUUsQUFJUDtBQUpPO0FBQUE7QTs7Ozs7NkJBTUMsQUFDUDtVQUFJLFVBQVUsQ0FBQyxLQUFBLEFBQUssTUFBTixBQUFZLGtCQUN0QixLQURVLEFBQ1YsQUFBSyxvQkFDTCxLQUZKLEFBRUksQUFBSyxBQUVUOzttQkFBTyxBQUFDOztvQkFBRDtzQkFBQSxBQUFXO0FBQVg7QUFBQSxPQUFBLEVBQVAsQUFBTyxBQUNSOzs7OztFQS9DaUIsTUFBTSxBQWtEMUIsQTs7MENBQWUsQUFBUyxJQUFJLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUF4QixDQUFBLEVBQWYsQUFBZSxBQUErQiIsImZpbGUiOiJpbmRleC5qcz9lbnRyeSIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=

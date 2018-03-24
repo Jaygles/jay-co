@@ -1,14 +1,12 @@
 import * as React from 'react';
 import Document from '../Components/Document';
-import LoginForm from '../Components/LoginForm';
-import LogoutButton from '../Components/LogoutButton';
-import SignupForm from '../Components/SignupForm';
+import LogoutButton from '../Components/Auth/LogoutButton';
 import PostForm from '../Components/Posts/PostForm';
-import Button from '../Components/Button';
+import Button from '../Components/Bits/Button';
 import PostList from '../Components/Posts/PostList';
-import Header from '../Components/Header';
-import Nav from '../Components/Nav';
-import GridContainer from '../Components/GridContainer';
+import Header from '../Components/Header/Header';
+import Nav from '../Components/Nav/Nav';
+import MainGrid from '../Components/Grids/MainGrid';
 import * as Actions from '../common/actions';
 import withData from '../higher-order/withData';
 
@@ -32,16 +30,11 @@ class Index extends React.Component {
   renderLoggedIn = () => {
     return (
       <div>
-        <p>logged in</p>
-        <LogoutButton />
-        <PostForm
-          title={this.state.title}
-          content={this.state.content}
-          onTitleChange={this._handleChangeTitle}
-          onContentChange={this._handleChangeContent}
-        />
-        <Button onClick={this._handleSave}>Publish</Button>
-        <PostList />
+        <Header />
+        <MainGrid key="layout">
+          <Nav isAuthenticated={this.props.isAuthenticated} />
+          <PostList />
+        </MainGrid>
       </div>
     );
   };
@@ -50,10 +43,10 @@ class Index extends React.Component {
     return (
       <div>
         <Header />
-        <GridContainer key="layout">
+        <MainGrid key="layout">
           <Nav />
           <PostList />
-        </GridContainer>
+        </MainGrid>
       </div>
     );
   };
