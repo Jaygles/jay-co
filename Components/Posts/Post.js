@@ -82,6 +82,7 @@ export default class Post extends React.Component {
         'th',
         'td',
         'pre',
+        'img',
       ],
       allowedAttributes: {
         a: ['href', 'name', 'target'],
@@ -152,6 +153,7 @@ export default class Post extends React.Component {
         'th',
         'td',
         'pre',
+        'img',
       ],
       allowedAttributes: {
         a: ['href', 'name', 'target'],

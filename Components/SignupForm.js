@@ -1,23 +1,22 @@
-import React, { Component } from "react";
-import * as Actions from "../common/actions";
-import { connect } from "react-redux";
-import Input from "../Components/Input";
-import Button from "../Components/Button";
-import Border from "../Components/Border";
+import React, { Component } from 'react';
+import * as Actions from '../common/actions';
+import { connect } from 'react-redux';
+import Input from '../Components/Input';
+import Button from '../Components/Button';
+import Border from '../Components/Border';
 
 class SignupForm extends Component {
   state = {
-    username: "",
-    password: "",
-    verify: ""
+    username: '',
+    password: '',
+    verify: '',
   };
 
-  _handleChange = e => {
+  _handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  _handleSubmit = e => {
-    console.log("Submit clicked");
+  _handleSubmit = (e) => {
     this.props.dispatch(Actions.requestSignup(this.state));
   };
   render() {
@@ -55,4 +54,4 @@ class SignupForm extends Component {
   }
 }
 
-export default connect(state => state)(SignupForm);
+export default connect((state) => state)(SignupForm);

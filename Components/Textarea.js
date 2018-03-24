@@ -54,9 +54,6 @@ export default class Textarea extends React.Component {
 
   _handleChange = (e) => {
     const { scrollHeight } = this._textarea;
-    console.log(scrollHeight);
-    console.log(this.state.height);
-    console.log(this);
     if (scrollHeight - this.state.height > 10) {
       this.setState({
         height:
