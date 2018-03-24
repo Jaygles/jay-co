@@ -68,15 +68,15 @@ var PostPreview = function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 10
         }
-      }, React.createElement(Text.Anchor, { href: 'index', __source: {
+      }, React.createElement(Text.Anchor, { href: '/', __source: {
           fileName: _jsxFileName,
           lineNumber: 11
         }
-      }, 'Home'), React.createElement(Text.Anchor, { href: 'about', __source: {
+      }, 'Home'), React.createElement(Text.Anchor, { href: '/about', __source: {
           fileName: _jsxFileName,
           lineNumber: 12
         }
-      }, 'About'), React.createElement(Text.Anchor, { href: 'portfolio', __source: {
+      }, 'About'), React.createElement(Text.Anchor, { href: '/portfolio', __source: {
           fileName: _jsxFileName,
           lineNumber: 13
         }

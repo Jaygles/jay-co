@@ -60,7 +60,7 @@ export default class Portfolio extends React.Component {
           {portfolio.title ? portfolio.title : null}
         </Text.Heading2>
         <Link href="https://www.google.com">
-          <img src="via.placeholder.com/250x150" />
+          <img src="http://via.placeholder.com/250x150" />
         </Link>
       </PortfolioGrid.single>
     );
@@ -71,9 +71,38 @@ export default class Portfolio extends React.Component {
     const { isEditing } = this.state;
     return (
       <PortfolioGrid.single>
-        <Text.Heading2>
-          {portfolio.title ? portfolio.title : null}
-        </Text.Heading2>
+        <div>
+          {!isEditing ? (
+            <Button onClick={this._handleEdit}>Edit Portfolio Item</Button>
+          ) : (
+            undefined
+          )}
+          {isEditing ? (
+            <Button onClick={this._handleCancel}>Cancel</Button>
+          ) : (
+            undefined
+          )}
+          {isEditing ? (
+            <Button onClick={this._handleSave}>Save</Button>
+          ) : (
+            undefined
+          )}
+          <Button onClick={this._handleDelete}>Delete</Button>
+        </div>
+        {isEditing ? (
+          <Textarea
+            value={this.state.title}
+            placeholder="Optional title"
+            fontWeight={600}
+            lineHeight="2.8rem"
+            fontSize="2.618rem"
+            onChange={this._handleTitleChange}
+          />
+        ) : (
+          <Text.Heading1>
+            {portfolio.title ? portfolio.title : null}
+          </Text.Heading1>
+        )}
         <Link href="https://www.google.com">
           <img src="http://via.placeholder.com/250x150" />
         </Link>

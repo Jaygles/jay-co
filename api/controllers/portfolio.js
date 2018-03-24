@@ -41,7 +41,7 @@ module.exports = {
     try {
       const portfolio = await Portfolio.find({
         where: {
-          id: req.params.PortfolioId,
+          id: req.params.portfolioId,
         },
       });
 
@@ -50,7 +50,7 @@ module.exports = {
           message: '404 on portfolio update',
         });
       }
-
+      console.log(req.body);
       const updatedPortfolio = await portfolio.update({
         title: req.body.title || portfolio.title,
         description: req.body.description || portfolio.description,
