@@ -9,7 +9,10 @@ module.exports = (Sequelize, DataTypes) => {
       allowNull: false,
     },
     img: {
-      type: DataTypes.TEXT,
+      type: DataTypes.STRING,
+      validate: {
+        isUrl: true,
+      },
       allowNull: false,
     },
   });

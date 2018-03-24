@@ -36,6 +36,10 @@ var _PostGrid = require('../Grids/PostGrid');
 
 var _PostGrid2 = _interopRequireDefault(_PostGrid);
 
+var _PostForm = require('./PostForm');
+
+var _PostForm2 = _interopRequireDefault(_PostForm);
+
 var _reactRedux = require('react-redux');
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
@@ -67,7 +71,7 @@ var PostList = function (_React$Component) {
           post: p,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 9
+            lineNumber: 10
           }
         });
       });
@@ -75,9 +79,14 @@ var PostList = function (_React$Component) {
       return React.createElement(_PostGrid2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         }
-      }, posts);
+      }, this.props.isAuthenticated ? React.createElement(_PostForm2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        }
+      }) : null, posts);
     }
   }]);
 
@@ -87,4 +96,4 @@ var PostList = function (_React$Component) {
 exports.default = (0, _reactRedux.connect)(function (state) {
   return state;
 })(PostList);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvUG9zdHMvUG9zdExpc3QuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJQb3N0IiwiUG9zdEdyaWQiLCJjb25uZWN0IiwiUG9zdExpc3QiLCJwb3N0cyIsInByb3BzIiwibWFwIiwicCIsImRpc3BhdGNoIiwiaXNBdXRoZW50aWNhdGVkIiwiaWQiLCJDb21wb25lbnQiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFVOzs7O0FBQ2pCLEFBQU8sQUFBYzs7OztBQUNyQixBQUFTOzs7Ozs7Ozs7SSxBQUVIOzs7Ozs7Ozs7Ozs2QkFDSzttQkFDUDs7VUFBTSxhQUFRLEFBQUssTUFBTCxBQUFXLE1BQVgsQUFBaUIsSUFBSSxVQUFBLEFBQUMsR0FBRDtxQkFDakMsQUFBQztvQkFDVyxPQUFBLEFBQUssTUFEakIsQUFDdUIsQUFDckI7MkJBQWlCLE9BQUEsQUFBSyxNQUZ4QixBQUU4QixBQUM1Qjt5QkFBYSxFQUhmLEFBR2lCLEFBQ2Y7Z0JBSkYsQUFJUTs7c0JBSlI7d0JBRGlDLEFBQ2pDO0FBQUE7QUFDRSxTQURGO0FBREYsQUFBYyxBQVNkLE9BVGM7O21CQVNQLEFBQUM7O29CQUFEO3NCQUFBLEFBQVc7QUFBWDtBQUFBLE9BQUEsRUFBUCxBQUFPLEFBQ1I7Ozs7O0VBWm9CLE1BQU0sQSxBQWU3Qjs7MkNBQXVCLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUFuQixDQUFBLEVBQWYsQUFBZSxBQUEwQiIsImZpbGUiOiJQb3N0TGlzdC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvUG9zdHMvUG9zdExpc3QuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJQb3N0IiwiUG9zdEdyaWQiLCJQb3N0Rm9ybSIsImNvbm5lY3QiLCJQb3N0TGlzdCIsInBvc3RzIiwicHJvcHMiLCJtYXAiLCJwIiwiZGlzcGF0Y2giLCJpc0F1dGhlbnRpY2F0ZWQiLCJpZCIsIkNvbXBvbmVudCIsInN0YXRlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87O0lBQVAsQUFBWTs7QUFDWixBQUFPLEFBQVU7Ozs7QUFDakIsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBYzs7OztBQUNyQixBQUFTOzs7Ozs7Ozs7SUFFSCxBOzs7Ozs7Ozs7Ozs2QkFDSzttQkFDUDs7VUFBTSxhQUFRLEFBQUssTUFBTCxBQUFXLE1BQVgsQUFBaUIsSUFBSSxVQUFBLEFBQUMsR0FBRDtxQkFDakMsQUFBQztvQkFDVyxPQUFBLEFBQUssTUFEakIsQUFDdUIsQUFDckI7MkJBQWlCLE9BQUEsQUFBSyxNQUZ4QixBQUU4QixBQUM1Qjt5QkFBYSxFQUhmLEFBR2lCLEFBQ2Y7Z0JBSkYsQUFJUTs7c0JBSlI7d0JBRGlDLEFBQ2pDO0FBQUE7QUFDRSxTQURGO0FBREYsQUFBYyxBQVNkLE9BVGM7O21CQVVaLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0c7QUFESDtBQUFBLE9BQUEsT0FDRyxBQUFLLE1BQUwsQUFBVyx3QkFBa0IsQUFBQzs7b0JBQUQ7c0JBQTdCLEFBQTZCO0FBQUE7QUFBQSxPQUFBLElBRGhDLEFBQytDLEFBQzVDLE1BSEwsQUFDRSxBQUtIOzs7OztFQWpCb0IsTSxBQUFNLEFBb0I3Qjs7MkNBQXVCLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUFuQixDQUFBLEVBQWYsQUFBZSxBQUEwQiIsImZpbGUiOiJQb3N0TGlzdC5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=

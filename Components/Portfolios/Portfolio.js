@@ -32,7 +32,7 @@ export default class Portfolio extends React.Component {
     this.setState({ title: e.target.value });
   };
 
-  _handleContentChange = (e) => {
+  _handleDescriptionChange = (e) => {
     this.setState({ description: e.target.value });
   };
 
@@ -59,8 +59,9 @@ export default class Portfolio extends React.Component {
         <Text.Heading2>
           {portfolio.title ? portfolio.title : null}
         </Text.Heading2>
+        <Text.PostBody>{portfolio.description}</Text.PostBody>
         <Link href="https://www.google.com">
-          <img src="http://via.placeholder.com/250x150" />
+          <img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>
     );
@@ -102,6 +103,20 @@ export default class Portfolio extends React.Component {
           <Text.Heading1>
             {portfolio.title ? portfolio.title : null}
           </Text.Heading1>
+        )}
+        {isEditing ? (
+          <Textarea
+            value={this.state.description}
+            placeholder="Optional title"
+            fontWeight={600}
+            lineHeight="2.8rem"
+            fontSize="2.618rem"
+            onChange={this._handleDescriptionChange}
+          />
+        ) : (
+          <Text.PostBody>
+            {portfolio.description ? portfolio.description : null}
+          </Text.PostBody>
         )}
         <Link href="https://www.google.com">
           <img src="http://via.placeholder.com/250x150" />

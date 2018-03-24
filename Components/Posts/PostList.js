@@ -1,6 +1,7 @@
 import * as React from 'react';
 import Post from './Post';
 import PostGrid from '../Grids/PostGrid';
+import PostForm from './PostForm';
 import { connect } from 'react-redux';
 
 class PostList extends React.Component {
@@ -14,7 +15,12 @@ class PostList extends React.Component {
       />
     ));
 
-    return <PostGrid>{posts}</PostGrid>;
+    return (
+      <PostGrid>
+        {this.props.isAuthenticated ? <PostForm /> : null}
+        {posts}
+      </PostGrid>
+    );
   }
 }
 

@@ -23,6 +23,46 @@ export const viewerAuthenticated = (viewer) => {
   };
 };
 
+export const requestLogout = () => {
+  return async (dispatch) => {
+    const response = await HTTP.logout();
+
+    if (response.status === 200) {
+      return redirect('/');
+    }
+
+    if (response.status === 403) {
+      return redirect('/');
+    }
+
+    return exception('error');
+  };
+};
+
+export const requestLogin = (data) => {
+  return async (dispatch) => {
+    const response = await HTTP.login(data);
+
+    if (response.status !== 200) {
+      return exception('error');
+    }
+
+    return redirect('/');
+  };
+};
+
+export const requestSignup = (data) => {
+  return async (dispatch) => {
+    const response = await HTTP.signup(data);
+
+    if (response.status !== 200) {
+      return exception('error');
+    }
+
+    return redirect('/');
+  };
+};
+
 export const viewerLogout = () => {
   return {
     type: 'VIEWER_LOGOUT',
@@ -166,45 +206,5 @@ export const requestSavePortfolio = (data) => {
     }
 
     return exception('error');
-  };
-};
-
-export const requestLogout = () => {
-  return async (dispatch) => {
-    const response = await HTTP.logout();
-
-    if (response.status === 200) {
-      return redirect('/');
-    }
-
-    if (response.status === 403) {
-      return redirect('/');
-    }
-
-    return exception('error');
-  };
-};
-
-export const requestLogin = (data) => {
-  return async (dispatch) => {
-    const response = await HTTP.login(data);
-
-    if (response.status !== 200) {
-      return exception('error');
-    }
-
-    return redirect('/');
-  };
-};
-
-export const requestSignup = (data) => {
-  return async (dispatch) => {
-    const response = await HTTP.signup(data);
-
-    if (response.status !== 200) {
-      return exception('error');
-    }
-
-    return redirect('/');
   };
 };

@@ -10,6 +10,7 @@ import Nav from '../Components/Nav/Nav';
 import MainGrid from '../Components/Grids/MainGrid';
 import * as Actions from '../common/actions';
 import withData from '../higher-order/withData';
+import SignupForm from '../Components/Auth/SignupForm';
 
 class Index extends React.Component {
   renderLoggedIn = () => {

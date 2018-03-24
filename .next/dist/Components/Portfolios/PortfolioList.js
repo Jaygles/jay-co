@@ -32,6 +32,10 @@ var _Portfolio = require('./Portfolio');
 
 var _Portfolio2 = _interopRequireDefault(_Portfolio);
 
+var _PortfolioForm = require('./PortfolioForm');
+
+var _PortfolioForm2 = _interopRequireDefault(_PortfolioForm);
+
 var _PortfolioGrid = require('../Grids/PortfolioGrid');
 
 var PortfolioGrid = _interopRequireWildcard(_PortfolioGrid);
@@ -67,7 +71,7 @@ var PortfolioList = function (_React$Component) {
           portfolio: p,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 9
+            lineNumber: 10
           }
         });
       });
@@ -75,9 +79,14 @@ var PortfolioList = function (_React$Component) {
       return React.createElement(PortfolioGrid.main, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         }
-      }, portfolios);
+      }, portfolios, this.props.isAuthenticated ? React.createElement(_PortfolioForm2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        }
+      }) : null);
     }
   }]);
 
@@ -87,4 +96,4 @@ var PortfolioList = function (_React$Component) {
 exports.default = (0, _reactRedux.connect)(function (state) {
   return state;
 })(PortfolioList);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvUG9ydGZvbGlvcy9Qb3J0Zm9saW9MaXN0LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiUG9ydGZvbGlvIiwiUG9ydGZvbGlvR3JpZCIsImNvbm5lY3QiLCJQb3J0Zm9saW9MaXN0IiwicG9ydGZvbGlvcyIsInByb3BzIiwibWFwIiwicCIsImRpc3BhdGNoIiwiaXNBdXRoZW50aWNhdGVkIiwiaWQiLCJDb21wb25lbnQiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFlOzs7O0FBQ3RCLEFBQU87O0lBQVAsQUFBWSxBQUFtQjs7QUFDL0IsQUFBUzs7Ozs7Ozs7O0lBRUgsQTs7Ozs7Ozs7Ozs7NkJBQ0s7bUJBQ1A7O1VBQU0sa0JBQWEsQUFBSyxNQUFMLEFBQVcsV0FBWCxBQUFzQixJQUFJLFVBQUEsQUFBQyxHQUFEO3FCQUMzQyxBQUFDO29CQUNXLE9BQUEsQUFBSyxNQURqQixBQUN1QixBQUNyQjsyQkFBaUIsT0FBQSxBQUFLLE1BRnhCLEFBRThCLEFBQzVCOzhCQUFrQixFQUhwQixBQUdzQixBQUNwQjtxQkFKRixBQUlhOztzQkFKYjt3QkFEMkMsQUFDM0M7QUFBQTtBQUNFLFNBREY7QUFERixBQUFtQixBQVNuQixPQVRtQjs7bUJBU1gsY0FBRCxjQUFBLEFBQWU7O29CQUFmO3NCQUFBLEFBQXFCO0FBQXJCO0FBQUEsT0FBQSxFQUFQLEFBQU8sQUFDUjs7Ozs7RUFaeUIsTUFBTSxBQWVsQyxBOzsyQ0FBdUIsVUFBQSxBQUFDLE9BQUQ7U0FBQSxBQUFXO0FBQW5CLENBQUEsRUFBZixBQUFlLEFBQTBCIiwiZmlsZSI6IlBvcnRmb2xpb0xpc3QuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvUG9ydGZvbGlvcy9Qb3J0Zm9saW9MaXN0LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiUG9ydGZvbGlvIiwiUG9ydGZvbGlvRm9ybSIsIlBvcnRmb2xpb0dyaWQiLCJjb25uZWN0IiwiUG9ydGZvbGlvTGlzdCIsInBvcnRmb2xpb3MiLCJwcm9wcyIsIm1hcCIsInAiLCJkaXNwYXRjaCIsImlzQXV0aGVudGljYXRlZCIsImlkIiwiQ29tcG9uZW50Iiwic3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU8sQUFBZTs7OztBQUN0QixBQUFPLEFBQW1COzs7O0FBQzFCLEFBQU87O0lBQVAsQUFBWSxBQUFtQjs7QUFDL0IsQUFBUzs7Ozs7Ozs7O0lBRUgsQTs7Ozs7Ozs7Ozs7NkJBQ0s7bUJBQ1A7O1VBQU0sa0JBQWEsQUFBSyxNQUFMLEFBQVcsV0FBWCxBQUFzQixJQUFJLFVBQUEsQUFBQyxHQUFEO3FCQUMzQyxBQUFDO29CQUNXLE9BQUEsQUFBSyxNQURqQixBQUN1QixBQUNyQjsyQkFBaUIsT0FBQSxBQUFLLE1BRnhCLEFBRThCLEFBQzVCOzhCQUFrQixFQUhwQixBQUdzQixBQUNwQjtxQkFKRixBQUlhOztzQkFKYjt3QkFEMkMsQUFDM0M7QUFBQTtBQUNFLFNBREY7QUFERixBQUFtQixBQVNuQixPQVRtQjs7bUJBVWhCLGNBQUQsY0FBQSxBQUFlOztvQkFBZjtzQkFBQSxBQUNHO0FBREg7QUFBQSxPQUFBLEVBQUEsQUFFRyxpQkFBQSxBQUFLLE1BQUwsQUFBVyx3QkFBa0IsQUFBQzs7b0JBQUQ7c0JBQTdCLEFBQTZCO0FBQUE7QUFBQSxPQUFBLElBSGxDLEFBQ0UsQUFFb0QsQUFHdkQ7Ozs7O0VBakJ5QixNLEFBQU0sQUFvQmxDOzsyQ0FBdUIsVUFBQSxBQUFDLE9BQUQ7U0FBQSxBQUFXO0FBQW5CLENBQUEsRUFBZixBQUFlLEFBQTBCIiwiZmlsZSI6IlBvcnRmb2xpb0xpc3QuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9

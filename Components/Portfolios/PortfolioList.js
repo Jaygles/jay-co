@@ -1,5 +1,6 @@
 import * as React from 'react';
 import Portfolio from './Portfolio';
+import PortfolioForm from './PortfolioForm';
 import * as PortfolioGrid from '../Grids/PortfolioGrid';
 import { connect } from 'react-redux';
 
@@ -14,7 +15,12 @@ class PortfolioList extends React.Component {
       />
     ));
 
-    return <PortfolioGrid.main>{portfolios}</PortfolioGrid.main>;
+    return (
+      <PortfolioGrid.main>
+        {portfolios}
+        {this.props.isAuthenticated ? <PortfolioForm /> : null}
+      </PortfolioGrid.main>
+    );
   }
 }
 

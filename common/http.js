@@ -163,12 +163,12 @@ export const updatePortfolio = ({ description, title, portfolioId }) => {
   return fetch(`${SERVER_PATH}/api/portfolios/${portfolioId}`, options);
 };
 
-export const savePortfolio = ({ description, title }) => {
+export const savePortfolio = ({ description, title, img }) => {
   const options = {
     method: 'POST',
     credentials: 'include',
     headers: requestHeaders,
-    body: JSON.stringify({ description, title }),
+    body: JSON.stringify({ description, title, img }),
   };
 
   return fetch(`${SERVER_PATH}/api/portfolios`, options);

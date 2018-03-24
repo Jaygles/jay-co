@@ -14,7 +14,7 @@ class Index extends React.Component {
         <Header />
         <MainGrid>
           <Nav isAuthenticated={isAuthenticated} />
-          <PortfolioList />
+          <PortfolioList isAuthenticated={isAuthenticated} />
         </MainGrid>
       </Document>
     );

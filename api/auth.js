@@ -32,7 +32,7 @@ module.exports = (app, passport) => {
       try {
         const user = await User.findOne({
           where: {
-            username: username,
+            username,
           },
         });
 
@@ -68,7 +68,7 @@ module.exports = (app, passport) => {
     try {
       const user = await User.findOne({
         where: {
-          id: id,
+          id,
         },
       });
 
