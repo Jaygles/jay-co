@@ -61,7 +61,11 @@ export default class Portfolio extends React.Component {
           {portfolio.title ? portfolio.title : null}
         </Text.Heading1>
         <Text.PortfolioBody>{portfolio.description}</Text.PortfolioBody>
-        <Link style={{ 'align-self': 'end' }} href="https://www.google.com">
+        <Link
+          target="_blank"
+          style={{ 'align-self': 'end' }}
+          href={portfolio.link}
+        >
           <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>
@@ -119,7 +123,11 @@ export default class Portfolio extends React.Component {
             {portfolio.description ? portfolio.description : null}
           </Text.PortfolioBody>
         )}
-        <Link href="https://www.google.com">
+        <Link
+          target="_blank"
+          style={{ 'align-self': 'end' }}
+          href={portfolio.link}
+        >
           <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>

@@ -9,6 +9,7 @@ class PortfolioForm extends React.Component {
   state = {
     description: '',
     title: '',
+    link: '',
     img: '',
   };
 
@@ -24,12 +25,17 @@ class PortfolioForm extends React.Component {
     this.setState({ img: e.target.value });
   };
 
+  _handleLinkChange = (e) => {
+    this.setState({ link: e.target.value });
+  };
+
   _handleSave = () => {
     console.log(this.state);
     this.props.dispatch(
       Actions.requestSavePortfolio({
         img: this.state.img,
         description: this.state.description,
+        link: this.state.link,
         title: this.state.title,
       }),
     );
@@ -57,6 +63,11 @@ class PortfolioForm extends React.Component {
           onChange={this._handleImgChange}
           value={this.state.img}
           placeholder="image src"
+        />
+        <Input
+          onChange={this._handleLinkChange}
+          value={this.state.link}
+          placeholder="link"
         />
         <Button onClick={this._handleSave}>Save</Button>
       </div>

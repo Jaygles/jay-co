@@ -4,10 +4,12 @@ import { Portfolio } from '../models';
 module.exports = {
   async create(req, res) {
     try {
+      console.log(req.body);
       const portfolio = await Portfolio.create({
         title: req.body.title,
         description: req.body.description,
         img: req.body.img,
+        link: req.body.link,
       });
 
       return res.status(200).send(portfolio);
@@ -55,6 +57,7 @@ module.exports = {
         title: req.body.title || portfolio.title,
         description: req.body.description || portfolio.description,
         img: req.body.img || portfolio.img,
+        link: req.body.link || portfolio.link,
       });
 
       return res.status(200).send(updatedPortfolio);

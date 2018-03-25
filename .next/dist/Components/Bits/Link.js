@@ -55,6 +55,8 @@ var CustomLink = function (_React$Component) {
   (0, _createClass3.default)(CustomLink, [{
     key: 'render',
     value: function render() {
+      var target = this.props.target;
+
       if (this.props.onClick) {
         return React.createElement('span', {
           className: this.props.className,
@@ -62,18 +64,22 @@ var CustomLink = function (_React$Component) {
           onClick: this.props.onClick,
           __source: {
             fileName: _jsxFileName,
-            lineNumber: 9
+            lineNumber: 10
           }
         }, this.props.children);
       }
 
       return React.createElement(_link2.default, { href: this.props.href, as: this.props.as, __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
-        }
-      }, React.createElement('a', { className: this.props.className, style: this.props.style, __source: {
-          fileName: _jsxFileName,
           lineNumber: 21
+        }
+      }, React.createElement('a', {
+        target: target,
+        className: this.props.className,
+        style: this.props.style,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 22
         }
       }, this.props.children));
     }
@@ -83,4 +89,4 @@ var CustomLink = function (_React$Component) {
 }(React.Component);
 
 exports.default = CustomLink;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvQml0cy9MaW5rLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiVGV4dCIsIkxpbmsiLCJDdXN0b21MaW5rIiwicHJvcHMiLCJvbkNsaWNrIiwiY2xhc3NOYW1lIiwic3R5bGUiLCJjaGlsZHJlbiIsImhyZWYiLCJhcyIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTzs7SUFBUCxBQUFZLEFBQVU7O0FBQ3RCLEFBQU87Ozs7Ozs7Ozs7O0ksQUFFYzs7Ozs7Ozs7Ozs7NkJBQ1YsQUFDUDtVQUFJLEtBQUEsQUFBSyxNQUFULEFBQWUsU0FBUyxBQUN0QjtxQkFDRSxjQUFBO3FCQUNhLEtBQUEsQUFBSyxNQURsQixBQUN3QixBQUN0QjtpQkFBTyxLQUFBLEFBQUssTUFGZCxBQUVvQixBQUNsQjttQkFBUyxLQUFBLEFBQUssTUFIaEIsQUFHc0I7O3NCQUh0Qjt3QkFBQSxBQUtHO0FBTEg7QUFDRSxTQURGLE9BS0csQUFBSyxNQU5WLEFBQ0UsQUFLYyxBQUdqQjtBQUVEOzttQkFDRSxBQUFDLGdDQUFLLE1BQU0sS0FBQSxBQUFLLE1BQWpCLEFBQXVCLE1BQU0sSUFBSSxLQUFBLEFBQUssTUFBdEMsQUFBNEM7b0JBQTVDO3NCQUFBLEFBQ0U7QUFERjtPQUFBLFFBQ0UsY0FBQSxPQUFHLFdBQVcsS0FBQSxBQUFLLE1BQW5CLEFBQXlCLFdBQVcsT0FBTyxLQUFBLEFBQUssTUFBaEQsQUFBc0Q7b0JBQXREO3NCQUFBLEFBQ0c7QUFESDtjQUNHLEFBQUssTUFIWixBQUNFLEFBQ0UsQUFDYyxBQUluQjs7Ozs7RUFyQnFDLE1BQU0sQTs7a0JBQXpCLEEiLCJmaWxlIjoiTGluay5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvQml0cy9MaW5rLmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiVGV4dCIsIkxpbmsiLCJDdXN0b21MaW5rIiwidGFyZ2V0IiwicHJvcHMiLCJvbkNsaWNrIiwiY2xhc3NOYW1lIiwic3R5bGUiLCJjaGlsZHJlbiIsImhyZWYiLCJhcyIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTzs7SUFBUCxBQUFZLEFBQVU7O0FBQ3RCLEFBQU87Ozs7Ozs7Ozs7O0lBRWMsQTs7Ozs7Ozs7Ozs7NkJBQ1Y7VUFBQSxBQUNDLFNBQVcsS0FEWixBQUNpQixNQURqQixBQUNDLEFBQ1I7O1VBQUksS0FBQSxBQUFLLE1BQVQsQUFBZSxTQUFTLEFBQ3RCO3FCQUNFLGNBQUE7cUJBQ2EsS0FBQSxBQUFLLE1BRGxCLEFBQ3dCLEFBQ3RCO2lCQUFPLEtBQUEsQUFBSyxNQUZkLEFBRW9CLEFBQ2xCO21CQUFTLEtBQUEsQUFBSyxNQUhoQixBQUdzQjs7c0JBSHRCO3dCQUFBLEFBS0c7QUFMSDtBQUNFLFNBREYsT0FLRyxBQUFLLE1BTlYsQUFDRSxBQUtjLEFBR2pCO0FBRUQ7O21CQUNFLEFBQUMsZ0NBQUssTUFBTSxLQUFBLEFBQUssTUFBakIsQUFBdUIsTUFBTSxJQUFJLEtBQUEsQUFBSyxNQUF0QyxBQUE0QztvQkFBNUM7c0JBQUEsQUFDRTtBQURGO09BQUEsUUFDRSxjQUFBO2dCQUFBLEFBQ1UsQUFDUjttQkFBVyxLQUFBLEFBQUssTUFGbEIsQUFFd0IsQUFDdEI7ZUFBTyxLQUFBLEFBQUssTUFIZCxBQUdvQjs7b0JBSHBCO3NCQUFBLEFBS0c7QUFMSDtBQUNFLGNBSUMsQUFBSyxNQVBaLEFBQ0UsQUFDRSxBQUtjLEFBSW5COzs7OztFQTFCcUMsTUFBTSxBOztrQkFBekIsQSIsImZpbGUiOiJMaW5rLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==

@@ -15,6 +15,13 @@ module.exports = (Sequelize, DataTypes) => {
       },
       allowNull: false,
     },
+    link: {
+      type: DataTypes.STRING,
+      validate: {
+        isUrl: true,
+      },
+      allowNull: false,
+    },
   });
   return Portfolio;
 };

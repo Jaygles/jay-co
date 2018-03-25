@@ -152,23 +152,29 @@ export const deletePortfolio = (id) => {
   return fetch(`${SERVER_PATH}/api/portfolios/${id}`, options);
 };
 
-export const updatePortfolio = ({ description, title, portfolioId }) => {
+export const updatePortfolio = ({
+  description,
+  title,
+  portfolioId,
+  img,
+  link,
+}) => {
   const options = {
     method: 'PUT',
     credentials: 'include',
     headers: requestHeaders,
-    body: JSON.stringify({ description, title }),
+    body: JSON.stringify({ description, title, img, link }),
   };
 
   return fetch(`${SERVER_PATH}/api/portfolios/${portfolioId}`, options);
 };
 
-export const savePortfolio = ({ description, title, img }) => {
+export const savePortfolio = ({ description, title, img, link }) => {
   const options = {
     method: 'POST',
     credentials: 'include',
     headers: requestHeaders,
-    body: JSON.stringify({ description, title, img }),
+    body: JSON.stringify({ description, title, img, link }),
   };
 
   return fetch(`${SERVER_PATH}/api/portfolios`, options);
