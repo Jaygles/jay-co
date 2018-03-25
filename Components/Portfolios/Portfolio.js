@@ -5,6 +5,7 @@ import * as Actions from '../../common/actions';
 import Button from '../Bits/Button';
 import Textarea from '../Bits/Textarea';
 import Link from '../Bits/Link';
+import Img from '../Bits/Img';
 import * as PortfolioGrid from '../Grids/PortfolioGrid';
 
 export default class Portfolio extends React.Component {
@@ -56,12 +57,12 @@ export default class Portfolio extends React.Component {
     const { portfolio } = this.props;
     return (
       <PortfolioGrid.single>
-        <Text.Heading2>
+        <Text.Heading1>
           {portfolio.title ? portfolio.title : null}
-        </Text.Heading2>
-        <Text.PostBody>{portfolio.description}</Text.PostBody>
-        <Link href="https://www.google.com">
-          <img src={portfolio.img} />
+        </Text.Heading1>
+        <Text.PortfolioBody>{portfolio.description}</Text.PortfolioBody>
+        <Link style={{ 'align-self': 'end' }} href="https://www.google.com">
+          <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>
     );
@@ -114,12 +115,12 @@ export default class Portfolio extends React.Component {
             onChange={this._handleDescriptionChange}
           />
         ) : (
-          <Text.PostBody>
+          <Text.PortfolioBody>
             {portfolio.description ? portfolio.description : null}
-          </Text.PostBody>
+          </Text.PortfolioBody>
         )}
         <Link href="https://www.google.com">
-          <img src="http://via.placeholder.com/250x150" />
+          <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>
     );

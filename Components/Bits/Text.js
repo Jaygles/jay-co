@@ -1,9 +1,15 @@
 import styled, { css } from 'react-emotion';
 import Link from './Link';
 
+export const PortfolioBody = styled('div')`
+  margin: 20px 20px 20px 0;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: rgba(0, 0, 20, 1);
+`;
+
 export const PostBody = styled('div')`
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -11,9 +17,7 @@ export const PostBody = styled('div')`
 `;
 
 export const Heading1 = styled('h1')`
-  margin-top: 0;
-  font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-    helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial, sans-serif;
+  margin-top: 20px;
   font-size: 40px;
   line-height: 48px;
   font-weight: 600;
@@ -60,9 +64,6 @@ export const Anchor = (props) => {
     text-decoration: none;
     font-size: 24px;
     font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir,
-      helvetica neue, helvetica, ubuntu, roboto, noto, segoe ui, arial,
-      sans-serif;
     color: #0000ff;
     &:visited {
       color: #00008b;

@@ -21,6 +21,10 @@ class Document extends React.Component {
           <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
+          <link
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif"
+            rel="stylesheet"
+          />
         </Head>
         {this.props.children}
       </div>

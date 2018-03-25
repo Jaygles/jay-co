@@ -9,11 +9,11 @@ const baseStyles = css`
 
 const inputStyles = css`
   width: 100%;
-  font-family: Courier, monospace;
   outline: 0;
   border: 0;
   border-bottom: 1px dashed #ececec;
   padding: 40px 0 16px 0;
+  font-family: 'IBM Plex Serif', serif;
   &:focus {
     border: 0;
     border-bottom: 1px dashed #0000ff;

@@ -3,12 +3,12 @@ import { css } from 'react-emotion';
 const buttonStyle = css`
   font-size: 12px;
   font-weight: 600;
-  font-family: Courier, monospace;
   outline: 0;
-  margin: 0;
+  margin-right: 10px;
   padding: 0;
   border: 0;
   cursor: pointer;
+  font-family: 'IBM Plex Serif', serif;
   &:hover {
     color: #0000ff;
     text-decoration: underline;

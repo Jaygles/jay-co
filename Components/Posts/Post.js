@@ -177,31 +177,14 @@ export default class Post extends React.Component {
     });
     return (
       <SinglePostWrap>
-        <div>
-          {!isEditing ? (
-            <Button onClick={this._handleEdit}>Edit Post</Button>
-          ) : (
-            undefined
-          )}
-          {isEditing ? (
-            <Button onClick={this._handleCancel}>Cancel</Button>
-          ) : (
-            undefined
-          )}
-          {isEditing ? (
-            <Button onClick={this._handleSave}>Save</Button>
-          ) : (
-            undefined
-          )}
-          <Button onClick={this._handleDelete}>Delete</Button>
-        </div>
+        <div />
         {isEditing ? (
           <Textarea
             value={this.state.title}
             placeholder="Optional title"
             fontWeight={600}
-            lineHeight="2.8rem"
-            fontSize="2.618rem"
+            lineHeight="3rem"
+            fontSize="40px"
             onChange={this._handleTitleChange}
           />
         ) : (
@@ -222,12 +205,28 @@ export default class Post extends React.Component {
           undefined
         )}
         {!isEditing ? (
-          <Text.PostBody style={{ margin: '16px 0 88px 0' }}>
+          <Text.PostBody style={{ margin: '16px 0 20px 0' }}>
             <div dangerouslySetInnerHTML={{ __html: sanitizedPost }} />
           </Text.PostBody>
         ) : (
           undefined
         )}
+        {!isEditing ? (
+          <Button onClick={this._handleEdit}>Edit Post</Button>
+        ) : (
+          undefined
+        )}
+        {isEditing ? (
+          <Button onClick={this._handleCancel}>Cancel</Button>
+        ) : (
+          undefined
+        )}
+        {isEditing ? (
+          <Button onClick={this._handleSave}>Save</Button>
+        ) : (
+          undefined
+        )}
+        <Button onClick={this._handleDelete}>Delete</Button>
       </SinglePostWrap>
     );
   };

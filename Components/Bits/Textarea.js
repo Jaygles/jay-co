@@ -5,9 +5,11 @@ import { css } from 'react-emotion';
 
 const textareaStyles = css`
   width: 100%;
+  margin-top: 20px;
   resize: none;
   outline: 0;
   border: 0;
+  font-family: 'IBM Plex Serif', serif;
   &:focus {
     outline: 0;
     border: 0;
@@ -28,7 +30,7 @@ export default class Textarea extends React.Component {
   static defaultProps = {
     autoFocus: false,
     onChange: () => {},
-    fontSize: '12px',
+    fontSize: '16px',
     fontWeight: 400,
     lineHeight: '20px',
     height: 24,

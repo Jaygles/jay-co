@@ -26,7 +26,7 @@ const injectGlobalStyles = () => injectGlobal`
     display: block;
   }
   html, body {
-    font-family: Courier, monospace;
+    font-family: 'IBM Plex Serif', serif;
     font-size: 12px;
   }
 `;

@@ -49,7 +49,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Bits/Input.js';
 
 var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  position: relative;\n'], ['\n  position: relative;\n']),
-    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  width: 100%;\n  font-family: Courier, monospace;\n  outline: 0;\n  border: 0;\n  border-bottom: 1px dashed #ececec;\n  padding: 40px 0 16px 0;\n  &:focus {\n    border: 0;\n    border-bottom: 1px dashed #0000ff;\n  }\n'], ['\n  width: 100%;\n  font-family: Courier, monospace;\n  outline: 0;\n  border: 0;\n  border-bottom: 1px dashed #ececec;\n  padding: 40px 0 16px 0;\n  &:focus {\n    border: 0;\n    border-bottom: 1px dashed #0000ff;\n  }\n']);
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  width: 100%;\n  outline: 0;\n  border: 0;\n  border-bottom: 1px dashed #ececec;\n  padding: 40px 0 16px 0;\n  font-family: \'IBM Plex Serif\', serif;\n  &:focus {\n    border: 0;\n    border-bottom: 1px dashed #0000ff;\n  }\n'], ['\n  width: 100%;\n  outline: 0;\n  border: 0;\n  border-bottom: 1px dashed #ececec;\n  padding: 40px 0 16px 0;\n  font-family: \'IBM Plex Serif\', serif;\n  &:focus {\n    border: 0;\n    border-bottom: 1px dashed #0000ff;\n  }\n']);
 
 var baseStyles = (0, _reactEmotion.css)(_templateObject);
 

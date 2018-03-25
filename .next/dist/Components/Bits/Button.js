@@ -22,7 +22,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Bits/Button.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  font-size: 12px;\n  font-weight: 600;\n  font-family: Courier, monospace;\n  outline: 0;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  cursor: pointer;\n  &:hover {\n    color: #0000ff;\n    text-decoration: underline;\n  }\n  &:focus {\n    outline: 0;\n    border: 0;\n  }\n'], ['\n  font-size: 12px;\n  font-weight: 600;\n  font-family: Courier, monospace;\n  outline: 0;\n  margin: 0;\n  padding: 0;\n  border: 0;\n  cursor: pointer;\n  &:hover {\n    color: #0000ff;\n    text-decoration: underline;\n  }\n  &:focus {\n    outline: 0;\n    border: 0;\n  }\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  font-size: 12px;\n  font-weight: 600;\n  outline: 0;\n  margin-right: 10px;\n  padding: 0;\n  border: 0;\n  cursor: pointer;\n  font-family: \'IBM Plex Serif\', serif;\n  &:hover {\n    color: #0000ff;\n    text-decoration: underline;\n  }\n  &:focus {\n    outline: 0;\n    border: 0;\n  }\n'], ['\n  font-size: 12px;\n  font-weight: 600;\n  outline: 0;\n  margin-right: 10px;\n  padding: 0;\n  border: 0;\n  cursor: pointer;\n  font-family: \'IBM Plex Serif\', serif;\n  &:hover {\n    color: #0000ff;\n    text-decoration: underline;\n  }\n  &:focus {\n    outline: 0;\n    border: 0;\n  }\n']);
 
 var buttonStyle = (0, _reactEmotion.css)(_templateObject);
 

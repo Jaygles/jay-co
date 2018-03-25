@@ -24,11 +24,19 @@ var _inherits2 = require('babel-runtime/helpers/inherits');
 
 var _inherits3 = _interopRequireDefault(_inherits2);
 
+var _taggedTemplateLiteral2 = require('babel-runtime/helpers/taggedTemplateLiteral');
+
+var _taggedTemplateLiteral3 = _interopRequireDefault(_taggedTemplateLiteral2);
+
 var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
 var _reactRedux = require('react-redux');
+
+var _reactEmotion = require('react-emotion');
+
+var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
 
 var _Text = require('../Bits/Text');
 
@@ -40,6 +48,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Header/Header.js';
 
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  height: 100px;\n  width: 100%;\n  display: flex;\n  align-items: center;\n'], ['\n  height: 100px;\n  width: 100%;\n  display: flex;\n  align-items: center;\n']),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin-left: 20px;\n'], ['\n  margin-left: 20px;\n']);
+
+var Top = (0, _reactEmotion2.default)('header')(_templateObject);
+
+var title = (0, _reactEmotion.css)(_templateObject2);
 
 var Header = function (_Component) {
   (0, _inherits3.default)(Header, _Component);
@@ -53,27 +67,21 @@ var Header = function (_Component) {
   (0, _createClass3.default)(Header, [{
     key: 'render',
     value: function render() {
-      return _react2.default.createElement('header', {
+      return _react2.default.createElement(Top, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 8
+          lineNumber: 20
         }
-      }, _react2.default.createElement('div', {
-        __source: {
+      }, _react2.default.createElement(Text.Heading1, { className: title, __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
-        }
-      }, _react2.default.createElement(Text.Heading1, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10
+          lineNumber: 21
         }
       }, _react2.default.createElement('p', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 22
         }
-      }, 'Jay-Co')), this.props.children));
+      }, 'Jay-Co')), this.props.children);
     }
   }]);
 
@@ -83,4 +91,4 @@ var Header = function (_Component) {
 exports.default = (0, _reactRedux.connect)(function (state) {
   return state;
 })(Header);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsImNvbm5lY3QiLCJUZXh0IiwiSGVhZGVyIiwicHJvcHMiLCJjaGlsZHJlbiIsInN0YXRlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBUzs7OztBQUNoQixBQUFTOztBQUNULEFBQU87O0lBQVAsQUFBWSxBQUFVOzs7Ozs7Ozs7SUFFaEIsQTs7Ozs7Ozs7Ozs7NkJBQ0ssQUFDUDs2QkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLGtCQUNFLGNBQUE7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLHlCQUNHLGNBQUQsS0FBQSxBQUFNOztvQkFBTjtzQkFBQSxBQUNFO0FBREY7QUFBQSx5QkFDRSxjQUFBOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FGSixBQUNFLEFBQ0UsQUFFRCxpQkFBQSxBQUFLLE1BTlosQUFDRSxBQUNFLEFBSWMsQUFJbkI7Ozs7O0FBWmtCLEEsQUFlckI7OzJDQUF1QixVQUFBLEFBQUMsT0FBRDtTQUFBLEFBQVc7QUFBbkIsQ0FBQSxFQUFmLEFBQWUsQUFBMEIiLCJmaWxlIjoiSGVhZGVyLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsImNvbm5lY3QiLCJzdHlsZWQiLCJjc3MiLCJUZXh0IiwiVG9wIiwidGl0bGUiLCJIZWFkZXIiLCJwcm9wcyIsImNoaWxkcmVuIiwic3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBUzs7OztBQUNoQixBQUFTOztBQUNULEFBQU8sQUFBVTs7OztBQUNqQixBQUFPOztJQUFQLEFBQVksQUFBVTs7Ozs7Ozs7Ozs7QUFFdEIsSUFBTSxNQUFNLDRCQUFOLEFBQU0sQUFBTyxVQUFuQjs7QUFPQSxJQUFNLFFBQUEsQUFBUSx1QkFBZDs7SUFJTSxBOzs7Ozs7Ozs7Ozs2QkFDSyxBQUNQOzZCQUNHLGNBQUQ7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsa0JBQ0csY0FBRCxLQUFBLEFBQU0sWUFBUyxXQUFmLEFBQTBCO29CQUExQjtzQkFBQSxBQUNFO0FBREY7eUJBQ0UsY0FBQTs7b0JBQUE7c0JBQUE7QUFBQTtBQUFBLFNBRkosQUFDRSxBQUNFLEFBRUQsaUJBQUEsQUFBSyxNQUxWLEFBQ0UsQUFJYyxBQUdqQjs7Ozs7QUFWa0IsQSxBQWFyQjs7MkNBQXVCLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUFuQixDQUFBLEVBQWYsQUFBZSxBQUEwQiIsImZpbGUiOiJIZWFkZXIuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9
