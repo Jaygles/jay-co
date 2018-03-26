@@ -26,6 +26,8 @@ const injectGlobalStyles = () => injectGlobal`
     display: block;
   }
   html, body {
+    height: 100vh;
+    background-color: #f9f9f9;
     font-family: 'IBM Plex Serif', serif;
     font-size: 12px;
   }

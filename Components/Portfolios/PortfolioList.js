@@ -18,7 +18,9 @@ class PortfolioList extends React.Component {
     return (
       <PortfolioGrid.main>
         {portfolios}
-        {this.props.isAuthenticated ? <PortfolioForm /> : null}
+        {this.props.isAuthenticated ? (
+          <PortfolioForm style={{ 'margin-top': '37px' }} />
+        ) : null}
       </PortfolioGrid.main>
     );
   }

@@ -105,6 +105,133 @@ var Document = function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 24
         }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '57x57',
+        href: 'static/apple-icon-57x57.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 28
+        }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '60x60',
+        href: 'static/apple-icon-60x60.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 33
+        }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '72x72',
+        href: 'static/apple-icon-72x72.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 38
+        }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '76x76',
+        href: 'static/apple-icon-76x76.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 43
+        }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '114x114',
+        href: 'static/apple-icon-114x114.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 48
+        }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '120x120',
+        href: 'static/apple-icon-120x120.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 53
+        }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '144x144',
+        href: 'static/apple-icon-144x144.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 58
+        }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '152x152',
+        href: 'static/apple-icon-152x152.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 63
+        }
+      }), React.createElement('link', {
+        rel: 'apple-touch-icon',
+        sizes: '180x180',
+        href: 'static/apple-icon-180x180.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 68
+        }
+      }), React.createElement('link', {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '192x192',
+        href: 'static/android-icon-192x192.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 73
+        }
+      }), React.createElement('link', {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '32x32',
+        href: 'static/favicon-32x32.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 79
+        }
+      }), React.createElement('link', {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '96x96',
+        href: 'static/favicon-96x96.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 85
+        }
+      }), React.createElement('link', {
+        rel: 'icon',
+        type: 'image/png',
+        sizes: '16x16',
+        href: 'static/favicon-16x16.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 91
+        }
+      }), React.createElement('link', { rel: 'manifest', href: 'static/manifest.json', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 97
+        }
+      }), React.createElement('meta', { name: 'msapplication-TileColor', content: '#ffffff', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 98
+        }
+      }), React.createElement('meta', {
+        name: 'msapplication-TileImage',
+        content: 'static/ms-icon-144x144.png',
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 99
+        }
+      }), React.createElement('meta', { name: 'theme-color', content: '#ffffff', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 103
+        }
       })), this.props.children);
     }
   }]);
@@ -118,4 +245,4 @@ Document.defaultProps = {
 };
 
 exports.default = (0, _withEmotion2.default)()(Document);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvRG9jdW1lbnQuanMiXSwibmFtZXMiOlsiSGVhZCIsIlJlYWN0Iiwid2l0aEVtb3Rpb24iLCJEb2N1bWVudCIsInByb3BzIiwidGl0bGUiLCJkZXNjcmlwdGlvbiIsImNoaWxkcmVuIiwiQ29tcG9uZW50IiwiZGVmYXVsdFByb3BzIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87Ozs7QUFDUCxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFpQjs7Ozs7Ozs7Ozs7SSxBQUVsQjs7Ozs7Ozs7Ozs7NkJBT0ssQUFDUDttQkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUFRO0FBQVI7QUFBQSxjQUFRLEFBQUssTUFEZixBQUNFLEFBQW1CLEFBQ25CLHNDQUFNLE1BQU4sQUFBVyxlQUFjLFNBQVMsS0FBQSxBQUFLLE1BQXZDLEFBQTZDO29CQUE3QztzQkFGRixBQUVFLEFBQ0E7QUFEQTt3Q0FDTSxNQUFOLEFBQVcsWUFBVyxTQUF0QixBQUE4QjtvQkFBOUI7c0JBSEYsQUFHRSxBQUNBO0FBREE7d0NBQ00sU0FBTixBQUFjO29CQUFkO3NCQUpGLEFBSUUsQUFDQTtBQURBO3dDQUNNLE1BQU4sQUFBVyxhQUFZLFNBQXZCLEFBQStCO29CQUEvQjtzQkFMRixBQUtFLEFBQ0E7QUFEQTt3Q0FDTSxXQUFOLEFBQWdCLG1CQUFrQixTQUFsQyxBQUEwQztvQkFBMUM7c0JBTkYsQUFNRSxBQUNBO0FBREE7d0NBQ00sVUFBTixBQUFlLGFBQVksU0FBM0IsQUFBbUM7b0JBQW5DO3NCQVBGLEFBT0UsQUFDQTtBQURBO3dDQUNNLFVBQU4sQUFBZSxXQUFVLFNBQXpCLEFBQWlDO29CQUFqQztzQkFSRixBQVFFLEFBQ0E7QUFEQTs7Y0FDQSxBQUNPLEFBQ0w7YUFGRixBQUVNOztvQkFGTjtzQkFWSixBQUNFLEFBU0UsQUFLRDtBQUxDO0FBQ0UsZ0JBSUgsQUFBSyxNQWhCVixBQUNFLEFBZWMsQUFHakI7Ozs7O0VBM0JvQixNLEFBQU07O0FBQXZCLEEsU0FDRyxBO1NBQWUsQUFDYixBQUNQO2UsQUFGb0IsQUFHbEIsQUEwQk47QUE3QndCLEFBQ3BCOztrQkE0QlcsNkJBQWYsQUFBZSxBQUFjIiwiZmlsZSI6IkRvY3VtZW50LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvRG9jdW1lbnQuanMiXSwibmFtZXMiOlsiSGVhZCIsIlJlYWN0Iiwid2l0aEVtb3Rpb24iLCJEb2N1bWVudCIsInByb3BzIiwidGl0bGUiLCJkZXNjcmlwdGlvbiIsImNoaWxkcmVuIiwiQ29tcG9uZW50IiwiZGVmYXVsdFByb3BzIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87Ozs7QUFDUCxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFpQjs7Ozs7Ozs7Ozs7SSxBQUVsQjs7Ozs7Ozs7Ozs7NkJBT0ssQUFDUDttQkFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxjQUFBOztvQkFBQTtzQkFBQSxBQUFRO0FBQVI7QUFBQSxjQUFRLEFBQUssTUFEZixBQUNFLEFBQW1CLEFBQ25CLHNDQUFNLE1BQU4sQUFBVyxlQUFjLFNBQVMsS0FBQSxBQUFLLE1BQXZDLEFBQTZDO29CQUE3QztzQkFGRixBQUVFLEFBQ0E7QUFEQTt3Q0FDTSxNQUFOLEFBQVcsWUFBVyxTQUF0QixBQUE4QjtvQkFBOUI7c0JBSEYsQUFHRSxBQUNBO0FBREE7d0NBQ00sU0FBTixBQUFjO29CQUFkO3NCQUpGLEFBSUUsQUFDQTtBQURBO3dDQUNNLE1BQU4sQUFBVyxhQUFZLFNBQXZCLEFBQStCO29CQUEvQjtzQkFMRixBQUtFLEFBQ0E7QUFEQTt3Q0FDTSxXQUFOLEFBQWdCLG1CQUFrQixTQUFsQyxBQUEwQztvQkFBMUM7c0JBTkYsQUFNRSxBQUNBO0FBREE7d0NBQ00sVUFBTixBQUFlLGFBQVksU0FBM0IsQUFBbUM7b0JBQW5DO3NCQVBGLEFBT0UsQUFDQTtBQURBO3dDQUNNLFVBQU4sQUFBZSxXQUFVLFNBQXpCLEFBQWlDO29CQUFqQztzQkFSRixBQVFFLEFBQ0E7QUFEQTs7Y0FDQSxBQUNPLEFBQ0w7YUFGRixBQUVNOztvQkFGTjtzQkFURixBQVNFLEFBSUE7QUFKQTtBQUNFO2FBR0YsQUFDTSxBQUNKO2VBRkYsQUFFUSxBQUNOO2NBSEYsQUFHTzs7b0JBSFA7c0JBYkYsQUFhRSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtlQUZGLEFBRVEsQUFDTjtjQUhGLEFBR087O29CQUhQO3NCQWxCRixBQWtCRSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtlQUZGLEFBRVEsQUFDTjtjQUhGLEFBR087O29CQUhQO3NCQXZCRixBQXVCRSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtlQUZGLEFBRVEsQUFDTjtjQUhGLEFBR087O29CQUhQO3NCQTVCRixBQTRCRSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtlQUZGLEFBRVEsQUFDTjtjQUhGLEFBR087O29CQUhQO3NCQWpDRixBQWlDRSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtlQUZGLEFBRVEsQUFDTjtjQUhGLEFBR087O29CQUhQO3NCQXRDRixBQXNDRSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtlQUZGLEFBRVEsQUFDTjtjQUhGLEFBR087O29CQUhQO3NCQTNDRixBQTJDRSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtlQUZGLEFBRVEsQUFDTjtjQUhGLEFBR087O29CQUhQO3NCQWhERixBQWdERSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtlQUZGLEFBRVEsQUFDTjtjQUhGLEFBR087O29CQUhQO3NCQXJERixBQXFERSxBQUtBO0FBTEE7QUFDRTthQUlGLEFBQ00sQUFDSjtjQUZGLEFBRU8sQUFDTDtlQUhGLEFBR1EsQUFDTjtjQUpGLEFBSU87O29CQUpQO3NCQTFERixBQTBERSxBQU1BO0FBTkE7QUFDRTthQUtGLEFBQ00sQUFDSjtjQUZGLEFBRU8sQUFDTDtlQUhGLEFBR1EsQUFDTjtjQUpGLEFBSU87O29CQUpQO3NCQWhFRixBQWdFRSxBQU1BO0FBTkE7QUFDRTthQUtGLEFBQ00sQUFDSjtjQUZGLEFBRU8sQUFDTDtlQUhGLEFBR1EsQUFDTjtjQUpGLEFBSU87O29CQUpQO3NCQXRFRixBQXNFRSxBQU1BO0FBTkE7QUFDRTthQUtGLEFBQ00sQUFDSjtjQUZGLEFBRU8sQUFDTDtlQUhGLEFBR1EsQUFDTjtjQUpGLEFBSU87O29CQUpQO3NCQTVFRixBQTRFRSxBQU1BO0FBTkE7QUFDRSx3Q0FLSSxLQUFOLEFBQVUsWUFBVyxNQUFyQixBQUEwQjtvQkFBMUI7c0JBbEZGLEFBa0ZFLEFBQ0E7QUFEQTt3Q0FDTSxNQUFOLEFBQVcsMkJBQTBCLFNBQXJDLEFBQTZDO29CQUE3QztzQkFuRkYsQUFtRkUsQUFDQTtBQURBOztjQUNBLEFBQ08sQUFDTDtpQkFGRixBQUVVOztvQkFGVjtzQkFwRkYsQUFvRkUsQUFJQTtBQUpBO0FBQ0Usd0NBR0ksTUFBTixBQUFXLGVBQWMsU0FBekIsQUFBaUM7b0JBQWpDO3NCQXpGSixBQUNFLEFBd0ZFLEFBRUQ7QUFGQztnQkFFRCxBQUFLLE1BNUZWLEFBQ0UsQUEyRmMsQUFHakI7Ozs7O0VBdkdvQixNQUFNLEE7O0FBQXZCLEEsU0FDRyxBO1NBQWUsQUFDYixBQUNQO2VBRm9CLEFBR2xCLEFBc0dOLEE7QUF6R3dCLEFBQ3BCOztrQkF3R1csNkJBQWYsQUFBZSxBQUFjIiwiZmlsZSI6IkRvY3VtZW50LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==

@@ -9,6 +9,7 @@ const buttonStyle = css`
   border: 0;
   cursor: pointer;
   font-family: 'IBM Plex Serif', serif;
+  background-color: #f9f9f9;
   &:hover {
     color: #0000ff;
     text-decoration: underline;

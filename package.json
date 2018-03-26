@@ -1,14 +1,12 @@
 {
   "name": "jay-co",
   "version": "0.0.1",
-  "description":
-    "Example of a company blog via nextjs, react and a cms made with postgres and sequelize",
+  "description": "Example of a company blog via nextjs, react and a cms made with postgres and sequelize",
   "main": "index.js",
   "scripts": {
     "dev": "babel-node index.js --presets es2015,stage-1,stage-2,stage-3",
     "build": "NODE_ENV=production next build && npm run migrate",
-    "migrate":
-      "NODE_ENV=production npm install -g sequelize-cli && sequelize db:migrate",
+    "migrate": "NODE_ENV=production npm install -g sequelize-cli && sequelize db:migrate",
     "heroku-postbuild": "NODE_ENV=production npm run build",
     "start": "NODE_ENV=production babel-node index.js --presets es2015"
   },
@@ -16,7 +14,12 @@
     "type": "git",
     "url": "git+https://github.com/Jaygles/jay-co.git"
   },
-  "keywords": ["cms", "postgres", "next", "react"],
+  "keywords": [
+    "cms",
+    "postgres",
+    "next",
+    "react"
+  ],
   "author": "Jacob Sullivan",
   "license": "ISC",
   "bugs": {

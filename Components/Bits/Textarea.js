@@ -9,6 +9,7 @@ const textareaStyles = css`
   resize: none;
   outline: 0;
   border: 0;
+  background-color: #f9f9f9;
   font-family: 'IBM Plex Serif', serif;
   &:focus {
     outline: 0;
