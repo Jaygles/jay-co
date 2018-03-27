@@ -42,13 +42,17 @@ var _Text = require('../Bits/Text');
 
 var Text = _interopRequireWildcard(_Text);
 
+var _HeaderBorder = require('../Bits/HeaderBorder');
+
+var _HeaderBorder2 = _interopRequireDefault(_HeaderBorder);
+
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Header/Header.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  height: 100px;\n  width: 100%;\n  display: flex;\n  align-items: center;\n'], ['\n  height: 100px;\n  width: 100%;\n  display: flex;\n  align-items: center;\n']),
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  height: 100px;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n'], ['\n  height: 100px;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n']),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin-left: 20px;\n'], ['\n  margin-left: 20px;\n']);
 
 var Top = (0, _reactEmotion2.default)('header')(_templateObject);
@@ -70,18 +74,23 @@ var Header = function (_Component) {
       return _react2.default.createElement(Top, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         }
       }, _react2.default.createElement(Text.Heading1, { className: title, __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         }
       }, _react2.default.createElement('p', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         }
-      }, 'Jay-Co')), this.props.children);
+      }, 'Jay-Co')), _react2.default.createElement(_HeaderBorder2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        }
+      }));
     }
   }]);
 
@@ -91,4 +100,4 @@ var Header = function (_Component) {
 exports.default = (0, _reactRedux.connect)(function (state) {
   return state;
 })(Header);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsImNvbm5lY3QiLCJzdHlsZWQiLCJjc3MiLCJUZXh0IiwiVG9wIiwidGl0bGUiLCJIZWFkZXIiLCJwcm9wcyIsImNoaWxkcmVuIiwic3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU8sQUFBUzs7OztBQUNoQixBQUFTOztBQUNULEFBQU8sQUFBVTs7OztBQUNqQixBQUFPOztJQUFQLEFBQVksQUFBVTs7Ozs7Ozs7Ozs7QUFFdEIsSUFBTSxNQUFNLDRCQUFOLEFBQU0sQUFBTyxVQUFuQjs7QUFPQSxJQUFNLFFBQUEsQUFBUSx1QkFBZDs7SUFJTSxBOzs7Ozs7Ozs7Ozs2QkFDSyxBQUNQOzZCQUNHLGNBQUQ7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsa0JBQ0csY0FBRCxLQUFBLEFBQU0sWUFBUyxXQUFmLEFBQTBCO29CQUExQjtzQkFBQSxBQUNFO0FBREY7eUJBQ0UsY0FBQTs7b0JBQUE7c0JBQUE7QUFBQTtBQUFBLFNBRkosQUFDRSxBQUNFLEFBRUQsaUJBQUEsQUFBSyxNQUxWLEFBQ0UsQUFJYyxBQUdqQjs7Ozs7QUFWa0IsQSxBQWFyQjs7MkNBQXVCLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUFuQixDQUFBLEVBQWYsQUFBZSxBQUEwQiIsImZpbGUiOiJIZWFkZXIuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsImNvbm5lY3QiLCJzdHlsZWQiLCJjc3MiLCJUZXh0IiwiSGVhZGVyQm9yZGVyIiwiVG9wIiwidGl0bGUiLCJIZWFkZXIiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQVM7O0FBQ1QsQUFBTyxBQUFVOzs7O0FBQ2pCLEFBQU87O0lBQVAsQUFBWSxBQUFVOztBQUN0QixBQUFPLEFBQWtCOzs7Ozs7Ozs7Ozs7O0FBRXpCLElBQU0sTUFBTSw0QkFBTixBQUFNLEFBQU8sVUFBbkI7O0FBUUEsSUFBTSxRQUFBLEFBQVEsdUJBQWQ7O0lBSU0sQTs7Ozs7Ozs7Ozs7NkJBQ0ssQUFDUDs2QkFDRyxjQUFEOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLGtCQUNHLGNBQUQsS0FBQSxBQUFNLFlBQVMsV0FBZixBQUEwQjtvQkFBMUI7c0JBQUEsQUFDRTtBQURGO3lCQUNFLGNBQUE7O29CQUFBO3NCQUFBO0FBQUE7QUFBQSxTQUZKLEFBQ0UsQUFDRSxBQUVGLDRCQUFBLEFBQUM7O29CQUFEO3NCQUxKLEFBQ0UsQUFJRSxBQUdMO0FBSEs7QUFBQTs7Ozs7QUFQYSxBLEFBYXJCOzsyQ0FBdUIsVUFBQSxBQUFDLE9BQUQ7U0FBQSxBQUFXO0FBQW5CLENBQUEsRUFBZixBQUFlLEFBQTBCIiwiZmlsZSI6IkhlYWRlci5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=
