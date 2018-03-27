@@ -53,7 +53,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Header/Header.js';
 
 var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  height: 100px;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n'], ['\n  height: 100px;\n  width: 100%;\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n']),
-    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin-left: 20px;\n'], ['\n  margin-left: 20px;\n']);
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  min-width: 130px;\n  margin-left: 20px;\n'], ['\n  min-width: 130px;\n  margin-left: 20px;\n']);
 
 var Top = (0, _reactEmotion2.default)('header')(_templateObject);
 
@@ -74,21 +74,21 @@ var Header = function (_Component) {
       return _react2.default.createElement(Top, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 23
         }
       }, _react2.default.createElement(Text.Heading1, { className: title, __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 24
         }
       }, _react2.default.createElement('p', {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 25
         }
       }, 'Jay-Co')), _react2.default.createElement(_HeaderBorder2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 26
+          lineNumber: 27
         }
       }));
     }
@@ -100,4 +100,4 @@ var Header = function (_Component) {
 exports.default = (0, _reactRedux.connect)(function (state) {
   return state;
 })(Header);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsImNvbm5lY3QiLCJzdHlsZWQiLCJjc3MiLCJUZXh0IiwiSGVhZGVyQm9yZGVyIiwiVG9wIiwidGl0bGUiLCJIZWFkZXIiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQVM7O0FBQ1QsQUFBTyxBQUFVOzs7O0FBQ2pCLEFBQU87O0lBQVAsQUFBWSxBQUFVOztBQUN0QixBQUFPLEFBQWtCOzs7Ozs7Ozs7Ozs7O0FBRXpCLElBQU0sTUFBTSw0QkFBTixBQUFNLEFBQU8sVUFBbkI7O0FBUUEsSUFBTSxRQUFBLEFBQVEsdUJBQWQ7O0lBSU0sQTs7Ozs7Ozs7Ozs7NkJBQ0ssQUFDUDs2QkFDRyxjQUFEOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLGtCQUNHLGNBQUQsS0FBQSxBQUFNLFlBQVMsV0FBZixBQUEwQjtvQkFBMUI7c0JBQUEsQUFDRTtBQURGO3lCQUNFLGNBQUE7O29CQUFBO3NCQUFBO0FBQUE7QUFBQSxTQUZKLEFBQ0UsQUFDRSxBQUVGLDRCQUFBLEFBQUM7O29CQUFEO3NCQUxKLEFBQ0UsQUFJRSxBQUdMO0FBSEs7QUFBQTs7Ozs7QUFQYSxBLEFBYXJCOzsyQ0FBdUIsVUFBQSxBQUFDLE9BQUQ7U0FBQSxBQUFXO0FBQW5CLENBQUEsRUFBZixBQUFlLEFBQTBCIiwiZmlsZSI6IkhlYWRlci5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvSGVhZGVyL0hlYWRlci5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkNvbXBvbmVudCIsImNvbm5lY3QiLCJzdHlsZWQiLCJjc3MiLCJUZXh0IiwiSGVhZGVyQm9yZGVyIiwiVG9wIiwidGl0bGUiLCJIZWFkZXIiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQVM7O0FBQ1QsQUFBTyxBQUFVOzs7O0FBQ2pCLEFBQU87O0lBQVAsQUFBWSxBQUFVOztBQUN0QixBQUFPLEFBQWtCOzs7Ozs7Ozs7Ozs7O0FBRXpCLElBQU0sTUFBTSw0QkFBTixBQUFNLEFBQU8sVUFBbkI7O0FBUUEsSUFBTSxRQUFBLEFBQVEsdUJBQWQ7O0lBS00sQTs7Ozs7Ozs7Ozs7NkJBQ0ssQUFDUDs2QkFDRyxjQUFEOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLGtCQUNHLGNBQUQsS0FBQSxBQUFNLFlBQVMsV0FBZixBQUEwQjtvQkFBMUI7c0JBQUEsQUFDRTtBQURGO3lCQUNFLGNBQUE7O29CQUFBO3NCQUFBO0FBQUE7QUFBQSxTQUZKLEFBQ0UsQUFDRSxBQUVGLDRCQUFBLEFBQUM7O29CQUFEO3NCQUxKLEFBQ0UsQUFJRSxBQUdMO0FBSEs7QUFBQTs7Ozs7QUFQYSxBLEFBYXJCOzsyQ0FBdUIsVUFBQSxBQUFDLE9BQUQ7U0FBQSxBQUFXO0FBQW5CLENBQUEsRUFBZixBQUFlLEFBQTBCIiwiZmlsZSI6IkhlYWRlci5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=

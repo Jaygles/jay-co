@@ -13,6 +13,7 @@ const Top = styled('header')`
 `;
 
 const title = css`
+  min-width: 130px;
   margin-left: 20px;
 `;
 

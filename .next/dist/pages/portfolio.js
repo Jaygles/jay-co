@@ -40,13 +40,13 @@ var _Nav = require('../Components/Nav/Nav');
 
 var _Nav2 = _interopRequireDefault(_Nav);
 
+var _PortfolioList = require('../Components/Portfolios/PortfolioList');
+
+var _PortfolioList2 = _interopRequireDefault(_PortfolioList);
+
 var _MainGrid = require('../Components/Grids/MainGrid');
 
 var _MainGrid2 = _interopRequireDefault(_MainGrid);
-
-var _Bio = require('../Components/About/Bio');
-
-var _Bio2 = _interopRequireDefault(_Bio);
 
 var _withData = require('../higher-order/withData');
 
@@ -56,19 +56,19 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/pages/about.js?entry';
+var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/pages/portfolio.js?entry';
 
 
-var About = function (_React$Component) {
-  (0, _inherits3.default)(About, _React$Component);
+var Index = function (_React$Component) {
+  (0, _inherits3.default)(Index, _React$Component);
 
-  function About() {
-    (0, _classCallCheck3.default)(this, About);
+  function Index() {
+    (0, _classCallCheck3.default)(this, Index);
 
-    return (0, _possibleConstructorReturn3.default)(this, (About.__proto__ || (0, _getPrototypeOf2.default)(About)).apply(this, arguments));
+    return (0, _possibleConstructorReturn3.default)(this, (Index.__proto__ || (0, _getPrototypeOf2.default)(Index)).apply(this, arguments));
   }
 
-  (0, _createClass3.default)(About, [{
+  (0, _createClass3.default)(Index, [{
     key: 'render',
     value: function render() {
       var isAuthenticated = this.props.isAuthenticated;
@@ -92,8 +92,7 @@ var About = function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 16
         }
-      }), React.createElement(_Bio2.default, {
-        __source: {
+      }), React.createElement(_PortfolioList2.default, { isAuthenticated: isAuthenticated, __source: {
           fileName: _jsxFileName,
           lineNumber: 17
         }
@@ -101,10 +100,10 @@ var About = function (_React$Component) {
     }
   }]);
 
-  return About;
+  return Index;
 }(React.Component);
 
 exports.default = (0, _withData2.default)({}, function (state) {
   return state;
-})(About);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL2Fib3V0LmpzIl0sIm5hbWVzIjpbIlJlYWN0IiwiRG9jdW1lbnQiLCJIZWFkZXIiLCJOYXYiLCJNYWluR3JpZCIsIkJpbyIsIndpdGhEYXRhIiwiQWJvdXQiLCJpc0F1dGhlbnRpY2F0ZWQiLCJwcm9wcyIsIkNvbXBvbmVudCIsInN0YXRlIl0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87O0lBQVAsQUFBWTs7QUFDWixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBYzs7Ozs7Ozs7Ozs7SSxBQUVmOzs7Ozs7Ozs7Ozs2QkFDSztVQUFBLEFBQ0Msa0JBQW9CLEtBRHJCLEFBQzBCLE1BRDFCLEFBQ0MsQUFDUjs7bUJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxRQUNFLEFBQUM7O29CQUFEO3NCQURGLEFBQ0UsQUFDQTtBQURBO0FBQUEsZ0JBQ0EsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxBQUFDLCtCQUFJLGlCQUFMLEFBQXNCO29CQUF0QjtzQkFERixBQUNFLEFBQ0E7QUFEQTtnQkFDQSxBQUFDOztvQkFBRDtzQkFMTixBQUNFLEFBRUUsQUFFRSxBQUlQO0FBSk87QUFBQTs7Ozs7RUFSVSxNQUFNLEEsQUFlMUI7OzBDQUFlLEFBQVMsSUFBSSxVQUFBLEFBQUMsT0FBRDtTQUFBLEFBQVc7QUFBeEIsQ0FBQSxFQUFmLEFBQWUsQUFBK0IiLCJmaWxlIjoiYWJvdXQuanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9
+})(Index);
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3BvcnRmb2xpby5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIkRvY3VtZW50IiwiSGVhZGVyIiwiTmF2IiwiUG9ydGZvbGlvTGlzdCIsIk1haW5HcmlkIiwid2l0aERhdGEiLCJJbmRleCIsImlzQXV0aGVudGljYXRlZCIsInByb3BzIiwiQ29tcG9uZW50Iiwic3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQVk7Ozs7QUFDbkIsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBbUI7Ozs7QUFDMUIsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBYzs7Ozs7Ozs7Ozs7SSxBQUVmOzs7Ozs7Ozs7Ozs2QkFDSztVQUFBLEFBQ0Msa0JBQW9CLEtBRHJCLEFBQzBCLE1BRDFCLEFBQ0MsQUFDUjs7bUJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxRQUNFLEFBQUM7O29CQUFEO3NCQURGLEFBQ0UsQUFDQTtBQURBO0FBQUEsZ0JBQ0EsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxBQUFDLCtCQUFJLGlCQUFMLEFBQXNCO29CQUF0QjtzQkFERixBQUNFLEFBQ0E7QUFEQTtnQkFDQSxBQUFDLHlDQUFjLGlCQUFmLEFBQWdDO29CQUFoQztzQkFMTixBQUNFLEFBRUUsQUFFRSxBQUlQO0FBSk87Ozs7OztFQVJVLE0sQUFBTSxBQWUxQjs7MENBQWUsQUFBUyxJQUFJLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUF4QixDQUFBLEVBQWYsQUFBZSxBQUErQiIsImZpbGUiOiJwb3J0Zm9saW8uanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9
