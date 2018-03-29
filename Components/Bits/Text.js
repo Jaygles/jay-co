@@ -66,7 +66,7 @@ export const Anchor = (props) => {
     font-weight: 400;
     color: #0000ff;
     &:visited {
-      color: #00008b;
+      color: #000000;
     }
     &:hover {
       color: #0000ff;

@@ -1,4 +1,4 @@
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
 
 export const main = styled('div')`
   width: 100%;
