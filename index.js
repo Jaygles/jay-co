@@ -13,7 +13,7 @@ import setupApi from './api';
 
 const dev = process.env.NODE_ENV !== 'production';
 const port = process.env.PORT || 8000;
-const app = next({ dev, quiet: false });
+const app = next({ dev, quiet: true });
 const nextRequestHandler = app.getRequestHandler();
 
 app.prepare().then(() => {

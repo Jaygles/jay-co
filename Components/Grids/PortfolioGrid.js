@@ -3,7 +3,7 @@ import styled, { css } from 'react-emotion';
 export const main = styled('div')`
   width: 100%;
   margin-bottom: 20px;
-  grid-column-start: 2;
+  grid-area: main;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-template-rows: auto;

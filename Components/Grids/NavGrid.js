@@ -1,14 +1,16 @@
 import styled from 'react-emotion';
 
 export default styled('nav')`
-  margin: 20px;
+  height: calc(100vh - 140px);
+  min-height: 200px;
+  width: 140px;
+  padding-top: 20px;
+  margin-left: 20px;
+  border-right: 1px dotted #5a5a5a;
   position: fixed;
-  grid-column-start: 1;
-  grid-column-end: 1;
-  align-self: stretch;
-  justify-self: stretch;
+  grid-area: nav;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: repeat(auto-fill, 50px);
   grid-gap: 20px;
 `;

@@ -32,9 +32,9 @@ var _NavGrid = require('../Grids/NavGrid');
 
 var _NavGrid2 = _interopRequireDefault(_NavGrid);
 
-var _Text = require('../Bits/Text');
+var _NavItem = require('./NavItem');
 
-var Text = _interopRequireWildcard(_Text);
+var _NavItem2 = _interopRequireDefault(_NavItem);
 
 var _LogoutButton = require('../Auth/LogoutButton');
 
@@ -68,19 +68,19 @@ var PostPreview = function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 10
         }
-      }, React.createElement(Text.Anchor, { href: '/', __source: {
+      }, React.createElement(_NavItem2.default, { target: '/', label: 'Home', __source: {
           fileName: _jsxFileName,
           lineNumber: 11
         }
-      }, 'Home'), React.createElement(Text.Anchor, { href: '/about', __source: {
+      }), React.createElement(_NavItem2.default, { target: '/about', label: 'About', __source: {
           fileName: _jsxFileName,
           lineNumber: 12
         }
-      }, 'About'), React.createElement(Text.Anchor, { href: '/portfolio', __source: {
+      }), React.createElement(_NavItem2.default, { target: '/portfolio', label: 'Portfolio', __source: {
           fileName: _jsxFileName,
           lineNumber: 13
         }
-      }, 'Portfolio'), isAuthenticated ? React.createElement(_LogoutButton2.default, {
+      }), isAuthenticated ? React.createElement(_LogoutButton2.default, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 14
@@ -93,4 +93,4 @@ var PostPreview = function (_React$Component) {
 }(React.Component);
 
 exports.default = PostPreview;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvTmF2L05hdi5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIk5hdkdyaWQiLCJUZXh0IiwiTG9nb3V0QnV0dG9uIiwiUG9zdFByZXZpZXciLCJwcm9wcyIsInBvc3QiLCJpc0F1dGhlbnRpY2F0ZWQiLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU8sQUFBYTs7OztBQUNwQixBQUFPOztJQUFQLEFBQVksQUFBVTs7QUFDdEIsQUFBTyxBQUFrQjs7Ozs7Ozs7Ozs7SUFFSixBOzs7Ozs7Ozs7Ozs2QkFDVjttQkFDMkIsS0FEM0IsQUFDZ0M7VUFEaEMsQUFDQyxjQURELEFBQ0M7VUFERCxBQUNPLHlCQURQLEFBQ08sQUFDZDs7bUJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxRQUNHLGNBQUQsS0FBQSxBQUFNLFVBQU8sTUFBYixBQUFrQjtvQkFBbEI7c0JBQUE7QUFBQTtTQURGLEFBQ0UsQUFDQSxlQUFDLGNBQUQsS0FBQSxBQUFNLFVBQU8sTUFBYixBQUFrQjtvQkFBbEI7c0JBQUE7QUFBQTtTQUZGLEFBRUUsQUFDQSxnQkFBQyxjQUFELEtBQUEsQUFBTSxVQUFPLE1BQWIsQUFBa0I7b0JBQWxCO3NCQUFBO0FBQUE7U0FIRixBQUdFLEFBQ0Msc0NBQWtCLEFBQUM7O29CQUFEO3NCQUFsQixBQUFrQjtBQUFBO0FBQUEsT0FBQSxJQUx2QixBQUNFLEFBSXdDLEFBRzNDOzs7OztFQVhzQyxNQUFNLEE7O2tCQUExQixBIiwiZmlsZSI6Ik5hdi5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvTmF2L05hdi5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIk5hdkdyaWQiLCJOYXZJdGVtIiwiTG9nb3V0QnV0dG9uIiwiUG9zdFByZXZpZXciLCJwcm9wcyIsInBvc3QiLCJpc0F1dGhlbnRpY2F0ZWQiLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU8sQUFBYTs7OztBQUNwQixBQUFPLEFBQWE7Ozs7QUFDcEIsQUFBTyxBQUFrQjs7Ozs7Ozs7Ozs7SSxBQUVKOzs7Ozs7Ozs7Ozs2QkFDVjttQkFDMkIsS0FEM0IsQUFDZ0M7VUFEaEMsQUFDQyxjQURELEFBQ0M7VUFERCxBQUNPLHlCQURQLEFBQ08sQUFDZDs7bUJBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxRQUNFLEFBQUMsbUNBQVEsUUFBVCxBQUFnQixLQUFJLE9BQXBCLEFBQTBCO29CQUExQjtzQkFERixBQUNFLEFBQ0E7QUFEQTtnQkFDQSxBQUFDLG1DQUFRLFFBQVQsQUFBZ0IsVUFBUyxPQUF6QixBQUErQjtvQkFBL0I7c0JBRkYsQUFFRSxBQUNBO0FBREE7Z0JBQ0EsQUFBQyxtQ0FBUSxRQUFULEFBQWdCLGNBQWEsT0FBN0IsQUFBbUM7b0JBQW5DO3NCQUhGLEFBR0UsQUFDQztBQUREO2tDQUNtQixBQUFDOztvQkFBRDtzQkFBbEIsQUFBa0I7QUFBQTtBQUFBLE9BQUEsSUFMdkIsQUFDRSxBQUl3QyxBQUczQzs7Ozs7RUFYc0MsTUFBTSxBOztrQkFBMUIsQSIsImZpbGUiOiJOYXYuanMiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9

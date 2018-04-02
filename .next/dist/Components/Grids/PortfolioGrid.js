@@ -15,7 +15,7 @@ var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  width: 100%;\n  margin-bottom: 20px;\n  grid-column-start: 2;\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));\n  grid-template-rows: auto;\n  grid-gap: 20px;\n'], ['\n  width: 100%;\n  margin-bottom: 20px;\n  grid-column-start: 2;\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));\n  grid-template-rows: auto;\n  grid-gap: 20px;\n']),
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  width: 100%;\n  margin-bottom: 20px;\n  grid-area: main;\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));\n  grid-template-rows: auto;\n  grid-gap: 20px;\n'], ['\n  width: 100%;\n  margin-bottom: 20px;\n  grid-area: main;\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));\n  grid-template-rows: auto;\n  grid-gap: 20px;\n']),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  min-height: 500px;\n  justify-self: center;\n  display: grid;\n  grid-gap: 20px;\n  grid-template-columns: 1fr;\n  grid-template-rows: auto;\n'], ['\n  min-height: 500px;\n  justify-self: center;\n  display: grid;\n  grid-gap: 20px;\n  grid-template-columns: 1fr;\n  grid-template-rows: auto;\n']);
 
 var main = exports.main = (0, _reactEmotion2.default)('div')(_templateObject);

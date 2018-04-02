@@ -1,5 +1,4 @@
 import * as React from 'react';
-import * as Text from './Text';
 import Link from 'next/link';
 
 export default class CustomLink extends React.Component {
