@@ -12,5 +12,5 @@ export default styled('nav')`
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(auto-fill, 50px);
-  grid-gap: 20px;
+  grid-gap: 10px;
 `;

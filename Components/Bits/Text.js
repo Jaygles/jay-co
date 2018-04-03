@@ -64,7 +64,7 @@ export const Anchor = (props) => {
     text-decoration: none;
     font-size: 24px;
     font-weight: 400;
-    color: #0000ff;
+    color: #0d0d0d;
     &:visited {
       color: #000000;
     }

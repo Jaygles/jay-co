@@ -85,7 +85,7 @@ var Header = function (_Component) {
           fileName: _jsxFileName,
           lineNumber: 25
         }
-      }, 'Jay-Co')), _react2.default.createElement(_HeaderBorder2.default, {
+      }, 'Jay S.')), _react2.default.createElement(_HeaderBorder2.default, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 27
