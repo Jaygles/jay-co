@@ -5,8 +5,8 @@ export default styled('div')`
   height: 10px;
   background: repeating-linear-gradient(
     45deg,
-    white,
-    white 10px,
+    #83d18f,
+    #83d18f 10px,
     #5a5a5a 0,
     #5a5a5a 30px
   );

@@ -7,7 +7,6 @@ export default styled('nav')`
   padding-top: 20px;
   margin-left: 20px;
   border-right: 1px dotted #5a5a5a;
-  position: fixed;
   grid-area: nav;
   display: grid;
   grid-template-columns: 1fr;

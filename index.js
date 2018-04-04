@@ -42,10 +42,7 @@ app.prepare().then(() => {
   });
 
   server.listen(port, (err) => {
-    if (err) {
-      throw err;
-    }
-
+    if (err) throw err;
     console.log(`Running on localhost:${port}`);
   });
 });

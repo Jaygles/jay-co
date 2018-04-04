@@ -22,9 +22,8 @@ class Header extends Component {
     return (
       <Top>
         <Text.Heading1 className={title}>
-          <p>Jay S.</p>
+          <p>Jay S</p>
         </Text.Heading1>
-        <HeaderBorder />
       </Top>
     );
   }

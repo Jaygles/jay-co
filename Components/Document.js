@@ -22,7 +22,7 @@ class Document extends React.Component {
           <meta property="og:locale" content="en_US" />
           <meta property="og:type" content="website" />
           <link
-            href="https://fonts.googleapis.com/css?family=IBM+Plex+Serif"
+            href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif"
             rel="stylesheet"
           />
           <link

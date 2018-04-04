@@ -99,7 +99,7 @@ var Document = function (_React$Component) {
           lineNumber: 23
         }
       }), React.createElement('link', {
-        href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Serif',
+        href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Serif',
         rel: 'stylesheet',
         __source: {
           fileName: _jsxFileName,
