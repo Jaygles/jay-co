@@ -1,11 +1,10 @@
 import * as React from 'react';
-import Router from 'next/router';
 import styled from 'react-emotion';
-import * as Text from '../Bits/Text';
 
 const HeadingWrap = styled('div')`
   display: flex;
   flex-direction: column;
+  grid-area: heading;
 `;
 
 const HeadingSpan = styled('span')`

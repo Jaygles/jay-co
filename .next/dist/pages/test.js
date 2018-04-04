@@ -44,6 +44,10 @@ var _TestHeading = require('../Components/Test/TestHeading');
 
 var _TestHeading2 = _interopRequireDefault(_TestHeading);
 
+var _TestArrow = require('../Components/Test/TestArrow');
+
+var _TestArrow2 = _interopRequireDefault(_TestArrow);
+
 var _Header = require('../Components/Header/Header');
 
 var _Header2 = _interopRequireDefault(_Header);
@@ -84,35 +88,40 @@ var Test = function (_React$Component) {
       return React.createElement(_Document2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 15
+          lineNumber: 16
         }
       }, React.createElement(_TestGrid2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 17
         }
       }, React.createElement(_TestHeading2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 18
         }
-      })), React.createElement(_Header2.default, {
+      }), React.createElement(_TestArrow2.default, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 19
         }
+      })), React.createElement(_Header2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 21
+        }
       }), React.createElement(_MainGrid2.default, { key: 'layout', __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 22
         }
       }, React.createElement(_Nav2.default, { isAuthenticated: this.props.isAuthenticated, __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 23
         }
       }), React.createElement(_PostList2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 22
+          lineNumber: 24
         }
       })));
     }
@@ -124,4 +133,4 @@ var Test = function (_React$Component) {
 exports.default = (0, _withData2.default)({}, function (state) {
   return state;
 })(Test);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Rlc3QuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJEb2N1bWVudCIsIndpdGhEYXRhIiwiVGVzdEdyaWQiLCJUZXN0SGVhZGluZyIsIkhlYWRlciIsIk5hdiIsIk1haW5HcmlkIiwiUG9zdExpc3QiLCJUZXN0IiwiaXNBdXRoZW50aWNhdGVkIiwicHJvcHMiLCJDb21wb25lbnQiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFpQjs7OztBQUN4QixBQUFPLEFBQVk7Ozs7QUFDbkIsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQWM7Ozs7Ozs7Ozs7O0ksQUFFZjs7Ozs7Ozs7Ozs7NkJBQ0s7VUFBQSxBQUNDLGtCQUFvQixLQURyQixBQUMwQixNQUQxQixBQUNDLEFBQ1I7O21CQUNFLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRSxBQUFDOztvQkFBRDtzQkFBQSxBQUNFO0FBREY7QUFBQSxlQUNFLEFBQUM7O29CQUFEO3NCQUZKLEFBQ0UsQUFDRSxBQUVGO0FBRkU7QUFBQSxpQkFFRixBQUFDOztvQkFBRDtzQkFKRixBQUlFLEFBQ0E7QUFEQTtBQUFBLGdCQUNBLEFBQUMsb0NBQVMsS0FBVixBQUFjO29CQUFkO3NCQUFBLEFBQ0U7QUFERjtlQUNFLEFBQUMsK0JBQUksaUJBQWlCLEtBQUEsQUFBSyxNQUEzQixBQUFpQztvQkFBakM7c0JBREYsQUFDRSxBQUNBO0FBREE7Z0JBQ0EsQUFBQzs7b0JBQUQ7c0JBUk4sQUFDRSxBQUtFLEFBRUUsQUFJUDtBQUpPO0FBQUE7Ozs7O0VBWFMsTUFBTSxBLEFBa0J6Qjs7MENBQWUsQUFBUyxJQUFJLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUF4QixDQUFBLEVBQWYsQUFBZSxBQUErQiIsImZpbGUiOiJ0ZXN0LmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Rlc3QuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJEb2N1bWVudCIsIndpdGhEYXRhIiwiVGVzdEdyaWQiLCJUZXN0SGVhZGluZyIsIlRlc3RBcnJvdyIsIkhlYWRlciIsIk5hdiIsIk1haW5HcmlkIiwiUG9zdExpc3QiLCJUZXN0IiwiaXNBdXRoZW50aWNhdGVkIiwicHJvcHMiLCJDb21wb25lbnQiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFpQjs7OztBQUN4QixBQUFPLEFBQWU7Ozs7QUFDdEIsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFjOzs7Ozs7Ozs7OztJLEFBRWY7Ozs7Ozs7Ozs7OzZCQUNLO1VBQUEsQUFDQyxrQkFBb0IsS0FEckIsQUFDMEIsTUFEMUIsQUFDQyxBQUNSOzttQkFDRSxBQUFDOztvQkFBRDtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxBQUFDOztvQkFBRDtzQkFERixBQUNFLEFBQ0E7QUFEQTtBQUFBLGdCQUNBLEFBQUM7O29CQUFEO3NCQUhKLEFBQ0UsQUFFRSxBQUVGO0FBRkU7QUFBQSxpQkFFRixBQUFDOztvQkFBRDtzQkFMRixBQUtFLEFBQ0E7QUFEQTtBQUFBLGdCQUNBLEFBQUMsb0NBQVMsS0FBVixBQUFjO29CQUFkO3NCQUFBLEFBQ0U7QUFERjtlQUNFLEFBQUMsK0JBQUksaUJBQWlCLEtBQUEsQUFBSyxNQUEzQixBQUFpQztvQkFBakM7c0JBREYsQUFDRSxBQUNBO0FBREE7Z0JBQ0EsQUFBQzs7b0JBQUQ7c0JBVE4sQUFDRSxBQU1FLEFBRUUsQUFJUDtBQUpPO0FBQUE7Ozs7O0VBWlMsTUFBTSxBLEFBbUJ6Qjs7MENBQWUsQUFBUyxJQUFJLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUF4QixDQUFBLEVBQWYsQUFBZSxBQUErQiIsImZpbGUiOiJ0ZXN0LmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==

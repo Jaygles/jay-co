@@ -32,17 +32,9 @@ var _react = require('react');
 
 var React = _interopRequireWildcard(_react);
 
-var _index = require('next/dist/lib/router/index.js');
-
-var _index2 = _interopRequireDefault(_index);
-
 var _reactEmotion = require('react-emotion');
 
 var _reactEmotion2 = _interopRequireDefault(_reactEmotion);
-
-var _Text = require('../Bits/Text');
-
-var Text = _interopRequireWildcard(_Text);
 
 function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj; } else { var newObj = {}; if (obj != null) { for (var key in obj) { if (Object.prototype.hasOwnProperty.call(obj, key)) newObj[key] = obj[key]; } } newObj.default = obj; return newObj; } }
 
@@ -50,7 +42,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Test/TestHeading.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  display: flex;\n  flex-direction: column;\n'], ['\n  display: flex;\n  flex-direction: column;\n']),
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n'], ['\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n']),
     _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin: 10px;\n  font-family: IBM Plex Sans;\n  color: #c74e44;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #ef7c73;\n    margin-left: 25px;\n  }\n  &:last-of-type {\n    color: #ffc8c4;\n    margin-left: 17px;\n  }\n'], ['\n  margin: 10px;\n  font-family: IBM Plex Sans;\n  color: #c74e44;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #ef7c73;\n    margin-left: 25px;\n  }\n  &:last-of-type {\n    color: #ffc8c4;\n    margin-left: 17px;\n  }\n']);
 
 var HeadingWrap = (0, _reactEmotion2.default)('div')(_templateObject);
@@ -76,22 +68,22 @@ var TestHeading = function (_React$Component) {
       return React.createElement(HeadingWrap, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 30
         }
       }, React.createElement(HeadingSpan, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 31
         }
       }, 'J'), React.createElement(HeadingSpan, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 32
         }
       }, 'A'), React.createElement(HeadingSpan, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 33
         }
       }, 'Y'));
     }
@@ -101,4 +93,4 @@ var TestHeading = function (_React$Component) {
 }(React.Component);
 
 exports.default = TestHeading;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0SGVhZGluZy5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsIlJvdXRlciIsInN0eWxlZCIsIlRleHQiLCJIZWFkaW5nV3JhcCIsIkhlYWRpbmdTcGFuIiwiVGVzdEhlYWRpbmciLCJwcm9wcyIsInRhcmdldCIsImxhYmVsIiwiQ29tcG9uZW50Il0sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTzs7OztBQUNQLEFBQU87Ozs7QUFDUCxBQUFPOztJQUFQLEFBQVksQUFBVTs7Ozs7Ozs7Ozs7QUFFdEIsSUFBTSxjQUFjLDRCQUFkLEFBQWMsQUFBTyxPQUEzQjs7QUFLQSxJQUFNLGNBQWMsNEJBQWQsQUFBYyxBQUFPLFFBQTNCOztJQWdCTSxBOzs7Ozs7Ozs7Ozs2QkFDSzttQkFDbUIsS0FEbkIsQUFDd0I7VUFEeEIsQUFDQyxnQkFERCxBQUNDO1VBREQsQUFDUyxlQURULEFBQ1MsQUFDaEI7O21CQUNHLGNBQUQ7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FERixBQUNFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FGRixBQUVFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FKSixBQUNFLEFBR0UsQUFHTDs7Ozs7RUFWdUIsTUFBTSxBLEFBYWhDOztrQkFBQSxBQUFlIiwiZmlsZSI6IlRlc3RIZWFkaW5nLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0SGVhZGluZy5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsInN0eWxlZCIsIkhlYWRpbmdXcmFwIiwiSGVhZGluZ1NwYW4iLCJUZXN0SGVhZGluZyIsInByb3BzIiwidGFyZ2V0IiwibGFiZWwiLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87O0lBQVAsQUFBWTs7QUFDWixBQUFPOzs7Ozs7Ozs7Ozs7O0FBRVAsSUFBTSxjQUFjLDRCQUFkLEFBQWMsQUFBTyxPQUEzQjs7QUFNQSxJQUFNLGNBQWMsNEJBQWQsQUFBYyxBQUFPLFFBQTNCOztJQWdCTSxBOzs7Ozs7Ozs7Ozs2QkFDSzttQkFDbUIsS0FEbkIsQUFDd0I7VUFEeEIsQUFDQyxnQkFERCxBQUNDO1VBREQsQUFDUyxlQURULEFBQ1MsQUFDaEI7O21CQUNHLGNBQUQ7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FERixBQUNFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FGRixBQUVFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FKSixBQUNFLEFBR0UsQUFHTDs7Ozs7RUFWdUIsTUFBTSxBLEFBYWhDOztrQkFBQSxBQUFlIiwiZmlsZSI6IlRlc3RIZWFkaW5nLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
