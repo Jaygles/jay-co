@@ -31,6 +31,7 @@ const injectGlobalStyles = () => injectGlobal`
     color: rgb(56, 56, 60);
     font-family: 'IBM Plex Serif', serif;
     font-size: 12px;
+    scroll-behavior: smooth;
   }
 `;
 

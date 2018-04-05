@@ -50,9 +50,19 @@ var TestArrow = function (_React$Component) {
   (0, _inherits3.default)(TestArrow, _React$Component);
 
   function TestArrow() {
+    var _ref;
+
+    var _temp, _this, _ret;
+
     (0, _classCallCheck3.default)(this, TestArrow);
 
-    return (0, _possibleConstructorReturn3.default)(this, (TestArrow.__proto__ || (0, _getPrototypeOf2.default)(TestArrow)).apply(this, arguments));
+    for (var _len = arguments.length, args = Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _ret = (_temp = (_this = (0, _possibleConstructorReturn3.default)(this, (_ref = TestArrow.__proto__ || (0, _getPrototypeOf2.default)(TestArrow)).call.apply(_ref, [this].concat(args))), _this), _this._handleClick = function () {
+      window.scrollTo(0, document.body.scrollHeight);
+    }, _temp), (0, _possibleConstructorReturn3.default)(_this, _ret);
   }
 
   (0, _createClass3.default)(TestArrow, [{
@@ -61,12 +71,11 @@ var TestArrow = function (_React$Component) {
       return React.createElement(ArrowGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 20
         }
-      }, React.createElement('div', {
-        __source: {
+      }, React.createElement('div', { onClick: this._handleClick, __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 21
         }
       }, '\uFE3E'));
     }
@@ -76,4 +85,4 @@ var TestArrow = function (_React$Component) {
 }(React.Component);
 
 exports.default = TestArrow;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0QXJyb3cuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJzdHlsZWQiLCJBcnJvd0dyaWQiLCJUZXN0QXJyb3ciLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87O0lBQVAsQUFBWTs7QUFDWixBQUFPOzs7Ozs7Ozs7Ozs7QUFFUCxJQUFNLFlBQVksNEJBQVosQUFBWSxBQUFPLE9BQXpCOztJLEFBVU07Ozs7Ozs7Ozs7OzZCQUNLLEFBQ1A7bUJBQ0csY0FBRDs7b0JBQUE7c0JBQUEsQUFDRTtBQURGO0FBQUEsT0FBQSxRQUNFLGNBQUE7O29CQUFBO3NCQUFBO0FBQUE7QUFBQSxTQUZKLEFBQ0UsQUFDRSxBQUdMOzs7OztFQVBxQixNQUFNLEEsQUFVOUI7O2tCQUFBLEFBQWUiLCJmaWxlIjoiVGVzdEFycm93LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0QXJyb3cuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJzdHlsZWQiLCJBcnJvd0dyaWQiLCJUZXN0QXJyb3ciLCJfaGFuZGxlQ2xpY2siLCJ3aW5kb3ciLCJzY3JvbGxUbyIsImRvY3VtZW50IiwiYm9keSIsInNjcm9sbEhlaWdodCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU87Ozs7Ozs7Ozs7OztBQUVQLElBQU0sWUFBWSw0QkFBWixBQUFZLEFBQU8sT0FBekI7O0lBVU0sQTs7Ozs7Ozs7Ozs7Ozs7a05BQ0osQSxlQUFlLFlBQU0sQUFDbkI7YUFBQSxBQUFPLFNBQVAsQUFBZ0IsR0FBRyxTQUFBLEFBQVMsS0FBNUIsQUFBaUMsQUFDbEM7QTs7Ozs7NkJBQ1EsQUFDUDttQkFDRyxjQUFEOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0UsY0FBQSxTQUFLLFNBQVMsS0FBZCxBQUFtQjtvQkFBbkI7c0JBQUE7QUFBQTtTQUZKLEFBQ0UsQUFDRSxBQUdMOzs7OztFQVZxQixNQUFNLEEsQUFhOUI7O2tCQUFBLEFBQWUiLCJmaWxlIjoiVGVzdEFycm93LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==

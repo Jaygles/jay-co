@@ -12,10 +12,13 @@ const ArrowGrid = styled('div')`
 `;
 
 class TestArrow extends React.Component {
+  _handleClick = () => {
+    window.scrollTo(0, document.body.scrollHeight);
+  };
   render() {
     return (
       <ArrowGrid>
-        <div>&#65086;</div>
+        <div onClick={this._handleClick}>&#65086;</div>
       </ArrowGrid>
     );
   }
