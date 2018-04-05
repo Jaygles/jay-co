@@ -8,18 +8,19 @@ const HeadingWrap = styled('div')`
 `;
 
 const HeadingSpan = styled('span')`
-  margin: 10px;
+  margin-top: 10px;
+  margin-left: 70px;
   font-family: IBM Plex Sans;
   color: #c74e44;
   font-size: calc(50px + 14vw);
   line-height: 70%;
   &:first-of-type {
     color: #ef7c73;
-    margin-left: 25px;
+    margin-left: 30px;
   }
   &:last-of-type {
     color: #ffc8c4;
-    margin-left: 17px;
+    margin-left: 40px;
   }
 `;
 

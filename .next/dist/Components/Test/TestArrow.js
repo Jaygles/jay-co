@@ -42,9 +42,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Test/TestArrow.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  width: 100%;\n  height: 50px;\n  font-size: 75px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  grid-area: arrow;\n'], ['\n  width: 100%;\n  height: 50px;\n  font-size: 75px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  grid-area: arrow;\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  width: 100%;\n  height: 50px;\n  font-size: 75px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  grid-area: arrow;\n'], ['\n  width: 100%;\n  height: 50px;\n  font-size: 75px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  grid-area: arrow;\n']),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  cursor: pointer;\n'], ['\n  cursor: pointer;\n']);
 
 var ArrowGrid = (0, _reactEmotion2.default)('div')(_templateObject);
+
+var ArrowWrap = (0, _reactEmotion2.default)('span')(_templateObject2);
 
 var TestArrow = function (_React$Component) {
   (0, _inherits3.default)(TestArrow, _React$Component);
@@ -71,11 +74,11 @@ var TestArrow = function (_React$Component) {
       return React.createElement(ArrowGrid, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 20
+          lineNumber: 24
         }
-      }, React.createElement('div', { onClick: this._handleClick, __source: {
+      }, React.createElement(ArrowWrap, { onClick: this._handleClick, __source: {
           fileName: _jsxFileName,
-          lineNumber: 21
+          lineNumber: 25
         }
       }, '\uFE3E'));
     }
@@ -85,4 +88,4 @@ var TestArrow = function (_React$Component) {
 }(React.Component);
 
 exports.default = TestArrow;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0QXJyb3cuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJzdHlsZWQiLCJBcnJvd0dyaWQiLCJUZXN0QXJyb3ciLCJfaGFuZGxlQ2xpY2siLCJ3aW5kb3ciLCJzY3JvbGxUbyIsImRvY3VtZW50IiwiYm9keSIsInNjcm9sbEhlaWdodCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU87Ozs7Ozs7Ozs7OztBQUVQLElBQU0sWUFBWSw0QkFBWixBQUFZLEFBQU8sT0FBekI7O0lBVU0sQTs7Ozs7Ozs7Ozs7Ozs7a05BQ0osQSxlQUFlLFlBQU0sQUFDbkI7YUFBQSxBQUFPLFNBQVAsQUFBZ0IsR0FBRyxTQUFBLEFBQVMsS0FBNUIsQUFBaUMsQUFDbEM7QTs7Ozs7NkJBQ1EsQUFDUDttQkFDRyxjQUFEOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0UsY0FBQSxTQUFLLFNBQVMsS0FBZCxBQUFtQjtvQkFBbkI7c0JBQUE7QUFBQTtTQUZKLEFBQ0UsQUFDRSxBQUdMOzs7OztFQVZxQixNQUFNLEEsQUFhOUI7O2tCQUFBLEFBQWUiLCJmaWxlIjoiVGVzdEFycm93LmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0QXJyb3cuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJzdHlsZWQiLCJBcnJvd0dyaWQiLCJBcnJvd1dyYXAiLCJUZXN0QXJyb3ciLCJfaGFuZGxlQ2xpY2siLCJ3aW5kb3ciLCJzY3JvbGxUbyIsImRvY3VtZW50IiwiYm9keSIsInNjcm9sbEhlaWdodCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU87Ozs7Ozs7Ozs7Ozs7QUFFUCxJQUFNLFlBQVksNEJBQVosQUFBWSxBQUFPLE9BQXpCOztBQVVBLElBQU0sWUFBWSw0QkFBWixBQUFZLEFBQU8sUUFBekI7O0lBSU0sQTs7Ozs7Ozs7Ozs7Ozs7a05BQ0osQSxlQUFlLFlBQU0sQUFDbkI7YUFBQSxBQUFPLFNBQVAsQUFBZ0IsR0FBRyxTQUFBLEFBQVMsS0FBNUIsQUFBaUMsQUFDbEM7QTs7Ozs7NkJBQ1EsQUFDUDttQkFDRyxjQUFEOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0csY0FBRCxhQUFXLFNBQVMsS0FBcEIsQUFBeUI7b0JBQXpCO3NCQUFBO0FBQUE7U0FGSixBQUNFLEFBQ0UsQUFHTDs7Ozs7RUFWcUIsTUFBTSxBLEFBYTlCOztrQkFBQSxBQUFlIiwiZmlsZSI6IlRlc3RBcnJvdy5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=

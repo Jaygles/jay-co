@@ -11,6 +11,10 @@ const ArrowGrid = styled('div')`
   grid-area: arrow;
 `;
 
+const ArrowWrap = styled('span')`
+  cursor: pointer;
+`;
+
 class TestArrow extends React.Component {
   _handleClick = () => {
     window.scrollTo(0, document.body.scrollHeight);
@@ -18,7 +22,7 @@ class TestArrow extends React.Component {
   render() {
     return (
       <ArrowGrid>
-        <div onClick={this._handleClick}>&#65086;</div>
+        <ArrowWrap onClick={this._handleClick}>&#65086;</ArrowWrap>
       </ArrowGrid>
     );
   }
