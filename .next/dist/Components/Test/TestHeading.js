@@ -43,7 +43,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Test/TestHeading.js';
 
 var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n'], ['\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n']),
-    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin-top: 10px;\n  margin-left: 70px;\n  font-family: IBM Plex Sans;\n  color: #c74e44;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #ef7c73;\n    margin-left: 30px;\n  }\n  &:last-of-type {\n    color: #ffc8c4;\n    margin-left: 40px;\n  }\n'], ['\n  margin-top: 10px;\n  margin-left: 70px;\n  font-family: IBM Plex Sans;\n  color: #c74e44;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #ef7c73;\n    margin-left: 30px;\n  }\n  &:last-of-type {\n    color: #ffc8c4;\n    margin-left: 40px;\n  }\n']);
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin-top: 10px;\n  margin-left: 70px;\n  font-family: IBM Plex Sans;\n  color: #402b1d;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #614b33;\n    margin-left: 30px;\n  }\n  &:last-of-type {\n    color: #84694c;\n    margin-left: 40px;\n  }\n'], ['\n  margin-top: 10px;\n  margin-left: 70px;\n  font-family: IBM Plex Sans;\n  color: #402b1d;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #614b33;\n    margin-left: 30px;\n  }\n  &:last-of-type {\n    color: #84694c;\n    margin-left: 40px;\n  }\n']);
 
 var HeadingWrap = (0, _reactEmotion2.default)('div')(_templateObject);
 

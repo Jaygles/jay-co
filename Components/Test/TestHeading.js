@@ -11,15 +11,15 @@ const HeadingSpan = styled('span')`
   margin-top: 10px;
   margin-left: 70px;
   font-family: IBM Plex Sans;
-  color: #c74e44;
+  color: #402b1d;
   font-size: calc(50px + 14vw);
   line-height: 70%;
   &:first-of-type {
-    color: #ef7c73;
+    color: #614b33;
     margin-left: 30px;
   }
   &:last-of-type {
-    color: #ffc8c4;
+    color: #84694c;
     margin-left: 40px;
   }
 `;
