@@ -7,6 +7,6 @@ export default styled('div')`
   grid-template-columns: 1fr 6fr;
   grid-template-rows: 1fr 50px;
   grid-template-areas:
-    ' heading   .   '
-    ' arrow   arrow ';
+    ' heading   animation   '
+    ' arrow     arrow       ';
 `;

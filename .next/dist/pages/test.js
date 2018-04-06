@@ -40,9 +40,17 @@ var _TestGrid = require('../Components/Test/TestGrid');
 
 var _TestGrid2 = _interopRequireDefault(_TestGrid);
 
+var _AnimationGrid = require('../Components/Grids/AnimationGrid');
+
+var _AnimationGrid2 = _interopRequireDefault(_AnimationGrid);
+
 var _TestHeading = require('../Components/Test/TestHeading');
 
 var _TestHeading2 = _interopRequireDefault(_TestHeading);
+
+var _AnimationContainer = require('../Components/Animation/AnimationContainer');
+
+var _AnimationContainer2 = _interopRequireDefault(_AnimationContainer);
 
 var _TestArrow = require('../Components/Test/TestArrow');
 
@@ -88,40 +96,50 @@ var Test = function (_React$Component) {
       return React.createElement(_Document2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 16
+          lineNumber: 18
         }
       }, React.createElement(_TestGrid2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 17
+          lineNumber: 19
         }
       }, React.createElement(_TestHeading2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 18
+          lineNumber: 20
         }
-      }), React.createElement(_TestArrow2.default, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 19
-        }
-      })), React.createElement(_Header2.default, {
+      }), React.createElement(_AnimationGrid2.default, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 21
         }
-      }), React.createElement(_MainGrid2.default, { key: 'layout', __source: {
+      }, React.createElement(_AnimationContainer2.default, {
+        __source: {
           fileName: _jsxFileName,
           lineNumber: 22
         }
+      })), React.createElement(_TestArrow2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 24
+        }
+      })), React.createElement(_Header2.default, {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        }
+      }), React.createElement(_MainGrid2.default, { key: 'layout', __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        }
       }, React.createElement(_Nav2.default, { isAuthenticated: this.props.isAuthenticated, __source: {
           fileName: _jsxFileName,
-          lineNumber: 23
+          lineNumber: 28
         }
       }), React.createElement(_PostList2.default, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 24
+          lineNumber: 29
         }
       })));
     }
@@ -133,4 +151,4 @@ var Test = function (_React$Component) {
 exports.default = (0, _withData2.default)({}, function (state) {
   return state;
 })(Test);
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Rlc3QuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJEb2N1bWVudCIsIndpdGhEYXRhIiwiVGVzdEdyaWQiLCJUZXN0SGVhZGluZyIsIlRlc3RBcnJvdyIsIkhlYWRlciIsIk5hdiIsIk1haW5HcmlkIiwiUG9zdExpc3QiLCJUZXN0IiwiaXNBdXRoZW50aWNhdGVkIiwicHJvcHMiLCJDb21wb25lbnQiLCJzdGF0ZSJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7QUFBQSxBQUFPOztJQUFQLEFBQVk7O0FBQ1osQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFpQjs7OztBQUN4QixBQUFPLEFBQWU7Ozs7QUFDdEIsQUFBTyxBQUFZOzs7O0FBQ25CLEFBQU8sQUFBUzs7OztBQUNoQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFjOzs7Ozs7Ozs7OztJLEFBRWY7Ozs7Ozs7Ozs7OzZCQUNLO1VBQUEsQUFDQyxrQkFBb0IsS0FEckIsQUFDMEIsTUFEMUIsQUFDQyxBQUNSOzttQkFDRSxBQUFDOztvQkFBRDtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0UsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxBQUFDOztvQkFBRDtzQkFERixBQUNFLEFBQ0E7QUFEQTtBQUFBLGdCQUNBLEFBQUM7O29CQUFEO3NCQUhKLEFBQ0UsQUFFRSxBQUVGO0FBRkU7QUFBQSxpQkFFRixBQUFDOztvQkFBRDtzQkFMRixBQUtFLEFBQ0E7QUFEQTtBQUFBLGdCQUNBLEFBQUMsb0NBQVMsS0FBVixBQUFjO29CQUFkO3NCQUFBLEFBQ0U7QUFERjtlQUNFLEFBQUMsK0JBQUksaUJBQWlCLEtBQUEsQUFBSyxNQUEzQixBQUFpQztvQkFBakM7c0JBREYsQUFDRSxBQUNBO0FBREE7Z0JBQ0EsQUFBQzs7b0JBQUQ7c0JBVE4sQUFDRSxBQU1FLEFBRUUsQUFJUDtBQUpPO0FBQUE7Ozs7O0VBWlMsTUFBTSxBLEFBbUJ6Qjs7MENBQWUsQUFBUyxJQUFJLFVBQUEsQUFBQyxPQUFEO1NBQUEsQUFBVztBQUF4QixDQUFBLEVBQWYsQUFBZSxBQUErQiIsImZpbGUiOiJ0ZXN0LmpzP2VudHJ5Iiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInBhZ2VzL3Rlc3QuanMiXSwibmFtZXMiOlsiUmVhY3QiLCJEb2N1bWVudCIsIndpdGhEYXRhIiwiVGVzdEdyaWQiLCJBbmltYXRpb25HcmlkIiwiVGVzdEhlYWRpbmciLCJBbmltYXRpb25Db250YWluZXIiLCJUZXN0QXJyb3ciLCJIZWFkZXIiLCJOYXYiLCJNYWluR3JpZCIsIlBvc3RMaXN0IiwiVGVzdCIsImlzQXV0aGVudGljYXRlZCIsInByb3BzIiwiQ29tcG9uZW50Iiwic3RhdGUiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQWM7Ozs7QUFDckIsQUFBTyxBQUFjOzs7O0FBQ3JCLEFBQU8sQUFBbUI7Ozs7QUFDMUIsQUFBTyxBQUFpQjs7OztBQUN4QixBQUFPLEFBQXdCOzs7O0FBQy9CLEFBQU8sQUFBZTs7OztBQUN0QixBQUFPLEFBQVk7Ozs7QUFDbkIsQUFBTyxBQUFTOzs7O0FBQ2hCLEFBQU8sQUFBYzs7OztBQUNyQixBQUFPLEFBQWM7Ozs7Ozs7Ozs7O0lBRWYsQTs7Ozs7Ozs7Ozs7NkJBQ0s7VUFBQSxBQUNDLGtCQUFvQixLQURyQixBQUMwQixNQUQxQixBQUNDLEFBQ1I7O21CQUNFLEFBQUM7O29CQUFEO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRSxBQUFDOztvQkFBRDtzQkFBQSxBQUNFO0FBREY7QUFBQSxlQUNFLEFBQUM7O29CQUFEO3NCQURGLEFBQ0UsQUFDQTtBQURBO0FBQUEsZ0JBQ0EsQUFBQzs7b0JBQUQ7c0JBQUEsQUFDRTtBQURGO0FBQUEsZUFDRSxBQUFDOztvQkFBRDtzQkFISixBQUVFLEFBQ0UsQUFFRjtBQUZFO0FBQUEsaUJBRUYsQUFBQzs7b0JBQUQ7c0JBTkosQUFDRSxBQUtFLEFBRUY7QUFGRTtBQUFBLGlCQUVGLEFBQUM7O29CQUFEO3NCQVJGLEFBUUUsQUFDQTtBQURBO0FBQUEsZ0JBQ0EsQUFBQyxvQ0FBUyxLQUFWLEFBQWM7b0JBQWQ7c0JBQUEsQUFDRTtBQURGO2VBQ0UsQUFBQywrQkFBSSxpQkFBaUIsS0FBQSxBQUFLLE1BQTNCLEFBQWlDO29CQUFqQztzQkFERixBQUNFLEFBQ0E7QUFEQTtnQkFDQSxBQUFDOztvQkFBRDtzQkFaTixBQUNFLEFBU0UsQUFFRSxBQUlQO0FBSk87QUFBQTs7Ozs7RUFmUyxNQUFNLEEsQUFzQnpCOzswQ0FBZSxBQUFTLElBQUksVUFBQSxBQUFDLE9BQUQ7U0FBQSxBQUFXO0FBQXhCLENBQUEsRUFBZixBQUFlLEFBQStCIiwiZmlsZSI6InRlc3QuanM/ZW50cnkiLCJzb3VyY2VSb290IjoiL1VzZXJzL2pheS9EZXNrdG9wL2NvZGUvcG9ydGZvbGlvL2pheS1jbyJ9

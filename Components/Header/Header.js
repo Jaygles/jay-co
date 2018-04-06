@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import styled, { css } from 'react-emotion';
 import * as Text from '../Bits/Text';
-import HeaderBorder from '../Bits/HeaderBorder';
 
 const Top = styled('header')`
   height: 100px;
