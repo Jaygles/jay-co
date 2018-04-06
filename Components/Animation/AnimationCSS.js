@@ -1,10 +1,6 @@
 import { css } from 'react-emotion';
 
 const AnimationCSS = css`
-  html,
-  body {
-    background-color: #83d18f;
-  }
   @keyframes conttest {
     0% {
       transform: translateY(0px);
@@ -20,6 +16,7 @@ const AnimationCSS = css`
     }
   }
   .container {
+    margin-left: 200px;
     width: 400px;
     height: 400px;
     position: relative;
@@ -28,7 +25,6 @@ const AnimationCSS = css`
     animation: conttest 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-    grid-area: animation;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -64,22 +60,22 @@ const AnimationCSS = css`
   }
   #cube .front {
     background-color: rgba(139, 69, 19, 1);
-    border-bottom: 1px solid #000;
+    border-bottom: 1.3px solid rgba(139, 69, 19, 1);
     transform: rotateY(0deg) translateZ(195px);
   }
   #cube .back {
     background-color: rgba(139, 69, 19, 1);
-    border-top: 1px solid #000;
+    border-top: 1.3px solid rgba(139, 69, 19, 1);
     transform: rotateX(180deg) translateZ(195px);
   }
   #cube .right {
     background-color: rgba(139, 69, 19, 1);
-    border-bottom: 1px solid #000;
+    border-bottom: 1.3px solid rgba(139, 69, 19, 1);
     transform: rotateY(90deg) translateZ(195px);
   }
   #cube .left {
     background-color: rgba(139, 69, 19, 1);
-    border-bottom: 1px solid #000;
+    border-bottom: 1.3px solid rgba(139, 69, 19, 1);
     transform: rotateY(-90deg) translateZ(195px);
   }
   #cube .top {
@@ -89,7 +85,7 @@ const AnimationCSS = css`
   }
   #cube .bottom {
     background-color: #ffc0cb;
-    transform: rotateX(-90deg) translateZ(-175px);
+    transform: rotateX(-90deg) translateZ(-175.5px);
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(11, 1fr);
@@ -139,8 +135,8 @@ const AnimationCSS = css`
   .a {
     height: 100%;
     width: 100%;
-    border-left: 1px solid #000;
-    border-top: 1px solid #000;
+    border-left: 1px solid green;
+    border-top: 1px solid green;
     border-radius: 1px;
     grid-area: a;
     background-color: green;
@@ -148,7 +144,7 @@ const AnimationCSS = css`
   .b {
     height: 100%;
     width: 100%;
-    border-top: 1px solid #000;
+    border-top: 1px solid grey;
     grid-area: b;
     background-color: grey;
     display: grid;
@@ -195,8 +191,8 @@ const AnimationCSS = css`
   .c {
     height: 100%;
     width: 100%;
-    border-right: 1px solid #000;
-    border-top: 1px solid #000;
+    border-right: 1px solid green;
+    border-top: 1px solid green;
     border-radius: 1px;
     grid-area: c;
     background-color: green;
@@ -204,7 +200,7 @@ const AnimationCSS = css`
   .d {
     height: 100%;
     width: 100%;
-    border-left: 1px solid #000;
+    border-left: 1px solid grey;
     grid-area: d;
     background-color: grey;
     display: grid;
@@ -327,7 +323,7 @@ const AnimationCSS = css`
   .f {
     height: 100%;
     width: 100%;
-    border-right: 1px solid #000;
+    border-right: 1px solid grey;
     grid-area: f;
     background-color: grey;
     display: grid;
@@ -374,8 +370,8 @@ const AnimationCSS = css`
   .g {
     height: 100%;
     width: 100%;
-    border-left: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-left: 1px solid green;
+    border-bottom: 1px solid green;
     border-radius: 1px;
     grid-area: g;
     background-color: green;
@@ -383,7 +379,7 @@ const AnimationCSS = css`
   .h {
     height: 100%;
     width: 100%;
-    border-bottom: 1px solid #000;
+    border-bottom: 1px solid grey;
     grid-area: h;
     background-color: grey;
     display: grid;
@@ -430,8 +426,8 @@ const AnimationCSS = css`
   .i {
     height: 100%;
     width: 100%;
-    border-right: 1px solid #000;
-    border-bottom: 1px solid #000;
+    border-right: 1px solid green;
+    border-bottom: 1px solid green;
     border-radius: 1px;
     grid-area: i;
     background-color: green;
@@ -1199,7 +1195,7 @@ const AnimationCSS = css`
     border: 1px solid #000;
     background-color: #dcdcdc;
     position: absolute;
-    transform: rotateY(90deg) translateZ(-2px) translateY(20px);
+    transform: rotateY(90deg) translateZ(-3px) translateY(20px);
   }
 `;
 
