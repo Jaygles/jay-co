@@ -67,7 +67,7 @@ var TestDescription = function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 17
         }
-      }, React.createElement(Text.Heading3, {
+      }, React.createElement(Text.MainDescription, {
         __source: {
           fileName: _jsxFileName,
           lineNumber: 18

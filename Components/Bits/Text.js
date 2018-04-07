@@ -59,6 +59,13 @@ export const PageTitle = styled('h1')`
   font-size: 12px;
 `;
 
+export const MainDescription = styled('p')`
+  color: rgb(220, 220, 220);
+  font-weight: 600;
+  line-height: 28px;
+  font-size: 24px;
+`;
+
 export const Anchor = (props) => {
   const basicStyles = css`
     text-decoration: none;

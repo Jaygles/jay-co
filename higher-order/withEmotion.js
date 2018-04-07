@@ -26,12 +26,16 @@ const injectGlobalStyles = () => injectGlobal`
     display: block;
   }
   html, body {
-    height: 100vh;
+    width: 100%;
     background-color: #001b47;
     color: rgb(220, 220, 220);
     font-family: 'IBM Plex Serif', serif;
     font-size: 12px;
     scroll-behavior: smooth;
+  }
+  body {
+    border-top: 4px solid #83d18f;
+    border-left: 4px solid #83d18f;
   }
 `;
 

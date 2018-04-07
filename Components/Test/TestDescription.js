@@ -15,10 +15,10 @@ class TestDescription extends React.Component {
   render() {
     return (
       <DescriptionWrap>
-        <Text.Heading3>
+        <Text.MainDescription>
           Jacob Sullivan is a Kansas City based Web Developer, noobie blogger
           and avid learner.
-        </Text.Heading3>
+        </Text.MainDescription>
       </DescriptionWrap>
     );
   }
