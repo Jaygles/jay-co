@@ -1138,7 +1138,7 @@ const AnimationCSS = css`
     align-items: center;
     justify-content: center;
     position: absolute;
-    transform: rotateY(90deg) translateZ(-10px) translateY(65px);
+    transform: rotateY(90deg) translateZ(-12px) translateY(65px);
   }
   .pole-sign-text {
     font-size: 12px;
@@ -1155,7 +1155,7 @@ const AnimationCSS = css`
     align-items: center;
     justify-content: center;
     position: absolute;
-    transform: rotateY(90deg) translateZ(-9px) translateY(65px);
+    transform: rotateY(90deg) translateZ(-10px) translateY(65px);
   }
   @keyframes bus-anim {
     0% {
