@@ -842,6 +842,7 @@ const AnimationCSS = css`
     justify-content: center;
   }
   .store-d-sign-text {
+    color: black;
     transform: rotateZ(175deg);
     font-family: 'Jua', sans-serif;
   }
@@ -1142,6 +1143,7 @@ const AnimationCSS = css`
   .pole-sign-text {
     font-size: 12px;
     font-family: Tahoma, Geneva, sans-serif;
+    color: black;
     transform: rotateZ(180deg) rotateY(180deg);
   }
   .pole-sign-back {
@@ -1153,7 +1155,7 @@ const AnimationCSS = css`
     align-items: center;
     justify-content: center;
     position: absolute;
-    transform: rotateY(90deg) translateZ(-10px) translateY(65px);
+    transform: rotateY(90deg) translateZ(-9px) translateY(65px);
   }
   @keyframes bus-anim {
     0% {
