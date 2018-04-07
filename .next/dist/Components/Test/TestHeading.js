@@ -42,8 +42,8 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Test/TestHeading.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n'], ['\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n']),
-    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin-top: 10px;\n  margin-left: 70px;\n  font-family: IBM Plex Sans;\n  color: #402b1d;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #614b33;\n    margin-left: 30px;\n  }\n  &:last-of-type {\n    color: #84694c;\n    margin-left: 40px;\n  }\n'], ['\n  margin-top: 10px;\n  margin-left: 70px;\n  font-family: IBM Plex Sans;\n  color: #402b1d;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #614b33;\n    margin-left: 30px;\n  }\n  &:last-of-type {\n    color: #84694c;\n    margin-left: 40px;\n  }\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  margin-top: 30px;\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n'], ['\n  margin-top: 30px;\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n']),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin-top: 30px;\n  margin-left: 100px;\n  font-family: IBM Plex Sans;\n  font-weight: bold;\n  color: #83d18f;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #83d18f;\n    margin-left: 60px;\n  }\n  &:last-of-type {\n    color: #83d18f;\n    margin-top: 50px;\n    margin-left: 150px;\n  }\n'], ['\n  margin-top: 30px;\n  margin-left: 100px;\n  font-family: IBM Plex Sans;\n  font-weight: bold;\n  color: #83d18f;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    color: #83d18f;\n    margin-left: 60px;\n  }\n  &:last-of-type {\n    color: #83d18f;\n    margin-top: 50px;\n    margin-left: 150px;\n  }\n']);
 
 var HeadingWrap = (0, _reactEmotion2.default)('div')(_templateObject);
 
@@ -68,22 +68,22 @@ var TestHeading = function (_React$Component) {
       return React.createElement(HeadingWrap, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 31
+          lineNumber: 34
         }
       }, React.createElement(HeadingSpan, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 35
         }
       }, 'J'), React.createElement(HeadingSpan, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 33
+          lineNumber: 36
         }
       }, 'A'), React.createElement(HeadingSpan, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 37
         }
       }, 'Y'));
     }
@@ -93,4 +93,4 @@ var TestHeading = function (_React$Component) {
 }(React.Component);
 
 exports.default = TestHeading;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0SGVhZGluZy5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsInN0eWxlZCIsIkhlYWRpbmdXcmFwIiwiSGVhZGluZ1NwYW4iLCJUZXN0SGVhZGluZyIsInByb3BzIiwidGFyZ2V0IiwibGFiZWwiLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87O0lBQVAsQUFBWTs7QUFDWixBQUFPOzs7Ozs7Ozs7Ozs7O0FBRVAsSUFBTSxjQUFjLDRCQUFkLEFBQWMsQUFBTyxPQUEzQjs7QUFNQSxJQUFNLGNBQWMsNEJBQWQsQUFBYyxBQUFPLFFBQTNCOztJQWlCTSxBOzs7Ozs7Ozs7Ozs2QkFDSzttQkFDbUIsS0FEbkIsQUFDd0I7VUFEeEIsQUFDQyxnQkFERCxBQUNDO1VBREQsQUFDUyxlQURULEFBQ1MsQUFDaEI7O21CQUNHLGNBQUQ7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FERixBQUNFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FGRixBQUVFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FKSixBQUNFLEFBR0UsQUFHTDs7Ozs7RUFWdUIsTUFBTSxBLEFBYWhDOztrQkFBQSxBQUFlIiwiZmlsZSI6IlRlc3RIZWFkaW5nLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0SGVhZGluZy5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsInN0eWxlZCIsIkhlYWRpbmdXcmFwIiwiSGVhZGluZ1NwYW4iLCJUZXN0SGVhZGluZyIsInByb3BzIiwidGFyZ2V0IiwibGFiZWwiLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87O0lBQVAsQUFBWTs7QUFDWixBQUFPOzs7Ozs7Ozs7Ozs7O0FBRVAsSUFBTSxjQUFjLDRCQUFkLEFBQWMsQUFBTyxPQUEzQjs7QUFPQSxJQUFNLGNBQWMsNEJBQWQsQUFBYyxBQUFPLFFBQTNCOztJQW1CTSxBOzs7Ozs7Ozs7Ozs2QkFDSzttQkFDbUIsS0FEbkIsQUFDd0I7VUFEeEIsQUFDQyxnQkFERCxBQUNDO1VBREQsQUFDUyxlQURULEFBQ1MsQUFDaEI7O21CQUNHLGNBQUQ7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FERixBQUNFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FGRixBQUVFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FKSixBQUNFLEFBR0UsQUFHTDs7Ozs7RUFWdUIsTUFBTSxBLEFBYWhDOztrQkFBQSxBQUFlIiwiZmlsZSI6IlRlc3RIZWFkaW5nLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==

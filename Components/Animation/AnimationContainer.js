@@ -4,154 +4,163 @@ import styled from 'react-emotion';
 
 const AnimationWrap = styled('div')`
   grid-area: animation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 class AnimationContainer extends React.Component {
   render() {
     return (
       <AnimationWrap className={AnimationCSS}>
-        <section className="container">
+        <section class="container">
           <div id="cube">
-            <figure className="front" />
-            <figure className="back" />
-            <figure className="right" />
-            <figure className="left" />
-            <figure className="top" />
-            <figure className="bottom">
-              <div className="a" />
-              <div className="b">
-                <div className="ba" />
-                <div className="bb" />
-                <div className="bc" />
-                <div className="bd" />
-                <div className="be" />
-                <div className="bf" />
+            <figure class="front" />
+            <figure class="back" />
+            <figure class="right" />
+            <figure class="left" />
+            <figure class="top" />
+            <figure class="bottom">
+              <div class="a" />
+              <div class="b">
+                <div class="ba" />
+                <div class="bb" />
+                <div class="bc" />
+                <div class="bd" />
+                <div class="be" />
+                <div class="bf" />
               </div>
-              <div className="c" />
-              <div className="d">
-                <div className="da" />
-                <div className="db" />
-                <div className="dc" />
-                <div className="dd" />
-                <div className="de" />
-                <div className="df" />
+              <div class="c" />
+              <div class="d">
+                <div class="da" />
+                <div class="db" />
+                <div class="dc" />
+                <div class="dd" />
+                <div class="de" />
+                <div class="df" />
               </div>
-              <div className="e">
-                <div className="ea" />
-                <div className="eb" />
-                <div className="ec" />
-                <div className="ed" />
-                <div className="ee" />
-                <div className="ef" />
-                <div className="eg" />
-                <div className="eh" />
-                <div className="ei" />
-                <div className="ej" />
-                <div className="ek" />
+              <div class="e">
+                <div class="ea" />
+                <div class="eb" />
+                <div class="ec" />
+                <div class="ed" />
+                <div class="ee" />
+                <div class="ef" />
+                <div class="eg" />
+                <div class="eh" />
+                <div class="ei" />
+                <div class="ej" />
+                <div class="ek" />
               </div>
-              <div className="f">
-                <div className="fa" />
-                <div className="fb" />
-                <div className="fc" />
-                <div className="fd" />
-                <div className="fe" />
-                <div className="ff" />
+              <div class="f">
+                <div class="fa" />
+                <div class="fb" />
+                <div class="fc" />
+                <div class="fd" />
+                <div class="fe" />
+                <div class="ff" />
               </div>
-              <div className="g" />
-              <div className="h">
-                <div className="ha" />
-                <div className="hb" />
-                <div className="hc" />
-                <div className="hd" />
-                <div className="he" />
-                <div className="hf" />
+              <div class="g" />
+              <div class="h">
+                <div class="ha" />
+                <div class="hb" />
+                <div class="hc" />
+                <div class="hd" />
+                <div class="he" />
+                <div class="hf" />
               </div>
-              <div className="i" />
+              <div class="i" />
             </figure>
           </div>
-          <div className="bldg">
-            <div className="bldg-a">
-              <div className="bldg-a-wa" />
-              <div className="bldg-a-wb" />
-              <div className="bldg-a-wc" />
-              <div className="bldg-a-wd" />
-              <div className="bldg-a-we" />
-              <div className="bldg-a-wf" />
+          <div class="bldg">
+            <div class="bldg-a">
+              <div class="bldg-a-wa" />
+              <div class="bldg-a-wb" />
+              <div class="bldg-a-wc" />
+              <div class="bldg-a-wd" />
+              <div class="bldg-a-we" />
+              <div class="bldg-a-wf" />
+              <div class="bldg-a-wg" />
+              <div class="bldg-a-wh" />
             </div>
-            <div className="bldg-b">
-              <div className="bldg-b-wa" />
-              <div className="bldg-b-wb" />
-              <div className="bldg-b-wc" />
-              <div className="bldg-b-wd" />
-              <div className="bldg-b-we" />
-              <div className="bldg-b-wf" />
+            <div class="bldg-b">
+              <div class="bldg-b-wa" />
+              <div class="bldg-b-wb" />
+              <div class="bldg-b-wc" />
+              <div class="bldg-b-wd" />
+              <div class="bldg-b-we" />
+              <div class="bldg-b-wf" />
+              <div class="bldg-b-wg" />
+              <div class="bldg-b-wh" />
             </div>
-            <div className="bldg-c">
-              <div className="bldg-c-wa" />
-              <div className="bldg-c-wb" />
-              <div className="bldg-c-wc" />
-              <div className="bldg-c-wd" />
-              <div className="bldg-c-we" />
-              <div className="bldg-c-wf" />
-              <div className="bldg-c-d" />
+            <div class="bldg-c">
+              <div class="bldg-c-wa" />
+              <div class="bldg-c-wb" />
+              <div class="bldg-c-wc" />
+              <div class="bldg-c-wd" />
+              <div class="bldg-c-we" />
+              <div class="bldg-c-wf" />
+              <div class="bldg-c-d" />
             </div>
-            <div className="bldg-d">
-              <div className="bldg-d-wa" />
-              <div className="bldg-d-wb" />
-              <div className="bldg-d-wc" />
-              <div className="bldg-d-wd" />
-              <div className="bldg-d-we" />
-              <div className="bldg-d-wf" />
+            <div class="bldg-d">
+              <div class="bldg-d-wa" />
+              <div class="bldg-d-wb" />
+              <div class="bldg-d-wc" />
+              <div class="bldg-d-wd" />
+              <div class="bldg-d-we" />
+              <div class="bldg-d-wf" />
+              <div class="bldg-d-wg" />
+              <div class="bldg-d-wh" />
             </div>
           </div>
-          <div className="store">
-            <div className="store-a" />
-            <div className="store-b">
-              <div className="store-b-a" />
-              <div className="store-b-b" />
+          <div class="store">
+            <div class="store-a" />
+            <div class="store-b">
+              <div class="store-b-a" />
+              <div class="store-b-b" />
             </div>
-            <div className="store-c" />
-            <div className="store-d">
-              <div className="store-d-sign">
-                <p className="store-d-sign-text">Frank's</p>
+            <div class="store-c" />
+            <div class="store-d">
+              <div class="store-d-sign">
+                <p class="store-d-sign-text">Frank's</p>
               </div>
-              <div className="store-d-d" />
+              <div class="store-d-d" />
             </div>
-            <div className="store-e" />
+            <div class="store-e" />
           </div>
-          <div className="tree">
-            <div className="tree-a" />
-            <div className="tree-b" />
-            <div className="tree-c" />
-            <div className="tree-d" />
-            <div className="tree-e" />
-            <div className="tree-f" />
-            <div className="tree-g" />
-            <div className="tree-h" />
-            <div className="tree-i" />
-            <div className="tree-j" />
-            <div className="tree-k" />
-            <div className="tree-l" />
-            <div className="tree-m" />
-            <div className="tree-n" />
-            <div className="tree-o" />
-            <div className="tree-p" />
+          <div class="tree">
+            <div class="tree-a" />
+            <div class="tree-b" />
+            <div class="tree-c" />
+            <div class="tree-d" />
+            <div class="tree-e" />
+            <div class="tree-f" />
+            <div class="tree-g" />
+            <div class="tree-h" />
+            <div class="tree-i" />
+            <div class="tree-j" />
+            <div class="tree-k" />
+            <div class="tree-l" />
+            <div class="tree-m" />
+            <div class="tree-n" />
+            <div class="tree-o" />
+            <div class="tree-p" />
           </div>
-          <div className="pole">
-            <div className="pole-a" />
-            <div className="pole-b" />
-            <div className="pole-c" />
-            <div className="pole-d" />
-            <div className="pole-sign">
-              <p className="pole-sign-text">BUS</p>
+          <div class="pole">
+            <div class="pole-a" />
+            <div class="pole-b" />
+            <div class="pole-c" />
+            <div class="pole-d" />
+            <div class="pole-sign">
+              <p class="pole-sign-text">BUS</p>
             </div>
-            <div className="pole-sign-back" />
+            <div class="pole-sign-back" />
           </div>
-          <div className="bus-stop">
-            <div className="bus-stop-a" />
-            <div className="bus-stop-b" />
-            <div className="bus-stop-c" />
-            <div className="bus-stop-d" />
+          <div class="bus-stop">
+            <div class="bus-stop-a" />
+            <div class="bus-stop-b" />
+            <div class="bus-stop-c" />
+            <div class="bus-stop-d" />
           </div>
         </section>
       </AnimationWrap>

@@ -1,7 +1,7 @@
 import { css } from 'react-emotion';
 
 const AnimationCSS = css`
-  @keyframes conttest {
+  @keyframes container-anim {
     0% {
       transform: translateY(0px);
     }
@@ -16,13 +16,12 @@ const AnimationCSS = css`
     }
   }
   .container {
-    margin-left: 200px;
     width: 400px;
     height: 400px;
     position: relative;
     perspective: 1000px;
     transform: rotateZ(0deg) translateY(0px);
-    animation: conttest 10s;
+    animation: container-anim 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     display: flex;
@@ -91,7 +90,7 @@ const AnimationCSS = css`
     grid-template-rows: repeat(11, 1fr);
     grid-template-areas: 'a a a a b b b c c c c' 'a a a a b b b c c c c' 'a a a a b b b c c c c' 'a a a a b b b c c c c' 'd d d d e e e f f f f' 'd d d d e e e f f f f' 'd d d d e e e f f f f' 'g g g g h h h i i i i' 'g g g g h h h i i i i' 'g g g g h h h i i i i' 'g g g g h h h i i i i';
   }
-  @keyframes test {
+  @keyframes cube-anim {
     0% {
       transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn);
     }
@@ -107,7 +106,8 @@ const AnimationCSS = css`
   }
   #cube {
     transform: rotate3d(1, 0, 0, 0.5turn);
-    animation: test 15s;
+    transition: transform 1s;
+    animation: cube-anim 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
@@ -128,9 +128,6 @@ const AnimationCSS = css`
   }
   #cube.show-bottom {
     transform: translateZ(-100px) rotateX(90deg);
-  }
-  #cube {
-    transition: transform 1s;
   }
   .a {
     height: 100%;
@@ -432,7 +429,7 @@ const AnimationCSS = css`
     grid-area: i;
     background-color: green;
   }
-  @keyframes bldg-test {
+  @keyframes bldg-anim {
     0% {
       transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(100px)
         translateX(100px);
@@ -458,7 +455,7 @@ const AnimationCSS = css`
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateX(100px)
       translateZ(100px);
-    animation: bldg-test 15s;
+    animation: bldg-anim 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
   }
@@ -470,9 +467,9 @@ const AnimationCSS = css`
     position: absolute;
     transform: rotateY(0deg) translateZ(40px) translateY(20px);
     display: grid;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(17, 1fr);
     grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . a a . . b b . . ' ' . . a a . . b b . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . c c . . d d . . ' ' . . c c . . d d . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . e e . . f f . . ' ' . . e e . . f f . . ' ' . . . . . . . . . . ';
+    grid-template-areas: ' . . . . . . . . . . ' ' . . a a . . b b . . ' ' . . a a . . b b . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . c c . . d d . . ' ' . . c c . . d d . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . e e . . f f . . ' ' . . e e . . f f . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . g g . . h h . . ' ' . . g g . . h h . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ';
   }
   .bldg-a-wa {
     height: 100%;
@@ -516,6 +513,20 @@ const AnimationCSS = css`
     background-color: #d3d3d3;
     grid-area: f;
   }
+  .bldg-a-wg {
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: #d3d3d3;
+    grid-area: g;
+  }
+  .bldg-a-wh {
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: #d3d3d3;
+    grid-area: h;
+  }
   .bldg-b {
     height: 200px;
     width: 80px;
@@ -524,9 +535,9 @@ const AnimationCSS = css`
     position: absolute;
     transform: rotateY(180deg) translateZ(40px) translateY(20px);
     display: grid;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(17, 1fr);
     grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . a a . . b b . . ' ' . . a a . . b b . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . c c . . d d . . ' ' . . c c . . d d . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . e e . . f f . . ' ' . . e e . . f f . . ' ' . . . . . . . . . . ';
+    grid-template-areas: ' . . . . . . . . . . ' ' . . a a . . b b . . ' ' . . a a . . b b . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . c c . . d d . . ' ' . . c c . . d d . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . e e . . f f . . ' ' . . e e . . f f . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . g g . . h h . . ' ' . . g g . . h h . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ';
   }
   .bldg-b-wa {
     height: 100%;
@@ -570,6 +581,20 @@ const AnimationCSS = css`
     background-color: #d3d3d3;
     grid-area: f;
   }
+  .bldg-b-wg {
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: #d3d3d3;
+    grid-area: g;
+  }
+  .bldg-b-wh {
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: #d3d3d3;
+    grid-area: h;
+  }
   .bldg-c {
     height: 200px;
     width: 80px;
@@ -578,9 +603,9 @@ const AnimationCSS = css`
     position: absolute;
     transform: rotateY(-90deg) translateZ(40px) translateY(20px);
     display: grid;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(17, 1fr);
     grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: ' . . . . g g . . . . ' ' . . . . g g . . . . ' ' . . . . g g . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . a a . . b b . . ' ' . . a a . . b b . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . c c . . d d . . ' ' . . c c . . d d . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . e e . . f f . . ' ' . . e e . . f f . . ' ' . . . . . . . . . . ';
+    grid-template-areas: ' . . . . g g . . . . ' ' . . . . g g . . . . ' ' . . . . g g . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . a a . . b b . . ' ' . . a a . . b b . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . c c . . d d . . ' ' . . c c . . d d . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . e e . . f f . . ' ' . . e e . . f f . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ';
   }
   .bldg-c-wa {
     height: 100%;
@@ -639,9 +664,9 @@ const AnimationCSS = css`
     position: absolute;
     transform: rotateY(90deg) translateZ(40px) translateY(20px);
     display: grid;
-    grid-template-rows: repeat(16, 1fr);
+    grid-template-rows: repeat(17, 1fr);
     grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . a a . . b b . . ' ' . . a a . . b b . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . c c . . d d . . ' ' . . c c . . d d . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . e e . . f f . . ' ' . . e e . . f f . . ' ' . . . . . . . . . . ';
+    grid-template-areas: ' . . . . . . . . . . ' ' . . a a . . b b . . ' ' . . a a . . b b . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . c c . . d d . . ' ' . . c c . . d d . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . e e . . f f . . ' ' . . e e . . f f . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . g g . . h h . . ' ' . . g g . . h h . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ';
   }
   .bldg-d-wa {
     height: 100%;
@@ -685,7 +710,21 @@ const AnimationCSS = css`
     background-color: #d3d3d3;
     grid-area: f;
   }
-  @keyframes store-test {
+  .bldg-d-wg {
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: #d3d3d3;
+    grid-area: g;
+  }
+  .bldg-d-wh {
+    height: 100%;
+    width: 100%;
+    border: 1px solid grey;
+    background-color: #d3d3d3;
+    grid-area: h;
+  }
+  @keyframes store-anim {
     0% {
       transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(120px)
         translateX(-120px);
@@ -725,7 +764,7 @@ const AnimationCSS = css`
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateX(-120px)
       translateZ(120px);
-    animation: store-test 15s, store-index 15s;
+    animation: store-anim 15s, store-index 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     z-index: -1;
@@ -825,7 +864,7 @@ const AnimationCSS = css`
     grid-template-columns: repeat(10, 1fr);
     grid-template-areas: ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ';
   }
-  @keyframes tree-test {
+  @keyframes tree-anim {
     0% {
       transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-120px)
         translateX(-120px);
@@ -867,7 +906,7 @@ const AnimationCSS = css`
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateX(-120px)
       translateZ(-120px);
-    animation: tree-test 15s, tree-index 15s;
+    animation: tree-anim 15s, tree-index 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     z-index: 0;
@@ -1012,7 +1051,7 @@ const AnimationCSS = css`
     position: absolute;
     transform: rotateX(-90deg) translateZ(150px);
   }
-  @keyframes pole-test {
+  @keyframes pole-anim {
     0% {
       transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-100px)
         translateX(60px);
@@ -1052,7 +1091,7 @@ const AnimationCSS = css`
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-100px)
       translateX(60px);
-    animation: pole-test 15s, pole-index 15s;
+    animation: pole-anim 15s, pole-index 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     z-index: 1;
@@ -1116,7 +1155,7 @@ const AnimationCSS = css`
     position: absolute;
     transform: rotateY(90deg) translateZ(-10px) translateY(65px);
   }
-  @keyframes bus-test {
+  @keyframes bus-anim {
     0% {
       transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-140px)
         translateX(80px);
@@ -1159,7 +1198,7 @@ const AnimationCSS = css`
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-140px)
       translateX(80px);
-    animation: bus-test 15s, bus-index 15s;
+    animation: bus-anim 15s, bus-index 15s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     z-index: 2;

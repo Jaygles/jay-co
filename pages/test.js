@@ -5,6 +5,7 @@ import TestGrid from '../Components/Test/TestGrid';
 import AnimationGrid from '../Components/Grids/AnimationGrid';
 import TestHeading from '../Components/Test/TestHeading';
 import AnimationContainer from '../Components/Animation/AnimationContainer';
+import TestDescription from '../Components/Test/TestDescription';
 import TestArrow from '../Components/Test/TestArrow';
 import Header from '../Components/Header/Header';
 import Nav from '../Components/Nav/Nav';
@@ -20,6 +21,7 @@ class Test extends React.Component {
           <TestHeading />
           <AnimationGrid>
             <AnimationContainer />
+            <TestDescription />
           </AnimationGrid>
           <TestArrow />
         </TestGrid>

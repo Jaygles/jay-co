@@ -5,10 +5,11 @@ export default styled('div')`
   width: 100%;
   grid-area: animation;
   display: grid;
-  grid-template-columns: 1fr 1fr 1.5fr;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;
   grid-template-areas:
-    ' .       .       . '
-    ' .   animation   . '
-    ' .  description  . ';
+    '  animation  '
+    ' description ';
+  align-items: center;
+  justify-items: center;
 `;

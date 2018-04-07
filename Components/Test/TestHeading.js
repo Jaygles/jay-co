@@ -2,25 +2,28 @@ import * as React from 'react';
 import styled from 'react-emotion';
 
 const HeadingWrap = styled('div')`
+  margin-top: 30px;
   display: flex;
   flex-direction: column;
   grid-area: heading;
 `;
 
 const HeadingSpan = styled('span')`
-  margin-top: 10px;
-  margin-left: 70px;
+  margin-top: 30px;
+  margin-left: 100px;
   font-family: IBM Plex Sans;
-  color: #402b1d;
+  font-weight: bold;
+  color: #83d18f;
   font-size: calc(50px + 14vw);
   line-height: 70%;
   &:first-of-type {
-    color: #614b33;
-    margin-left: 30px;
+    color: #83d18f;
+    margin-left: 60px;
   }
   &:last-of-type {
-    color: #84694c;
-    margin-left: 40px;
+    color: #83d18f;
+    margin-top: 50px;
+    margin-left: 150px;
   }
 `;
 

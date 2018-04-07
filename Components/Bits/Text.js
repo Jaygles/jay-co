@@ -6,14 +6,14 @@ export const PortfolioBody = styled('div')`
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: rgb(56, 56, 60);
+  color: rgb(220, 220, 220);
 `;
 
 export const PostBody = styled('div')`
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: rgb(56, 56, 60);
+  color: rgb(220, 220, 220);
 `;
 
 export const Heading1 = styled('h1')`
@@ -21,39 +21,39 @@ export const Heading1 = styled('h1')`
   font-size: 40px;
   line-height: 48px;
   font-weight: 600;
-  color: rgb(56, 56, 60);
+  color: rgb(220, 220, 220);
 `;
 
 export const Heading2 = styled('h1')`
   font-weight: 400;
-  color: rgb(56, 56, 60);
+  color: rgb(220, 220, 220);
   line-height: 20px;
   font-size: 12px;
 `;
 
 export const Heading3 = styled('h1')`
   font-weight: 400;
-  color: rgb(56, 56, 60);
+  color: rgb(220, 220, 220);
   line-height: 20px;
   font-size: 12px;
 `;
 
 export const Heading4 = styled('h1')`
   font-weight: 400;
-  color: rgb(56, 56, 60);
+  color: rgb(220, 220, 220);
   line-height: 20px;
   font-size: 12px;
 `;
 
 export const Paragraph = styled('p')`
   font-weight: 400;
-  color: rgb(56, 56, 60);
+  color: rgb(220, 220, 220);
   line-height: 20px;
   font-size: 12px;
 `;
 
 export const PageTitle = styled('h1')`
-  color: rgb(56, 56, 60);
+  color: rgb(220, 220, 220);
   font-weight: 600;
   line-height: 20px;
   font-size: 12px;
@@ -64,7 +64,7 @@ export const Anchor = (props) => {
     text-decoration: none;
     font-size: 24px;
     font-weight: 400;
-    color: #0d0d0d;
+    color: rgb(220, 220, 220);
     &:visited {
       color: #000000;
     }
