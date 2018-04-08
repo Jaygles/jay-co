@@ -725,8 +725,8 @@ const AnimationCSS = css`
     grid-area: h;
   }
   .bldg-sign {
-    height: 30px;
-    width: 35px;
+    height: 35px;
+    width: 40px;
     border: 4px solid #f7fbf5;
     border-radius: 50%;
     box-shadow: 1px 1px 0 #b32d3b, -1px 1px 0 #b32d3b, 1px -1px 0 #b32d3b,
