@@ -112,17 +112,51 @@ class AnimationContainer extends React.Component {
               <div class="bldg-d-wg" />
               <div class="bldg-d-wh" />
             </div>
+            <div class="bldg-sign">
+              <p class="bldg-sign-text">WESTERN AUTO</p>
+            </div>
+            <div class="bldg-sign-pole-a" />
+            <div class="bldg-sign-pole-b" />
           </div>
           <div class="store">
-            <div class="store-a" />
+            <div class="store-a">
+              <div class="store-aa" />
+              <div class="store-ab" />
+              <div class="store-ac" />
+              <div class="store-ad" />
+              <div class="store-ae" />
+              <div class="store-af" />
+              <div class="store-ag" />
+              <div class="store-ah" />
+              <div class="store-ai" />
+              <div class="store-aj" />
+              <div class="store-ak" />
+              <div class="store-al" />
+              <div class="store-am" />
+              <div class="store-an" />
+              <div class="store-ao" />
+              <div class="store-ap" />
+              <div class="store-aq" />
+              <div class="store-ar" />
+              <div class="store-as" />
+              <div class="store-at" />
+              <div class="store-au" />
+              <div class="store-av" />
+              <div class="store-aw" />
+              <div class="store-ax" />
+              <div class="store-ay" />
+              <div class="store-az" />
+            </div>
             <div class="store-b">
               <div class="store-b-a" />
               <div class="store-b-b" />
             </div>
             <div class="store-c" />
             <div class="store-d">
+              <div class="store-d-wa" />
+              <div class="store-d-wb" />
               <div class="store-d-sign">
-                <p class="store-d-sign-text">Frank's</p>
+                <p class="store-d-sign-text">It's a beuatiful day</p>
               </div>
               <div class="store-d-d" />
             </div>

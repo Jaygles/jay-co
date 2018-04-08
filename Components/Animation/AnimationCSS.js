@@ -84,7 +84,7 @@ const AnimationCSS = css`
   }
   #cube .bottom {
     background-color: #ffc0cb;
-    transform: rotateX(-90deg) translateZ(-175.5px);
+    transform: rotateX(-90deg) translateZ(-174.5px);
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(11, 1fr);
@@ -724,6 +724,53 @@ const AnimationCSS = css`
     background-color: #d3d3d3;
     grid-area: h;
   }
+  .bldg-sign {
+    height: 30px;
+    width: 35px;
+    border: 4px solid #f7fbf5;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0 #b32d3b, -1px 1px 0 #b32d3b, 1px -1px 0 #b32d3b,
+      -1px -1px 0 #b32d3b;
+    background-color: rgba(0, 0, 0, 0);
+    position: absolute;
+    transform: rotateY(-90deg) translateZ(0px) translateY(223px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bldg-sign-text {
+    text-align: center;
+    color: #b32d3b;
+    font-size: 13px;
+    text-shadow: 1px 1px 0 black, -1px 1px 0 black, 1px -1px 0 black,
+      -1px -1px 0 #000;
+    transform: rotateZ(180deg);
+    font-family: 'Jua', sans-serif;
+  }
+  .bldg-sign-pole-a {
+    height: 30px;
+    width: 3px;
+    border-radius: 25%;
+    background-color: grey;
+    position: absolute;
+    transform: translateZ(16px) translateY(214px) translateX(27px)
+      rotateZ(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .bldg-sign-pole-b {
+    height: 30px;
+    width: 3px;
+    border-radius: 25%;
+    background-color: grey;
+    position: absolute;
+    transform: translateZ(-16px) translateY(214px) translateX(27px)
+      rotateZ(45deg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   @keyframes store-anim {
     0% {
       transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(120px)
@@ -773,25 +820,25 @@ const AnimationCSS = css`
     height: 65px;
     width: 100px;
     border: 1px solid #000;
-    background-color: #841f27;
+    background-color: #b76b4d;
     position: absolute;
     transform: rotateY(0deg) translateZ(50px) translateY(20px);
     display: grid;
-    grid-template-rows: repeat(8, 1fr);
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-areas: ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ' ' . . . . . . . . . . ';
+    grid-template-rows: repeat(16, 1fr);
+    grid-template-columns: repeat(14, 1fr);
+    grid-template-areas: ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . ';
   }
   .store-b {
     height: 65px;
     width: 100px;
     border: 1px solid #000;
-    background-color: #841f27;
+    background-color: #b76b4d;
     position: absolute;
     transform: rotateY(180deg) translateZ(50px) translateY(20px);
     display: grid;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(20, 1fr);
-    grid-template-areas: ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ';
+    grid-template-areas: ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . a a a a a a a a . . b b b b b b b b . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ' ' . . . . . . . . . . . . . . . . . . . . ';
   }
   .store-b-a {
     height: 100%;
@@ -811,7 +858,7 @@ const AnimationCSS = css`
     height: 65px;
     width: 100px;
     border: 1px solid #000;
-    background-color: #841f27;
+    background-color: #b76b4d;
     position: absolute;
     transform: rotateY(-90deg) translateZ(50px) translateY(20px);
     display: grid;
@@ -823,41 +870,60 @@ const AnimationCSS = css`
     height: 65px;
     width: 100px;
     border: 1px solid #000;
-    background-color: #841f27;
+    background-color: #b76b4d;
     position: absolute;
     transform: rotateY(90deg) translateZ(50px) translateY(20px);
     display: grid;
     grid-template-rows: repeat(16, 1fr);
     grid-template-columns: repeat(20, 1fr);
-    grid-template-areas: ' . . . . . . . . . b b . . . . . . . . .' ' . . . . . . . . . b b . . . . . . . . .' ' . . . . . . . . . b b . . . . . . . . .' ' . . . . . . . . . b b . . . . . . . . .' ' . . . . . . . . . b b . . . . . . . . .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . . a a a a a a a a a a a a . . . .' ' . . . . a a a a a a a a a a a a . . . .' ' . . . . a a a a a a a a a a a a . . . .' ' . . . . a a a a a a a a a a a a . . . .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . . . . . . . . . . . . . . . . . .';
+    grid-template-areas: ' . . . . . . . . . b b . . . . . . . . .' ' . . . . . . . . . b b . . . . . . . . .' ' . . . . . . . . . b b . . . . . . . . .' ' . c c c c c c . . b b . . d d d d d d .' ' . c c c c c c . . b b . . d d d d d d .' ' . c c c c c c . . b b . . d d d d d d .' ' . c c c c c c . . . . . . d d d d d d .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . a a a a a a a a a a a a a a . . .' ' . . . a a a a a a a a a a a a a a . . .' ' . . . a a a a a a a a a a a a a a . . .' ' . . . a a a a a a a a a a a a a a . . .' ' . . . a a a a a a a a a a a a a a . . .' ' . . . . . . . . . . . . . . . . . . . .' ' . . . . . . . . . . . . . . . . . . . .';
+  }
+  .store-d-wa {
+    height: 100%;
+    width: 100%;
+    border: 1px solid slategrey;
+    background-color: #add8e6;
+    grid-area: c;
+  }
+  .store-d-wb {
+    height: 100%;
+    width: 100%;
+    border: 1px solid slategrey;
+    background-color: #add8e6;
+    grid-area: d;
   }
   .store-d-sign {
     height: 100%;
     width: 100%;
-    border: 1px solid grey;
-    background-color: #daa520;
+    border: 1px solid #7565a4;
+    background-color: #45a4f5;
     grid-area: a;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   .store-d-sign-text {
-    color: black;
     transform: rotateZ(175deg);
     font-family: 'Jua', sans-serif;
+    color: #c2b297;
+    text-shadow: 1px 1px 0 #7b848c, -1px 1px 0 #7b848c, 1px -1px 0 #7b848c,
+      -1px -1px 0 #7b848c;
+    font-size: 10px;
+    text-align: center;
+    line-height: 80%;
   }
   .store-d-d {
     height: 100%;
     width: 100%;
-    border: 1px solid #a52a2a;
-    background-color: #deb887;
+    border: 1px solid #000;
+    background-color: #51422f;
     grid-area: b;
   }
   .store-e {
     height: 100px;
     width: 100px;
     border: 1px solid #000;
-    background-color: #841f27;
+    background-color: #b76b4d;
     position: absolute;
     transform: rotateX(-90deg) translateZ(35px);
     display: grid;
@@ -1138,12 +1204,11 @@ const AnimationCSS = css`
     align-items: center;
     justify-content: center;
     position: absolute;
-    transform: rotateY(90deg) translateZ(-12px) translateY(65px);
+    transform: rotateY(90deg) translateZ(-10px) translateY(65px);
   }
   .pole-sign-text {
     font-size: 12px;
     font-family: Tahoma, Geneva, sans-serif;
-    color: black;
     transform: rotateZ(180deg) rotateY(180deg);
   }
   .pole-sign-back {
