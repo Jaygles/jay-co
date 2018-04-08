@@ -156,7 +156,7 @@ class AnimationContainer extends React.Component {
               <div class="store-d-wa" />
               <div class="store-d-wb" />
               <div class="store-d-sign">
-                <p class="store-d-sign-text">It's a beuatiful day</p>
+                <p class="store-d-sign-text">IT'S A BEAUTIFUL DAY</p>
               </div>
               <div class="store-d-d" />
             </div>

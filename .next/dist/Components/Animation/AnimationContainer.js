@@ -582,7 +582,7 @@ var AnimationContainer = function (_React$Component) {
           fileName: _jsxFileName,
           lineNumber: 159
         }
-      }, 'It\'s a beuatiful day')), React.createElement('div', { 'class': 'store-d-d', __source: {
+      }, 'IT\'S A BEAUTIFUL DAY')), React.createElement('div', { 'class': 'store-d-d', __source: {
           fileName: _jsxFileName,
           lineNumber: 161
         }
