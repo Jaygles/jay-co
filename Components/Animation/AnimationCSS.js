@@ -84,7 +84,7 @@ const AnimationCSS = css`
   }
   #cube .bottom {
     background-color: #ffc0cb;
-    transform: rotateX(-90deg) translateZ(-174.5px);
+    transform: rotateX(-90deg) translateZ(-175.5px);
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(11, 1fr);
