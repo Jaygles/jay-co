@@ -908,7 +908,7 @@ const AnimationCSS = css`
     color: #c2b297;
     text-shadow: 1px 1px 0 #7b848c, -1px 1px 0 #7b848c, 1px -1px 0 #7b848c,
       -1px -1px 0 #7b848c;
-    font-size: 10px;
+    font-size: 9px;
     text-align: center;
     line-height: 80%;
   }
