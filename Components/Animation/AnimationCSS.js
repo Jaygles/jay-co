@@ -58,23 +58,23 @@ const AnimationCSS = css`
     height: 20px;
   }
   #cube .front {
-    background-color: rgba(139, 69, 19, 1);
-    border-bottom: 1.3px solid rgba(139, 69, 19, 1);
+    background-color: #514237;
+    border-bottom: 1.3px solid #514237;
     transform: rotateY(0deg) translateZ(195px);
   }
   #cube .back {
-    background-color: rgba(139, 69, 19, 1);
-    border-top: 1.3px solid rgba(139, 69, 19, 1);
+    background-color: #514237;
+    border-top: 1.3px solid #514237;
     transform: rotateX(180deg) translateZ(195px);
   }
   #cube .right {
-    background-color: rgba(139, 69, 19, 1);
-    border-bottom: 1.3px solid rgba(139, 69, 19, 1);
+    background-color: #514237;
+    border-bottom: 1.3px solid #514237;
     transform: rotateY(90deg) translateZ(195px);
   }
   #cube .left {
-    background-color: rgba(139, 69, 19, 1);
-    border-bottom: 1.3px solid rgba(139, 69, 19, 1);
+    background-color: #514237;
+    border-bottom: 1.3px solid #514237;
     transform: rotateY(-90deg) translateZ(195px);
   }
   #cube .top {
@@ -132,11 +132,11 @@ const AnimationCSS = css`
   .a {
     height: 100%;
     width: 100%;
-    border-left: 1px solid green;
-    border-top: 1px solid green;
+    border-left: 1px solid #56b000;
+    border-top: 1px solid #56b000;
     border-radius: 1px;
     grid-area: a;
-    background-color: green;
+    background-color: #56b000;
   }
   .b {
     height: 100%;
@@ -188,11 +188,11 @@ const AnimationCSS = css`
   .c {
     height: 100%;
     width: 100%;
-    border-right: 1px solid green;
-    border-top: 1px solid green;
+    border-right: 1px solid #56b000;
+    border-top: 1px solid #56b000;
     border-radius: 1px;
     grid-area: c;
-    background-color: green;
+    background-color: #56b000;
   }
   .d {
     height: 100%;
@@ -367,11 +367,11 @@ const AnimationCSS = css`
   .g {
     height: 100%;
     width: 100%;
-    border-left: 1px solid green;
-    border-bottom: 1px solid green;
+    border-left: 1px solid #56b000;
+    border-bottom: 1px solid #56b000;
     border-radius: 1px;
     grid-area: g;
-    background-color: green;
+    background-color: #56b000;
   }
   .h {
     height: 100%;
@@ -423,11 +423,11 @@ const AnimationCSS = css`
   .i {
     height: 100%;
     width: 100%;
-    border-right: 1px solid green;
-    border-bottom: 1px solid green;
+    border-right: 1px solid #56b000;
+    border-bottom: 1px solid #56b000;
     border-radius: 1px;
     grid-area: i;
-    background-color: green;
+    background-color: #56b000;
   }
   @keyframes bldg-anim {
     0% {
@@ -753,7 +753,7 @@ const AnimationCSS = css`
     border-radius: 25%;
     background-color: grey;
     position: absolute;
-    transform: translateZ(16px) translateY(214px) translateX(27px)
+    transform: translateZ(16px) translateY(214px) translateX(29px)
       rotateZ(45deg);
     display: flex;
     align-items: center;
@@ -765,11 +765,128 @@ const AnimationCSS = css`
     border-radius: 25%;
     background-color: grey;
     position: absolute;
-    transform: translateZ(-16px) translateY(214px) translateX(27px)
+    transform: translateZ(-16px) translateY(214px) translateX(29px)
       rotateZ(45deg);
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  @keyframes stop-a-anim {
+    0% {
+      transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(50px)
+        translateX(60px);
+    }
+    25% {
+      transform: rotateY(-90deg) rotate3d(0, 0, 1, -0.5turn) translateZ(50px)
+        translateX(60px);
+    }
+    50% {
+      transform: rotateY(-180deg) rotate3d(1, 0, 0, -0.5turn) translateZ(50px)
+        translateX(60px);
+    }
+    75% {
+      transform: rotateY(-270deg) rotate3d(0, 0, 1, 0.5turn) translateZ(50px)
+        translateX(60px);
+    }
+  }
+  @keyframes stop-a-index {
+    0% {
+      z-index: 3;
+    }
+    25% {
+      z-index: 0;
+    }
+    50% {
+      z-index: -2;
+    }
+    75% {
+      z-index: -2;
+    }
+  }
+  .stop-a {
+    height: 35px;
+    width: 5px;
+    position: absolute;
+    bottom: 0;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateZ(50px)
+      translateX(60px);
+    animation: stop-a-anim 15s, stop-a-index 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+  }
+  .stop-aa {
+    height: 35px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    transform: rotateY(0deg) translateZ(1px) translateY(20px);
+  }
+  .stop-ab {
+    height: 35px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    transform: rotateY(180deg) translateZ(1px) translateY(20px);
+  }
+  .stop-ac {
+    height: 35px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    transform: rotateY(-90deg) translateZ(1px) translateY(20px);
+  }
+  .stop-ad {
+    height: 35px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    transform: rotateY(90deg) translateZ(1px) translateY(20px);
+  }
+  .stop-a-sign {
+    height: 16px;
+    width: 16px;
+    background: transparent;
+    position: relative;
+    text-align: center;
+    transform: rotateY(90deg) translateZ(-7px) translateY(53px);
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 0;
+      border-bottom: 4.64px solid #b01c2e;
+      border-left: 4.64px solid rgba(0, 0, 0, 0);
+      border-right: 4.64px solid rgba(0, 0, 0, 0);
+      width: 6.72px;
+      height: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1.9px;
+      left: 0;
+      border-top: 4.64px solid #b01c2e;
+      border-left: 4.64px solid rgba(0, 0, 0, 0);
+      border-right: 4.64px solid rgba(0, 0, 0, 0);
+      width: 6.72px;
+      height: 0;
+    }
+  }
+  .stop-a-sign-text {
+    height: 6.72px;
+    width: 100%;
+    display: inline-block;
+    background: #b01c2e;
+    font-size: 6px;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    transform: rotateZ(180deg) rotateY(180deg);
   }
   @keyframes store-anim {
     0% {
@@ -800,7 +917,7 @@ const AnimationCSS = css`
       z-index: -1;
     }
     75% {
-      z-index: -1;
+      z-index: -3;
     }
   }
   .store {
@@ -908,9 +1025,9 @@ const AnimationCSS = css`
     color: #c2b297;
     text-shadow: 1px 1px 0 #7b848c, -1px 1px 0 #7b848c, 1px -1px 0 #7b848c,
       -1px -1px 0 #7b848c;
-    font-size: 9px;
+    font-size: 8px;
     text-align: center;
-    line-height: 80%;
+    line-height: 95%;
   }
   .store-d-d {
     height: 100%;
@@ -951,7 +1068,7 @@ const AnimationCSS = css`
   }
   @keyframes tree-index {
     0% {
-      z-index: 0;
+      z-index: 4;
     }
     25% {
       z-index: 1;
@@ -1118,6 +1235,124 @@ const AnimationCSS = css`
     position: absolute;
     transform: rotateX(-90deg) translateZ(150px);
   }
+
+  @keyframes stop-b-anim {
+    0% {
+      transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-50px)
+        translateX(-60px);
+    }
+    25% {
+      transform: rotateY(-90deg) rotate3d(0, 0, 1, -0.5turn) translateZ(-50px)
+        translateX(-60px);
+    }
+    50% {
+      transform: rotateY(-180deg) rotate3d(1, 0, 0, -0.5turn) translateZ(-50px)
+        translateX(-60px);
+    }
+    75% {
+      transform: rotateY(-270deg) rotate3d(0, 0, 1, 0.5turn) translateZ(-50px)
+        translateX(-60px);
+    }
+  }
+  @keyframes stop-b-index {
+    0% {
+      z-index: 3;
+    }
+    25% {
+      z-index: 0;
+    }
+    50% {
+      z-index: -2;
+    }
+    75% {
+      z-index: -2;
+    }
+  }
+  .stop-b {
+    height: 35px;
+    width: 5px;
+    position: absolute;
+    bottom: 0;
+    transform-style: preserve-3d;
+    transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-50px)
+      translateX(-60px);
+    animation: stop-b-anim 15s, stop-b-index 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    z-index: 1;
+  }
+  .stop-ba {
+    height: 35px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    transform: rotateY(0deg) translateZ(1px) translateY(20px);
+  }
+  .stop-bb {
+    height: 35px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    transform: rotateY(180deg) translateZ(1px) translateY(20px);
+  }
+  .stop-bc {
+    height: 35px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    transform: rotateY(-90deg) translateZ(1px) translateY(20px);
+  }
+  .stop-bd {
+    height: 35px;
+    width: 2px;
+    border: 1px solid grey;
+    background-color: grey;
+    position: absolute;
+    transform: rotateY(90deg) translateZ(1px) translateY(20px);
+  }
+  .stop-b-sign {
+    height: 16px;
+    width: 16px;
+    background: transparent;
+    position: relative;
+    text-align: center;
+    transform: rotateY(-90deg) translateZ(7px) translateY(53px);
+    &:before {
+      content: '';
+      position: absolute;
+      top: 1px;
+      left: 0;
+      border-bottom: 4.64px solid #b01c2e;
+      border-left: 4.64px solid rgba(0, 0, 0, 0);
+      border-right: 4.64px solid rgba(0, 0, 0, 0);
+      width: 6.72px;
+      height: 0;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -1.9px;
+      left: 0;
+      border-top: 4.64px solid #b01c2e;
+      border-left: 4.64px solid rgba(0, 0, 0, 0);
+      border-right: 4.64px solid rgba(0, 0, 0, 0);
+      width: 6.72px;
+      height: 0;
+    }
+  }
+  .stop-b-sign-text {
+    height: 6.72px;
+    width: 100%;
+    display: inline-block;
+    background: #b01c2e;
+    font-size: 6px;
+    color: white;
+    font-family: Tahoma, Geneva, sans-serif;
+    transform: rotateZ(180deg) rotateY(180deg);
+  }
   @keyframes pole-anim {
     0% {
       transform: rotateY(0deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-100px)
@@ -1208,6 +1443,7 @@ const AnimationCSS = css`
   }
   .pole-sign-text {
     font-size: 12px;
+    color: black;
     font-family: Tahoma, Geneva, sans-serif;
     transform: rotateZ(180deg) rotateY(180deg);
   }

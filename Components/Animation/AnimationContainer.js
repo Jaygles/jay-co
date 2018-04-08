@@ -118,6 +118,15 @@ class AnimationContainer extends React.Component {
             <div class="bldg-sign-pole-a" />
             <div class="bldg-sign-pole-b" />
           </div>
+          <div class="stop-a">
+            <div class="stop-aa" />
+            <div class="stop-ab" />
+            <div class="stop-ac" />
+            <div class="stop-ad" />
+            <div class="stop-a-sign">
+              <span class="stop-a-sign-text">STOP</span>
+            </div>
+          </div>
           <div class="store">
             <div class="store-a">
               <div class="store-aa" />
@@ -179,6 +188,15 @@ class AnimationContainer extends React.Component {
             <div class="tree-n" />
             <div class="tree-o" />
             <div class="tree-p" />
+          </div>
+          <div class="stop-b">
+            <div class="stop-ba" />
+            <div class="stop-bb" />
+            <div class="stop-bc" />
+            <div class="stop-bd" />
+            <div class="stop-b-sign">
+              <span class="stop-b-sign-text">STOP</span>
+            </div>
           </div>
           <div class="pole">
             <div class="pole-a" />
