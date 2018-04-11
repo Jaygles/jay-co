@@ -7,9 +7,12 @@ const AnimationWrap = styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 1s all linear;
+  transition: 0.3s all linear;
   transform: scale3d(1, 1, 1);
 
+  @media (max-width: 359px) {
+    transform: scale3d(0.6, 0.6, 0.6);
+  }
   @media (min-width: 360px) {
     transform: scale3d(0.7, 0.7, 0.7);
   }

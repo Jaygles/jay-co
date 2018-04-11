@@ -4,6 +4,7 @@ import withData from '../higher-order/withData';
 import TestGrid from '../Components/Test/TestGrid';
 import AnimationGrid from '../Components/Grids/AnimationGrid';
 import TestHeading from '../Components/Test/TestHeading';
+import AnimationBackdrop from '../Components/Animation/AnimationBackdrop';
 import AnimationContainer from '../Components/Animation/AnimationContainer';
 import TestDescription from '../Components/Test/TestDescription';
 import TestArrow from '../Components/Test/TestArrow';
@@ -20,6 +21,7 @@ class Test extends React.Component {
         <TestGrid>
           <TestHeading />
           <AnimationGrid>
+            <AnimationBackdrop />
             <AnimationContainer />
             <TestDescription />
           </AnimationGrid>
