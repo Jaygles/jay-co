@@ -3,28 +3,14 @@ import styled from 'react-emotion';
 
 const HeadingWrap = styled('div')`
   margin-top: 30px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  font-family: Kiona, sans-serif;
+  font-weight: 100;
   grid-area: heading;
 `;
 
-const HeadingSpan = styled('span')`
-  margin-top: 30px;
-  margin-left: 100px;
-  font-family: IBM Plex Sans;
-  font-weight: bold;
-  color: #001b47;
-  text-shadow: 1px 1px 2px #83d18f, -1px 1px 2px #83d18f, 1px -1px 2px #83d18f,
-    -1px -1px 2px #83d18f;
-  font-size: calc(50px + 14vw);
-  line-height: 70%;
-  &:first-of-type {
-    margin-left: 60px;
-  }
-  &:last-of-type {
-    margin-top: 50px;
-    margin-left: 150px;
-  }
+const Heading = styled('p')`
+  font-size: 10vw;
 `;
 
 class TestHeading extends React.Component {
@@ -32,9 +18,7 @@ class TestHeading extends React.Component {
     const { target, label } = this.props;
     return (
       <HeadingWrap>
-        <HeadingSpan>J</HeadingSpan>
-        <HeadingSpan>A</HeadingSpan>
-        <HeadingSpan>Y</HeadingSpan>
+        <Heading>JACOB SULLIVAN</Heading>
       </HeadingWrap>
     );
   }

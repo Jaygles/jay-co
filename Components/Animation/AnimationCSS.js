@@ -3,16 +3,16 @@ import { css } from 'react-emotion';
 const AnimationCSS = css`
   @keyframes container-anim {
     0% {
-      transform: translateY(0px);
+      transform: translateY(0px) rotateZ(45deg);
     }
     25% {
-      transform: translateY(15px);
+      transform: translateY(15px) rotateZ(45deg);
     }
     50% {
-      transform: translateY(30px);
+      transform: translateY(30px) rotateZ(45deg);
     }
     75% {
-      transform: translateY(15px);
+      transform: translateY(15px) rotateZ(45deg);
     }
   }
   .container {
@@ -20,7 +20,7 @@ const AnimationCSS = css`
     height: 400px;
     position: relative;
     perspective: 1000px;
-    transform: rotateZ(0deg) translateY(0px);
+    transform: translateY(0px) rotateZ(45deg);
     animation: container-anim 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
@@ -60,31 +60,31 @@ const AnimationCSS = css`
   #cube .front {
     background-color: #514237;
     border-bottom: 1.3px solid #514237;
-    transform: rotateY(0deg) translateZ(195px);
+    transform: rotateY(0deg) translateZ(195px) translateY(100px);
   }
   #cube .back {
     background-color: #514237;
     border-top: 1.3px solid #514237;
-    transform: rotateX(180deg) translateZ(195px);
+    transform: rotateX(180deg) translateZ(195px) translateY(-100px);
   }
   #cube .right {
     background-color: #514237;
     border-bottom: 1.3px solid #514237;
-    transform: rotateY(90deg) translateZ(195px);
+    transform: rotateY(90deg) translateZ(195px) translateY(100px);
   }
   #cube .left {
     background-color: #514237;
     border-bottom: 1.3px solid #514237;
-    transform: rotateY(-90deg) translateZ(195px);
+    transform: rotateY(-90deg) translateZ(195px) translateY(100px);
   }
   #cube .top {
     background-color: rgba(0, 0, 0, 0.3);
     opacity: 1;
-    transform: rotateX(90deg) translateZ(255px);
+    transform: rotateX(90deg) translateZ(155px);
   }
   #cube .bottom {
     background-color: #ffc0cb;
-    transform: rotateX(-90deg) translateZ(-175.5px);
+    transform: rotateX(-90deg) translateZ(-75.5px);
     display: grid;
     grid-template-columns: repeat(11, 1fr);
     grid-template-rows: repeat(11, 1fr);
@@ -451,7 +451,7 @@ const AnimationCSS = css`
     width: 80px;
     height: 200px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateX(100px)
       translateZ(100px);
@@ -807,7 +807,7 @@ const AnimationCSS = css`
     height: 35px;
     width: 5px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateZ(50px)
       translateX(60px);
@@ -924,7 +924,7 @@ const AnimationCSS = css`
     height: 65px;
     width: 100px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateX(-120px)
       translateZ(120px);
@@ -1084,7 +1084,7 @@ const AnimationCSS = css`
     height: 65px;
     width: 10px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     display: flex;
     justify-content: center;
     transform-style: preserve-3d;
@@ -1272,7 +1272,7 @@ const AnimationCSS = css`
     height: 35px;
     width: 5px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-50px)
       translateX(-60px);
@@ -1389,7 +1389,7 @@ const AnimationCSS = css`
     height: 45px;
     width: 5px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-100px)
       translateX(60px);
@@ -1497,7 +1497,7 @@ const AnimationCSS = css`
     height: 40px;
     width: 66px;
     position: absolute;
-    bottom: 0;
+    bottom: 100px;
     transform-style: preserve-3d;
     transform: rotateY(-360deg) rotate3d(1, 0, 0, 0.5turn) translateZ(-140px)
       translateX(80px);

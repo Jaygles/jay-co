@@ -37,6 +37,18 @@ const injectGlobalStyles = () => injectGlobal`
     border-top: 4px solid #83d18f;
     border-left: 4px solid #83d18f;
   }
+  @font-face {
+    font-family: 'Kiona';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Kiona-Regular'),
+    local('Kiona Regular'),
+    url(./static/Kiona-Regular),
+    format('tff');
+    unicode-range: U+0100-024f, U+1-1eff,
+      U+20a0-20ab, U+20ad-20cf, U+2c60-2c7f,
+      U+A720-A7FF;
+  }
 `;
 
 export default () => (ComposedComponent) => {

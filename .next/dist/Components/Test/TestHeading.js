@@ -42,12 +42,12 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 
 var _jsxFileName = '/Users/jay/Desktop/code/portfolio/jay-co/Components/Test/TestHeading.js';
 
-var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  margin-top: 30px;\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n'], ['\n  margin-top: 30px;\n  display: flex;\n  flex-direction: column;\n  grid-area: heading;\n']),
-    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  margin-top: 30px;\n  margin-left: 100px;\n  font-family: IBM Plex Sans;\n  font-weight: bold;\n  color: #001b47;\n  text-shadow: 1px 1px 2px #83d18f, -1px 1px 2px #83d18f, 1px -1px 2px #83d18f,\n    -1px -1px 2px #83d18f;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    margin-left: 60px;\n  }\n  &:last-of-type {\n    margin-top: 50px;\n    margin-left: 150px;\n  }\n'], ['\n  margin-top: 30px;\n  margin-left: 100px;\n  font-family: IBM Plex Sans;\n  font-weight: bold;\n  color: #001b47;\n  text-shadow: 1px 1px 2px #83d18f, -1px 1px 2px #83d18f, 1px -1px 2px #83d18f,\n    -1px -1px 2px #83d18f;\n  font-size: calc(50px + 14vw);\n  line-height: 70%;\n  &:first-of-type {\n    margin-left: 60px;\n  }\n  &:last-of-type {\n    margin-top: 50px;\n    margin-left: 150px;\n  }\n']);
+var _templateObject = (0, _taggedTemplateLiteral3.default)(['\n  margin-top: 30px;\n  text-align: center;\n  font-family: Kiona, sans-serif;\n  font-weight: 100;\n  grid-area: heading;\n'], ['\n  margin-top: 30px;\n  text-align: center;\n  font-family: Kiona, sans-serif;\n  font-weight: 100;\n  grid-area: heading;\n']),
+    _templateObject2 = (0, _taggedTemplateLiteral3.default)(['\n  font-size: 10vw;\n'], ['\n  font-size: 10vw;\n']);
 
 var HeadingWrap = (0, _reactEmotion2.default)('div')(_templateObject);
 
-var HeadingSpan = (0, _reactEmotion2.default)('span')(_templateObject2);
+var Heading = (0, _reactEmotion2.default)('p')(_templateObject2);
 
 var TestHeading = function (_React$Component) {
   (0, _inherits3.default)(TestHeading, _React$Component);
@@ -68,24 +68,14 @@ var TestHeading = function (_React$Component) {
       return React.createElement(HeadingWrap, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 20
         }
-      }, React.createElement(HeadingSpan, {
+      }, React.createElement(Heading, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 35
+          lineNumber: 21
         }
-      }, 'J'), React.createElement(HeadingSpan, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 36
-        }
-      }, 'A'), React.createElement(HeadingSpan, {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 37
-        }
-      }, 'Y'));
+      }, 'JACOB SULLIVAN'));
     }
   }]);
 
@@ -93,4 +83,4 @@ var TestHeading = function (_React$Component) {
 }(React.Component);
 
 exports.default = TestHeading;
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0SGVhZGluZy5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsInN0eWxlZCIsIkhlYWRpbmdXcmFwIiwiSGVhZGluZ1NwYW4iLCJUZXN0SGVhZGluZyIsInByb3BzIiwidGFyZ2V0IiwibGFiZWwiLCJDb21wb25lbnQiXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBLEFBQU87O0lBQVAsQUFBWTs7QUFDWixBQUFPOzs7Ozs7Ozs7Ozs7O0FBRVAsSUFBTSxjQUFjLDRCQUFkLEFBQWMsQUFBTyxPQUEzQjs7QUFPQSxJQUFNLGNBQWMsNEJBQWQsQUFBYyxBQUFPLFFBQTNCOztJQW1CTSxBOzs7Ozs7Ozs7Ozs2QkFDSzttQkFDbUIsS0FEbkIsQUFDd0I7VUFEeEIsQUFDQyxnQkFERCxBQUNDO1VBREQsQUFDUyxlQURULEFBQ1MsQUFDaEI7O21CQUNHLGNBQUQ7O29CQUFBO3NCQUFBLEFBQ0U7QUFERjtBQUFBLE9BQUEsUUFDRyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FERixBQUNFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FGRixBQUVFLEFBQ0EsWUFBQyxjQUFEOztvQkFBQTtzQkFBQTtBQUFBO0FBQUEsU0FKSixBQUNFLEFBR0UsQUFHTDs7Ozs7RUFWdUIsTUFBTSxBLEFBYWhDOztrQkFBQSxBQUFlIiwiZmlsZSI6IlRlc3RIZWFkaW5nLmpzIiwic291cmNlUm9vdCI6Ii9Vc2Vycy9qYXkvRGVza3RvcC9jb2RlL3BvcnRmb2xpby9qYXktY28ifQ==
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkNvbXBvbmVudHMvVGVzdC9UZXN0SGVhZGluZy5qcyJdLCJuYW1lcyI6WyJSZWFjdCIsInN0eWxlZCIsIkhlYWRpbmdXcmFwIiwiSGVhZGluZyIsIlRlc3RIZWFkaW5nIiwicHJvcHMiLCJ0YXJnZXQiLCJsYWJlbCIsIkNvbXBvbmVudCJdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7O0FBQUEsQUFBTzs7SUFBUCxBQUFZOztBQUNaLEFBQU87Ozs7Ozs7Ozs7Ozs7QUFFUCxJQUFNLGNBQWMsNEJBQWQsQUFBYyxBQUFPLE9BQTNCOztBQVFBLElBQU0sVUFBVSw0QkFBVixBQUFVLEFBQU8sS0FBdkI7O0ksQUFJTTs7Ozs7Ozs7Ozs7NkJBQ0s7bUJBQ21CLEtBRG5CLEFBQ3dCO1VBRHhCLEFBQ0MsZ0JBREQsQUFDQztVQURELEFBQ1MsZUFEVCxBQUNTLEFBQ2hCOzttQkFDRyxjQUFEOztvQkFBQTtzQkFBQSxBQUNFO0FBREY7QUFBQSxPQUFBLFFBQ0csY0FBRDs7b0JBQUE7c0JBQUE7QUFBQTtBQUFBLFNBRkosQUFDRSxBQUNFLEFBR0w7Ozs7O0VBUnVCLE1BQU0sQSxBQVdoQzs7a0JBQUEsQUFBZSIsImZpbGUiOiJUZXN0SGVhZGluZy5qcyIsInNvdXJjZVJvb3QiOiIvVXNlcnMvamF5L0Rlc2t0b3AvY29kZS9wb3J0Zm9saW8vamF5LWNvIn0=
