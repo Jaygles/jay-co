@@ -3,16 +3,16 @@ import { css } from 'react-emotion';
 const AnimationCSS = css`
   @keyframes container-anim {
     0% {
-      transform: translateY(0px) rotateZ(45deg);
+      transform: translateY(0px);
     }
     25% {
-      transform: translateY(15px) rotateZ(45deg);
+      transform: translateY(15px);
     }
     50% {
-      transform: translateY(30px) rotateZ(45deg);
+      transform: translateY(30px);
     }
     75% {
-      transform: translateY(15px) rotateZ(45deg);
+      transform: translateY(15px);
     }
   }
   .container {
@@ -20,7 +20,7 @@ const AnimationCSS = css`
     height: 400px;
     position: relative;
     perspective: 1000px;
-    transform: translateY(0px) rotateZ(45deg);
+    transform: translateY(0px);
     animation: container-anim 10s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;

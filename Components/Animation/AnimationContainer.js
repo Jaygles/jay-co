@@ -3,24 +3,24 @@ import styled from 'react-emotion';
 import AnimationCSS from './AnimationCSS';
 
 const AnimationWrap = styled('div')`
-  background-color: lightgrey;
   grid-area: animation;
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: scale3d(1, 1, 1) rotateZ(-45deg) rotate3d(1, 1, 0, 0.9turn);
+  transition: 1s all linear;
+  transform: scale3d(1, 1, 1);
 
   @media (min-width: 360px) {
-    transform: scale3d(0.7, 0.7, 0.7) rotateZ(-45deg) rotate3d(1, 1, 0, 0.9turn);
+    transform: scale3d(0.7, 0.7, 0.7);
   }
   @media (min-width: 600px) {
-    transform: scale3d(0.8, 0.8, 0.8) rotateZ(-45deg) rotate3d(1, 1, 0, 0.9turn);
+    transform: scale3d(0.8, 0.8, 0.8);
   }
   @media (min-width: 1023px) {
-    transform: scale3d(1.2, 1.2, 1.2) rotateZ(-45deg) rotate3d(1, 1, 0, 0.9turn);
+    transform: scale3d(1.2, 1.2, 1.2);
   }
   @media (min-width: 1899px) {
-    transform: scale3d(1.6, 1.6, 1.6) rotateZ(-45deg) rotate3d(1, 1, 0, 0.9turn);
+    transform: scale3d(1.6, 1.6, 1.6);
   }
   @media (min-width: 2559px) {
     transform: scale3d(3, 3, 3) rotateZ(-45deg);
