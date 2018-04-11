@@ -1,62 +1,36 @@
 import * as React from 'react';
+import styled from 'react-emotion';
 import AnimationCSS from './AnimationCSS';
-import styled, { css } from 'react-emotion';
 
-let scale;
+const AnimationWrap = styled('div')`
+  grid-area: animation;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale3d(1, 1, 1);
 
-let AnimationWrap = <div className={AnimationCSS} />;
+  @media (min-width: 360px) {
+    transform: scale3d(0.7, 0.7, 0.7);
+  }
+  @media (min-width: 600px) {
+    transform: scale3d(0.8, 0.8, 0.8);
+  }
+  @media (min-width: 1023px) {
+    transform: scale3d(1.2, 1.2, 1.2);
+  }
+  @media (min-width: 1899px) {
+    transform: scale3d(1.6, 1.6, 1.6);
+  }
+  @media (min-width: 2559px) {
+    transform: scale3d(3, 3, 3);
+  }
+  @media (min-width: 4559px) {
+    transform: scale3d(6, 6, 6);
+  }
+`;
 
 class AnimationContainer extends React.Component {
-  state = {
-    width: 1200,
-    height: 0,
-  };
-
-  componentWillMount = () => {
-    if (typeof window !== 'undefined') {
-      this._updateWindowDimensions();
-      scale = (width) => css`
-        transform: scale3d(
-          ${window.innerHeight / 1000},
-          ${window.innerHeight / 1000},
-          ${window.innerHeight / 1000}
-        );
-      `;
-      AnimationWrap = styled('div')`
-        grid-area: animation;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        ${scale};
-      `;
-    }
-  };
-
-  componentDidMount = () => {
-    this._updateWindowDimensions();
-    this.forceUpdate();
-    console.log('did');
-    console.log(typeof window);
-    window.addEventListener('resize', this._updateWindowDimensions);
-  };
-
-  componentWillUnmount = () => {
-    window.removeEventListener('resize', this._updateWindowDimensions);
-  };
-
-  _updateWindowDimensions = () => {
-    if (typeof window !== undefined) {
-      this.setState({
-        width: window.innerWidth || 1200,
-        height: window.innerHeight || 1200,
-      });
-      this.forceUpdate();
-    } else {
-      this.setState({ width: 1200, height: 1000 });
-    }
-  };
-
-  renderLoaded = () => {
+  render() {
     return (
       <AnimationWrap className={AnimationCSS}>
         <section className="container">
@@ -263,17 +237,6 @@ class AnimationContainer extends React.Component {
         </section>
       </AnimationWrap>
     );
-  };
-
-  render() {
-    let isLoaded =
-      typeof window !== 'undefined' ? (
-        this.renderLoaded()
-      ) : (
-        <div className={AnimationCSS} />
-      );
-
-    return isLoaded;
   }
 }
 
