@@ -889,10 +889,10 @@ const AnimationCSS = css`
     71% {
       transform: rotateZ(180deg) rotateY(0deg);
     }
-    94.9% {
+    99.8% {
       transform: rotateZ(180deg) rotateY(0deg);
     }
-    95% {
+    99.9% {
       transform: rotateZ(180deg) rotateY(180deg);
     }
   }
@@ -1367,16 +1367,16 @@ const AnimationCSS = css`
     0% {
       transform: rotateZ(180deg) rotateY(0deg);
     }
-    60% {
+    50% {
       transform: rotateZ(180deg) rotateY(0deg);
     }
-    61% {
+    50.1% {
       transform: rotateZ(180deg) rotateY(180deg);
     }
-    94.9% {
+    99.8% {
       transform: rotateZ(180deg) rotateY(180deg);
     }
-    95% {
+    99.9% {
       transform: rotateZ(180deg) rotateY(0deg);
     }
   }
@@ -1468,6 +1468,28 @@ const AnimationCSS = css`
     position: absolute;
     transform: rotateY(90deg) translateZ(2px) translateY(20px);
   }
+
+  @keyframes pole-sign-anim {
+    0% {
+      transform: rotateY(90deg) translateZ(-10px) translateY(65px);
+    }
+    25% {
+      transform: rotateY(90deg) translateZ(-10px) translateY(65px);
+    }
+    40% {
+      transform: rotateY(90deg) translateZ(-10px) translateY(65px);
+    }
+    41% {
+      transform: rotateY(-90deg) translateZ(10px) translateY(65px);
+    }
+    99.8% {
+      transform: rotateY(-90deg) translateZ(10px) translateY(65px);
+    }
+    99.9% {
+      transform: rotateY(90deg) translateZ(-10px) translateY(65px);
+    }
+  }
+
   .pole-sign {
     height: 15px;
     width: 25px;
@@ -1477,6 +1499,7 @@ const AnimationCSS = css`
     align-items: center;
     justify-content: center;
     position: absolute;
+    animation: pole-sign-anim 15s infinite;
     transform: rotateY(90deg) translateZ(-10px) translateY(65px);
   }
   .pole-sign-text {
@@ -1484,17 +1507,6 @@ const AnimationCSS = css`
     color: black;
     font-family: Tahoma, Geneva, sans-serif;
     transform: rotateZ(180deg) rotateY(180deg);
-  }
-  .pole-sign-back {
-    height: 15px;
-    width: 25px;
-    border: 1px solid #000;
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    transform: rotateY(90deg) translateZ(-10px) translateY(65px);
   }
   @keyframes bus-anim {
     0% {
