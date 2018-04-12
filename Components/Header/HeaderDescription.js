@@ -4,7 +4,7 @@ import * as Text from '../Bits/Text';
 
 const DescriptionWrap = styled('div')`
   height: 100%;
-  width: 50%;
+  width: 66%;
   justify-self: center;
   text-align: center;
   display: flex;

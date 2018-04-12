@@ -4,7 +4,7 @@ import Header from '../Components/Header/Header';
 import SubHeader from '../Components/SubHeader/SubHeader';
 import Nav from '../Components/Nav/Nav';
 import MainGrid from '../Components/Grids/MainGrid';
-import PostList from '../Components/Posts/PostList';
+import PortfolioList from '../Components/Portfolios/PortfolioList';
 import * as Actions from '../common/actions';
 import withData from '../higher-order/withData';
 
@@ -16,7 +16,7 @@ class Index extends React.Component {
         <SubHeader />
         <MainGrid key="layout">
           <Nav isAuthenticated={this.props.isAuthenticated} />
-          <PostList />
+          <PortfolioList isAuthenticated={this.props.isAuthenticated} />
         </MainGrid>
       </div>
     );
@@ -29,7 +29,7 @@ class Index extends React.Component {
         <SubHeader />
         <MainGrid key="layout">
           <Nav />
-          <PostList />
+          <PortfolioList isAuthenticated={false} />
         </MainGrid>
       </div>
     );

@@ -5,7 +5,7 @@ import LoginForm from '../Components/Auth/LoginForm';
 import SignupForm from '../Components/Auth/SignupForm';
 import withData from '../higher-order/withData';
 
-class Index extends React.Component {
+class Admin extends React.Component {
   render() {
     return (
       <Document>
@@ -18,4 +18,4 @@ class Index extends React.Component {
   }
 }
 
-export default withData({}, (state) => state)(Index);
+export default withData({}, (state) => state)(Admin);

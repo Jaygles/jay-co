@@ -6,7 +6,7 @@ export default styled('div')`
   min-height: 100vh;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 150px 60vh auto 50px;
+  grid-template-rows: 8vw 50vh auto 50px;
   grid-template-areas:
     '  heading  '
     ' animation '

@@ -8,9 +8,9 @@ export default class PostPreview extends React.Component {
     const { post, isAuthenticated } = this.props;
     return (
       <NavGrid>
-        <NavItem target="/" label="Blog" />
+        <NavItem target="/" label="Portfolio" />
         <NavItem target="/about" label="About" />
-        <NavItem target="/portfolio" label="Portfolio" />
+        <NavItem target="/blog" label="Blog" />
         {isAuthenticated ? <LogoutButton /> : null}
       </NavGrid>
     );
