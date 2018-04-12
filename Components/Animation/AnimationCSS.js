@@ -878,6 +878,25 @@ const AnimationCSS = css`
       height: 0;
     }
   }
+
+  @keyframes stop-a-sign-text-flip {
+    0% {
+      transform: rotateZ(180deg) rotateY(180deg);
+    }
+    70% {
+      transform: rotateZ(180deg) rotateY(180deg);
+    }
+    71% {
+      transform: rotateZ(180deg) rotateY(0deg);
+    }
+    94.9% {
+      transform: rotateZ(180deg) rotateY(0deg);
+    }
+    95% {
+      transform: rotateZ(180deg) rotateY(180deg);
+    }
+  }
+
   .stop-a-sign-text {
     height: 6.72px;
     width: 100%;
@@ -885,6 +904,7 @@ const AnimationCSS = css`
     background: #b01c2e;
     font-size: 6px;
     color: white;
+    animation: stop-a-sign-text-flip 15s infinite;
     font-family: Tahoma, Geneva, sans-serif;
     transform: rotateZ(180deg) rotateY(180deg);
   }
@@ -1343,6 +1363,23 @@ const AnimationCSS = css`
       height: 0;
     }
   }
+  @keyframes stop-b-sign-text-flip {
+    0% {
+      transform: rotateZ(180deg) rotateY(0deg);
+    }
+    60% {
+      transform: rotateZ(180deg) rotateY(0deg);
+    }
+    61% {
+      transform: rotateZ(180deg) rotateY(180deg);
+    }
+    94.9% {
+      transform: rotateZ(180deg) rotateY(180deg);
+    }
+    95% {
+      transform: rotateZ(180deg) rotateY(0deg);
+    }
+  }
   .stop-b-sign-text {
     height: 6.72px;
     width: 100%;
@@ -1351,7 +1388,8 @@ const AnimationCSS = css`
     font-size: 6px;
     color: white;
     font-family: Tahoma, Geneva, sans-serif;
-    transform: rotateZ(180deg) rotateY(180deg);
+    animation: stop-b-sign-text-flip 15s infinite;
+    transform: rotateZ(180deg) rotateY(0deg);
   }
   @keyframes pole-anim {
     0% {
