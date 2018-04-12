@@ -6,5 +6,8 @@ export default styled('div')`
   max-width: 99.9vw;
   display: grid;
   grid-template-columns: 180px 1fr;
-  grid-template-areas: ' nav main ';
+  grid-template-rows: 1fr 50px;
+  grid-template-areas:
+    '  nav    main  '
+    ' footer footer ';
 `;

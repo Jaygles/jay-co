@@ -5,6 +5,7 @@ import SubHeader from '../Components/SubHeader/SubHeader';
 import Nav from '../Components/Nav/Nav';
 import MainGrid from '../Components/Grids/MainGrid';
 import Bio from '../Components/About/Bio';
+import Footer from '../Components/Footer/Footer';
 import withData from '../higher-order/withData';
 
 class About extends React.Component {
@@ -17,6 +18,7 @@ class About extends React.Component {
         <MainGrid>
           <Nav isAuthenticated={isAuthenticated} />
           <Bio />
+          <Footer />
         </MainGrid>
       </Document>
     );

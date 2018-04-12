@@ -11,16 +11,16 @@ module.exports = {
     operatorsAliases: Sequelize.Op,
   },
   production: {
-    username: process.env.PRODUCTION_USERNAME,
-    password: process.env.PRODUCTION_PASSWORD,
-    database: process.env.PRODUCTION_DATABASE,
-    host: process.env.PRODUCTION_HOST,
-    port: process.env.PRODUCTION_PORT,
+    username: process.env.RDS_USERNAME,
+    password: process.env.RDS_PASSWORD,
+    database: process.env.RDS_DB_NAME,
+    host: process.env.RDS_HOSTNAME,
+    port: process.env.RDS_PORT,
     dialect: 'postgres',
     operatorsAliases: Sequelize.Op,
   },
   session: {
-    secret: process.env.PRODUCTION_SECRET || 'placeholdersecret',
+    secret: process.env.RDS_SECRET || 'placeholdersecret',
     operatorsAliases: Sequelize.Op,
   },
 };

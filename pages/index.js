@@ -5,6 +5,7 @@ import SubHeader from '../Components/SubHeader/SubHeader';
 import Nav from '../Components/Nav/Nav';
 import MainGrid from '../Components/Grids/MainGrid';
 import PortfolioList from '../Components/Portfolios/PortfolioList';
+import Footer from '../Components/Footer/Footer';
 import * as Actions from '../common/actions';
 import withData from '../higher-order/withData';
 
@@ -17,6 +18,7 @@ class Index extends React.Component {
         <MainGrid key="layout">
           <Nav isAuthenticated={this.props.isAuthenticated} />
           <PortfolioList isAuthenticated={this.props.isAuthenticated} />
+          <Footer />
         </MainGrid>
       </div>
     );
@@ -31,6 +33,7 @@ class Index extends React.Component {
           <Nav />
           <PortfolioList isAuthenticated={false} />
         </MainGrid>
+        <Footer />
       </div>
     );
   };

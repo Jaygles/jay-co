@@ -81,5 +81,5 @@ export const Anchor = (props) => {
     }
   `;
 
-  return <Link {...props} className={basicStyles} />;
+  return <Link {...props} prefetch className={basicStyles} />;
 };
