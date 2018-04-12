@@ -20,7 +20,7 @@ const ArrowWrap = styled('span')`
 
 class TestArrow extends React.Component {
   _handleClick = () => {
-    window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo(0, window.innerHeight);
   };
   render() {
     return (
