@@ -208,3 +208,10 @@ export const requestSavePortfolio = (data) => {
     return exception('error');
   };
 };
+
+export const setActivePage = (page) => {
+  return {
+    type: 'ACTIVE_PAGE',
+    payload: page,
+  };
+};

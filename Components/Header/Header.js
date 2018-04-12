@@ -21,7 +21,7 @@ class Header extends Component {
     return (
       <Top>
         <Text.Heading1 className={title}>
-          <p>Jay S</p>
+          <p>{this.props.activePage}</p>
         </Text.Heading1>
       </Top>
     );

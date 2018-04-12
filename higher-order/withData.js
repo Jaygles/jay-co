@@ -32,6 +32,7 @@ const getInitialStateData = async (ctx) => {
     posts,
     comments,
     portfolios,
+    activePage: 'Portfolio',
     isAuthenticated: ctx.req.isAuthenticated(),
     // viewer: ctx.req.user,
   };

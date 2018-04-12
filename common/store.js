@@ -6,6 +6,7 @@ const INITIAL_STATE = {
   posts: [],
   comments: [],
   portfolios: [],
+  activePage: 'Portfolio',
   post: undefined,
   viewer: undefined,
   isAuthenticated: false,
@@ -23,6 +24,10 @@ const mergeLogoutState = (state) => {
   return { ...state, isAuthenticated: false, viewer: undefined };
 };
 
+const setActivePage = (page, state) => {
+  return { ...state, activePage: page };
+};
+
 export const reducer = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case 'UPDATE_STORE_KEYS':
@@ -31,6 +36,8 @@ export const reducer = (state = INITIAL_STATE, action) => {
       return mergeAuthState(action, state);
     case 'VIEWER_LOGOUT':
       return mergeLogoutState(state);
+    case 'ACTIVE_PAGE':
+      return setActivePage(action.payload, state);
     default:
       return state;
   }
