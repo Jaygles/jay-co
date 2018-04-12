@@ -8,7 +8,7 @@ const AnimationWrap = styled('div')`
   align-items: center;
   justify-content: center;
   transition: 0.3s all linear;
-  transform: scale3d(1, 1, 1);
+  transform: scale3d(0.8, 0.8, 0.8);
 
   @media (max-width: 359px) {
     transform: scale3d(0.6, 0.6, 0.6);
@@ -20,7 +20,7 @@ const AnimationWrap = styled('div')`
     transform: scale3d(0.8, 0.8, 0.8);
   }
   @media (min-width: 1023px) {
-    transform: scale3d(1.2, 1.2, 1.2);
+    transform: scale3d(1, 1, 1);
   }
   @media (min-width: 1899px) {
     transform: scale3d(1.6, 1.6, 1.6);

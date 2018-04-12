@@ -4,7 +4,8 @@ import * as Text from '../Bits/Text';
 
 const DescriptionWrap = styled('div')`
   height: 100%;
-  width: 66%;
+  width: 50%;
+  justify-self: center;
   text-align: center;
   display: flex;
   align-items: center;
@@ -16,8 +17,10 @@ class TestDescription extends React.Component {
     return (
       <DescriptionWrap>
         <Text.MainDescription>
-          Jacob Sullivan is a Kansas City based Web Developer, noobie blogger
-          and avid learner.
+          Hi, I'm a Kansas City based Web Developer. Feel free to check out my
+          work or see what I know. Want to get in touch? I'm just a{' '}
+          <Text.Anchor href="mailto:JaySull514@gmail.com">click</Text.Anchor>{' '}
+          away.
         </Text.MainDescription>
       </DescriptionWrap>
     );

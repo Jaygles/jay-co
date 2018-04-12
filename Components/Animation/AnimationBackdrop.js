@@ -1,8 +1,8 @@
 import styled from 'react-emotion';
 
 const AnimationBackdrop = styled('div')`
-  height: 350px;
-  width: 350px;
+  height: 300px;
+  width: 300px;
   background: #efefef;
   position: relative;
   grid-area: animation;
@@ -21,12 +21,12 @@ const AnimationBackdrop = styled('div')`
     width: 250px;
   }
   @media (min-width: 600px) {
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
   }
   @media (min-width: 1023px) {
-    height: 500px;
-    width: 500px;
+    height: 400px;
+    width: 400px;
   }
   @media (min-width: 1899px) {
     height: 600px;

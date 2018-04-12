@@ -71,12 +71,12 @@ export const Anchor = (props) => {
     text-decoration: none;
     font-size: 24px;
     font-weight: 400;
-    color: rgb(220, 220, 220);
+    color: #72b597;
     &:visited {
-      color: #000000;
+      color: #72b597;
     }
     &:hover {
-      color: #0000ff;
+      color: #377c79;
       cursor: pointer;
     }
   `;

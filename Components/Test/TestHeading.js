@@ -2,7 +2,7 @@ import * as React from 'react';
 import styled from 'react-emotion';
 
 const HeadingWrap = styled('div')`
-  margin-top: 30px;
+  margin-top: 10px;
   text-align: center;
   font-family: Kiona, sans-serif;
   font-weight: 100;
@@ -10,7 +10,7 @@ const HeadingWrap = styled('div')`
 `;
 
 const Heading = styled('p')`
-  font-size: 10vw;
+  font-size: 8vw;
 `;
 
 class TestHeading extends React.Component {

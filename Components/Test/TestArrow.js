@@ -13,6 +13,9 @@ const ArrowGrid = styled('div')`
 
 const ArrowWrap = styled('span')`
   cursor: pointer;
+  &:hover {
+    color: #72b597;
+  }
 `;
 
 class TestArrow extends React.Component {
