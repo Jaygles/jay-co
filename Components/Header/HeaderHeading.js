@@ -13,7 +13,7 @@ const Heading = styled('p')`
   font-size: 8vw;
 `;
 
-class TestHeading extends React.Component {
+class HeaderHeading extends React.Component {
   render() {
     const { target, label } = this.props;
     return (
@@ -24,4 +24,4 @@ class TestHeading extends React.Component {
   }
 }
 
-export default TestHeading;
+export default HeaderHeading;

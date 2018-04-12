@@ -12,7 +12,7 @@ const DescriptionWrap = styled('div')`
   justify-content: center;
 `;
 
-class TestDescription extends React.Component {
+class HeaderDescription extends React.Component {
   render() {
     return (
       <DescriptionWrap>
@@ -27,4 +27,4 @@ class TestDescription extends React.Component {
   }
 }
 
-export default TestDescription;
+export default HeaderDescription;

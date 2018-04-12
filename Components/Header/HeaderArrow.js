@@ -18,7 +18,7 @@ const ArrowWrap = styled('span')`
   }
 `;
 
-class TestArrow extends React.Component {
+class HeaderArrow extends React.Component {
   _handleClick = () => {
     window.scrollTo(0, window.innerHeight);
   };
@@ -31,4 +31,4 @@ class TestArrow extends React.Component {
   }
 }
 
-export default TestArrow;
+export default HeaderArrow;

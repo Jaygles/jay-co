@@ -1,22 +1,19 @@
 import * as React from 'react';
 import Document from '../Components/Document';
-import LogoutButton from '../Components/Auth/LogoutButton';
-import PostForm from '../Components/Posts/PostForm';
-import SignUpForm from '../Components/Auth/SignupForm';
-import Button from '../Components/Bits/Button';
-import PostList from '../Components/Posts/PostList';
 import Header from '../Components/Header/Header';
+import SubHeader from '../Components/SubHeader/SubHeader';
 import Nav from '../Components/Nav/Nav';
 import MainGrid from '../Components/Grids/MainGrid';
+import PostList from '../Components/Posts/PostList';
 import * as Actions from '../common/actions';
 import withData from '../higher-order/withData';
-import SignupForm from '../Components/Auth/SignupForm';
 
 class Index extends React.Component {
   renderLoggedIn = () => {
     return (
       <div>
         <Header />
+        <SubHeader />
         <MainGrid key="layout">
           <Nav isAuthenticated={this.props.isAuthenticated} />
           <PostList />
@@ -29,6 +26,7 @@ class Index extends React.Component {
     return (
       <div>
         <Header />
+        <SubHeader />
         <MainGrid key="layout">
           <Nav />
           <PostList />

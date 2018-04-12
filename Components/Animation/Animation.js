@@ -33,7 +33,7 @@ const AnimationWrap = styled('div')`
   }
 `;
 
-class AnimationContainer extends React.Component {
+class Animation extends React.Component {
   render() {
     return (
       <AnimationWrap className={AnimationCSS}>
@@ -244,4 +244,4 @@ class AnimationContainer extends React.Component {
   }
 }
 
-export default AnimationContainer;
+export default Animation;
