@@ -13,7 +13,7 @@ import setupApi from './api';
 
 const dev = false;
 const port = process.env.PORT || 8081;
-const app = next({ quiet: true });
+const app = next({ quiet: false });
 const nextRequestHandler = app.getRequestHandler();
 
 app.prepare().then(() => {

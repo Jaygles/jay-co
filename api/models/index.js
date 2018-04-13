@@ -1,13 +1,13 @@
 import fs from 'fs';
 import path from 'path';
-import sequelize from 'sequelize';
+import Sequelize from 'sequelize';
 
 const db = {};
 const basename = path.basename(module.filename);
-const env = process.env.NODE_ENV || 'development';
+const env = process.env.NODE_ENV || 'production';
 const sequelizeConfig = require(`${__dirname}/../../config.js`)[env];
 
-const ORM = new sequelize(
+const ORM = new Sequelize(
   sequelizeConfig.database,
   sequelizeConfig.username,
   sequelizeConfig.password,
@@ -26,6 +26,6 @@ Object.keys(db).forEach((modelName) => {
 });
 
 db.ORM = ORM;
-db.sequelize = sequelize;
+db.sequelize = Sequelize;
 
 module.exports = db;
