@@ -5,11 +5,11 @@ const requestHeaders = {
   'Content-Type': 'application/json',
 };
 
-const ENV = process.env.NODE_ENV || 'development';
+const ENV = process.env.NODE_ENV || 'production';
 const SERVER_PATH =
   ENV === 'development'
     ? 'http://localhost:8000'
-    : 'https://jay-co.herokuapp.com';
+    : 'http://jayco-env.fcpf32k7de.us-east-2.elasticbeanstalk.com';
 
 export const getAllComments = () => {
   const options = {
