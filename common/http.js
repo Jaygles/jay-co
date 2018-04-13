@@ -5,10 +5,10 @@ const requestHeaders = {
   'Content-Type': 'application/json',
 };
 
-const ENV = process.env.NODE_ENV || 'production';
+const ENV = process.env.NODE_ENV || 'development';
 const SERVER_PATH =
   ENV === 'development'
-    ? 'http://localhost:8000'
+    ? 'http://localhost:8081'
     : 'http://jayco-env.fcpf32k7de.us-east-2.elasticbeanstalk.com';
 
 export const getAllComments = () => {

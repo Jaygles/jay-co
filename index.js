@@ -11,9 +11,9 @@ import bodyParser from 'body-parser';
 import setupAuth from './api/auth';
 import setupApi from './api';
 
-const dev = false;
+const dev = process.env.NODE_ENV !== 'production';
 const port = process.env.PORT || 8081;
-const app = next({ quiet: false });
+const app = next({ dev, quiet: true });
 const nextRequestHandler = app.getRequestHandler();
 
 app.prepare().then(() => {

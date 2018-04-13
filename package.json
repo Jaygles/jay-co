@@ -5,12 +5,13 @@
     "Example of a company blog via nextjs, react and a cms made with postgres and sequelize",
   "main": "index.js",
   "scripts": {
-    "dev": "babel-node index.js --presets es2015,stage-1,stage-2,stage-3",
-    "build": "NODE_ENV=production next build && npm run migrate",
+    "dev":
+      "NODE_ENV=development babel-node index.js --presets es2015,stage-1,stage-2,stage-3",
+    "build": "next build && npm run migrate",
     "migrate":
-      "NODE_ENV=production npm install sequelize-cli && sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
+      "npm install sequelize-cli && sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
     "start":
-      "NODE_ENV=production npm set unsafe-perm true && next build && npm run migrate && babel-node index.js --presets es2015"
+      "npm set unsafe-perm true && next build && npm run migrate && babel-node index.js --presets es2015"
   },
   "repository": {
     "type": "git",
