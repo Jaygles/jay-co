@@ -9,7 +9,6 @@
     "build": "NODE_ENV=production next build && npm run migrate",
     "migrate":
       "NODE_ENV=production npm install sequelize-cli && sequelize db:migrate:undo:all && sequelize db:migrate && sequelize db:seed:all",
-    "heroku-postbuild": "NODE_ENV=production npm run build",
     "start":
       "NODE_ENV=production npm set unsafe-perm true && next build && npm run migrate && babel-node index.js --presets es2015"
   },
