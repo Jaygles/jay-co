@@ -38,6 +38,9 @@ app.prepare().then(() => {
 
   server.get('*', (req, res) => {
     const parsedUrl = url.parse(req.url, true);
+    console.log('Parsed URL');
+    console.log('----------------------------------------------------');
+    console.log(parsedUrl);
     return nextRequestHandler(req, res, parsedUrl);
   });
 
