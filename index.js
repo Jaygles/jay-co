@@ -12,8 +12,8 @@ import setupAuth from './api/auth';
 import setupApi from './api';
 
 const dev = false;
-const port = process.env.PORT || 8000;
-const app = next({ dev, quiet: true });
+const port = process.env.PORT || 8081;
+const app = next({ quiet: true });
 const nextRequestHandler = app.getRequestHandler();
 
 app.prepare().then(() => {
