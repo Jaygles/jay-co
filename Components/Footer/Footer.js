@@ -3,7 +3,7 @@ import styled from 'react-emotion';
 import FooterIcon from './FooterIcon';
 
 const FooterWrapper = styled('footer')`
-  width: 100vw;
+  width: 100%;
   font-size: 16px;
   grid-area: footer;
   display: flex;

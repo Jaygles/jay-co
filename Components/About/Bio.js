@@ -20,6 +20,17 @@ const BioText = styled('p')`
   font-size: 20px;
 `;
 
+const ResumeLink = styled('a')`
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 400;
+  color: #72b597;
+  &:hover {
+    color: #377c79;
+    cursor: pointer;
+  }
+`;
+
 class Bio extends React.Component {
   componentWillMount() {
     this.props.dispatch(Actions.setActivePage('Resume'));
@@ -33,6 +44,11 @@ class Bio extends React.Component {
           <br />
           <br />
           References available upon request.
+          <br />
+          <br />
+          <ResumeLink href="./static/Resume.pdf" target="_blank" download>
+            Download Resume Here
+          </ResumeLink>
         </BioText>
         <Resume />
       </AboutGrid>
