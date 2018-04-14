@@ -79,6 +79,7 @@ class Resume extends React.Component {
         <Document
           className={AnnotationCss}
           file="./static/Resume.pdf"
+          options={{ workerSrc: 'static/' }}
           onLoadSuccess={this._onDocumentLoad}
         >
           <Page
