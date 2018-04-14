@@ -32654,12 +32654,32 @@ module.exports = function(hash, moduleMap, options) {
 
 /***/ }),
 
+/***/ "./utils/offline.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+/**
+ * Registers our Service Worker on the site
+ * Need more? check out:
+ * https://github.com/GoogleChrome/sw-precache/blob/master/demo/app/js/service-worker-registration.js
+ */
+
+if (false) {
+  navigator.serviceWorker.register('/sw.js').then(function (reg) {
+    console.log('Service worker registered (0-0) ');
+  }).catch(function (e) {
+    console.error('Error during service worker registration:', e);
+  });
+}
+
+/***/ }),
+
 /***/ 0:
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__("./node_modules/next/dist/client/webpack-hot-middleware-client.js");
 __webpack_require__("./node_modules/next/dist/client/on-demand-entries-client.js");
-module.exports = __webpack_require__("./node_modules/next/dist/client/next-dev.js");
+__webpack_require__("./node_modules/next/dist/client/next-dev.js");
+module.exports = __webpack_require__("./utils/offline.js");
 
 
 /***/ })
