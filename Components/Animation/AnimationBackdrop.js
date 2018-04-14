@@ -4,6 +4,7 @@ const AnimationBackdrop = styled('div')`
   height: 300px;
   width: 300px;
   background: #efefef;
+  box-shadow: 1px 1px 1px 4px #000e25;
   position: relative;
   grid-area: animation;
   align-self: center;

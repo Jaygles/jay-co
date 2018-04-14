@@ -5,6 +5,9 @@ export default styled('div')`
   grid-area: main;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    ' text '
+    ' pdf ';
   grid-gap: 20px;
 `;

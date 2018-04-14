@@ -9,7 +9,7 @@ export default class PostPreview extends React.Component {
     return (
       <NavGrid>
         <NavItem target="/" label="Portfolio" />
-        <NavItem target="/about" label="About" />
+        <NavItem target="/about" label="Resume" />
         <NavItem target="/blog" label="Blog" />
         {isAuthenticated ? <LogoutButton /> : null}
       </NavGrid>

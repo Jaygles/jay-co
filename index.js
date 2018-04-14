@@ -38,10 +38,6 @@ app.prepare().then(() => {
 
   server.get('*', (req, res) => {
     const parsedUrl = url.parse(req.url, true);
-    console.log('----------------');
-    console.log('process-env');
-    console.log(process.env);
-    console.log('----------------');
     return nextRequestHandler(req, res, parsedUrl);
   });
 
