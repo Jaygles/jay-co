@@ -123,11 +123,7 @@ export default class Portfolio extends React.Component {
             {portfolio.description ? portfolio.description : null}
           </Text.PortfolioBody>
         )}
-        <Link
-          target="_blank"
-          style={{ 'align-self': 'end' }}
-          href={portfolio.link}
-        >
+        <Link target="_blank" href={portfolio.link}>
           <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>
