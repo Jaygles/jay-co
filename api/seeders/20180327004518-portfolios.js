@@ -9,7 +9,7 @@ module.exports = {
           title: 'Carrot Cake Bar and Grill',
           description:
             'My take on a simple web presence for a ficticious restaurant. Made with React and Redux. Vanilla CSS. Other things included are recompose and react-google-maps.',
-          img: '/static/carrot10x7.png',
+          img: '/static/carrot10x7.jpg',
           link: 'https://jaygles.github.io/react-restaurant-example/',
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -27,7 +27,7 @@ module.exports = {
           title: 'Fakesite',
           description:
             'A concept developed between myself and my friend Cody Persinger (https://www.linkedin.com/in/crpersinger/) Technologies are HTML5, SCSS/SASS, Javascript, jQuery',
-          img: '/static/Fakesite10x7.png',
+          img: '/static/Fakesite10x7.jpg',
           link: 'https://jaygles.github.io/Fakesite/',
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -36,7 +36,7 @@ module.exports = {
           title: 'Capsaicin Clicker',
           description:
             'A clicker game where you are trying to create the hottest pepper on earth. This is a MERN stack app using Redux. Uses the Foundation CSS framework.',
-          img: '/static/capclick10x7.png',
+          img: '/static/capclick10x7.jpg',
           link: 'https://www.capsaicin-clicker.com/',
           createdAt: new Date(),
           updatedAt: new Date(),
@@ -45,7 +45,7 @@ module.exports = {
           title: 'NYT Article Search',
           description:
             'A simple full-stack app pulling from the New York Times article search API. Technologies are MongoDB, Node.js, Express, React, vanilla CSS.',
-          img: '/static/react10x7.png',
+          img: '/static/react10x7.jpg',
           link: 'https://react-nyt-heroku.herokuapp.com/',
           createdAt: new Date(),
           updatedAt: new Date(),
