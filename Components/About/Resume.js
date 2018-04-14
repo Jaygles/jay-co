@@ -1,7 +1,6 @@
 import * as React from 'react';
-import { Document, Page } from 'react-pdf/dist/entry.webpack';
+import PDF from 'react-pdf-js';
 import styled, { css } from 'react-emotion';
-import AnnotationCss from './AnnotationCSS';
 import * as Text from '../Bits/Text';
 
 const DocWrap = styled('div')`
@@ -32,74 +31,82 @@ const ResumeLink = styled('a')`
 `;
 
 class Resume extends React.Component {
-  state = {
-    numPages: null,
-    pageNumber: 1,
-    width: 0,
-    now: Date.now(),
-    test(width) {
-      return css`
-        margin-bottom: 40px;
-        canvas {
-          transition: 1s ease-in all;
-          width: ${width * 0.6}px !important;
-          height: ${width * 0.6 * 11 / 8}px !important;
-        }
-      `;
-    },
+  state = {};
+
+  onDocumentComplete = (pages) => {
+    this.setState({ page: 1, pages });
   };
 
-  componentDidMount = () => {
-    this.setState({ width: window.innerWidth });
-    window.addEventListener('resize', this._onWindowResize, false);
+  onPageComplete = (page) => {
+    this.setState({ page });
   };
 
-  _onDocumentLoad = ({ numPages }) => {
-    this.setState({ numPages });
+  handlePrevious = () => {
+    this.setState({ page: this.state.page - 1 });
   };
 
-  rezieTimeout = null;
+  handleNext = () => {
+    this.setState({ page: this.state.page + 1 });
+  };
 
-  _onWindowResize = () => {
-    const actualResizeHandler = (thiis) => {
-      thiis.setState({ width: window.innerWidth });
-    };
-    if (!this.resizeTimeout) {
-      this.resizeTimeout = setTimeout(() => {
-        this.resizeTimeout = null;
-        actualResizeHandler(this);
-      }, 250);
+  renderPagination = (page, pages) => {
+    let previousButton = (
+      <li className="previous" onClick={this.handlePrevious}>
+        <a href="#">
+          <i className="fa fa-arrow-left" /> Previous
+        </a>
+      </li>
+    );
+    if (page === 1) {
+      previousButton = (
+        <li className="previous disabled">
+          <a href="#">
+            <i className="fa fa-arrow-left" /> Previous
+          </a>
+        </li>
+      );
     }
+    let nextButton = (
+      <li className="next" onClick={this.handleNext}>
+        <a href="#">
+          Next <i className="fa fa-arrow-right" />
+        </a>
+      </li>
+    );
+    if (page === pages) {
+      nextButton = (
+        <li className="next disabled">
+          <a href="#">
+            Next <i className="fa fa-arrow-right" />
+          </a>
+        </li>
+      );
+    }
+    return (
+      <nav>
+        <ul className="pager">
+          {previousButton}
+          {nextButton}
+        </ul>
+      </nav>
+    );
   };
 
   render() {
-    const { pageNumber, numPages } = this.state;
-    return this.state.width > 800 ? (
-      <DocWrap>
-        <Document
-          className={AnnotationCss}
+    let pagination = null;
+    if (this.state.pages) {
+      pagination = this.renderPagination(this.state.page, this.state.pages);
+    }
+    return (
+      <div>
+        <PDF
           file="./static/Resume.pdf"
-          options={{ workerSrc: 'static/' }}
-          onLoadSuccess={this._onDocumentLoad}
-        >
-          <Page
-            className={this.state.test(this.state.width)}
-            width={this.state.width * 0.6}
-            pageNumber={pageNumber}
-          />
-          <Page
-            className={this.state.test(this.state.width)}
-            width={this.state.width * 0.6}
-            pageNumber={pageNumber + 1}
-          />
-        </Document>
-      </DocWrap>
-    ) : (
-      <DocWrap>
-        <ResumeLink target="_blank" href="./static/Resume.pdf">
-          Download Resume
-        </ResumeLink>
-      </DocWrap>
+          onDocumentComplete={this.onDocumentComplete}
+          onPageComplete={this.onPageComplete}
+          page={this.state.page}
+        />
+        {pagination}
+      </div>
     );
   }
 }
