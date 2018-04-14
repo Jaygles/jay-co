@@ -1,5 +1,5 @@
 import * as React from 'react';
-import { Document, Page } from 'react-pdf';
+import { Document, Page } from 'react-pdf/dist/entry.webpack';
 import styled, { css } from 'react-emotion';
 import AnnotationCss from './AnnotationCSS';
 import * as Text from '../Bits/Text';
