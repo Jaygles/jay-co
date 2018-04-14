@@ -28,14 +28,33 @@ const ResumeLink = styled('a')`
 `;
 
 class Resume extends React.Component {
+  state = {
+    scale: 1.4,
+  };
+  componentDidMount = () => {
+    this.setState({ scale: window.innerWidth / 1200 });
+    window.addEventListener('resize', this._onWindowResize);
+  };
+  resizeTimeout = null;
+  _onWindowResize = () => {
+    const actualResizeHandler = (Comp) => {
+      Comp.setState({ scale: window.innerWidth / 1200 });
+    };
+    if (!this.resizeTimeout) {
+      this.resizeTimeout = setTimeout(() => {
+        this.resizeTimeout = null;
+        actualResizeHandler(this);
+      }, 250);
+    }
+  };
   render() {
     return (
       <DocWrap>
         <div className={divStyle}>
-          <PDF file="./static/Resume.pdf" scale={1.4} page={1} />
+          <PDF file="./static/Resume.pdf" scale={this.state.scale} page={1} />
         </div>
         <div className={divStyle}>
-          <PDF file="./static/Resume.pdf" scale={1.4} page={2} />
+          <PDF file="./static/Resume.pdf" scale={this.state.scale} page={2} />
         </div>
       </DocWrap>
     );

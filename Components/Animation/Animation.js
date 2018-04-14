@@ -26,10 +26,10 @@ const AnimationWrap = styled('div')`
     transform: scale3d(1.6, 1.6, 1.6);
   }
   @media (min-width: 2559px) {
-    transform: scale3d(3, 3, 3);
+    transform: scale3d(2, 2, 2);
   }
   @media (min-width: 4559px) {
-    transform: scale3d(6, 6, 6);
+    transform: scale3d(4, 4, 4);
   }
 `;
 

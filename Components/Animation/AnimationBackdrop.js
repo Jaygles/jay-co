@@ -34,12 +34,12 @@ const AnimationBackdrop = styled('div')`
     width: 600px;
   }
   @media (min-width: 2559px) {
-    height: 1200px;
-    width: 1200px;
+    height: 800px;
+    width: 800px;
   }
   @media (min-width: 4559px) {
-    height: 2000px;
-    width: 2000px;
+    height: 1000px;
+    width: 1000px;
   }
 `;
 
