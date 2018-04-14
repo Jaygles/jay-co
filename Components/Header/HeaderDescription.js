@@ -18,8 +18,13 @@ class HeaderDescription extends React.Component {
       <DescriptionWrap>
         <Text.MainDescription>
           Hi, I'm a Kansas City based Web Developer. Feel free to check out my
-          work or see what I know. Want to get in touch? I'm just a{' '}
-          <Text.Anchor href="mailto:JaySull514@gmail.com">click</Text.Anchor>{' '}
+          work or see what I know below.
+          <br />
+          <br />
+          Want to get in touch? I'm just a{' '}
+          <Text.Anchor href="mailto:JaySull514@gmail.com">
+            click
+          </Text.Anchor>{' '}
           away.
         </Text.MainDescription>
       </DescriptionWrap>
