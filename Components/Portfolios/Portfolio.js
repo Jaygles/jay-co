@@ -7,7 +7,11 @@ import Textarea from '../Bits/Textarea';
 import Link from '../Bits/Link';
 import Img from '../Bits/Img';
 import * as PortfolioGrid from '../Grids/PortfolioGrid';
-import styled from 'react-emotion';
+import styled, { css } from 'react-emotion';
+
+const imgAlign = css`
+  align-self: end;
+`;
 
 const EditOptionsWrapper = styled('div')`
   height: 40px;
@@ -70,11 +74,7 @@ export default class Portfolio extends React.Component {
           {portfolio.title ? portfolio.title : null}
         </Text.Heading1>
         <Text.PortfolioBody>{portfolio.description}</Text.PortfolioBody>
-        <Link
-          target="_blank"
-          style={{ 'align-self': 'end' }}
-          href={portfolio.link}
-        >
+        <Link target="_blank" className={imgAlign} href={portfolio.link}>
           <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>
@@ -132,7 +132,7 @@ export default class Portfolio extends React.Component {
             {portfolio.description ? portfolio.description : null}
           </Text.PortfolioBody>
         )}
-        <Link target="_blank" href={portfolio.link}>
+        <Link className={imgAlign} target="_blank" href={portfolio.link}>
           <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>
