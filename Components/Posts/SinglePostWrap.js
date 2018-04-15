@@ -14,4 +14,7 @@ export default styled('div')`
       cursor: pointer;
     }
   }
+  p {
+    font-size: 21px;
+  }
 `;
