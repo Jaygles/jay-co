@@ -8,29 +8,29 @@ const AnimationWrap = styled('div')`
   align-items: center;
   justify-content: center;
   transition: 0.3s all linear;
-  transform: scale3d(0.8, 0.8, 0.8);
+  // transform: scale3d(0.8, 0.8, 0.8);
 
-  @media (max-width: 359px) {
-    transform: scale3d(0.6, 0.6, 0.6);
-  }
-  @media (min-width: 360px) {
-    transform: scale3d(0.7, 0.7, 0.7);
-  }
-  @media (min-width: 600px) {
-    transform: scale3d(0.8, 0.8, 0.8);
-  }
-  @media (min-width: 1023px) {
-    transform: scale3d(1, 1, 1);
-  }
-  @media (min-width: 1899px) {
-    transform: scale3d(1.6, 1.6, 1.6);
-  }
-  @media (min-width: 2559px) {
-    transform: scale3d(2, 2, 2);
-  }
-  @media (min-width: 4559px) {
-    transform: scale3d(4, 4, 4);
-  }
+  // @media (max-width: 359px) {
+  //   transform: scale3d(0.6, 0.6, 0.6);
+  // }
+  // @media (min-width: 360px) {
+  //   transform: scale3d(0.7, 0.7, 0.7);
+  // }
+  // @media (min-width: 600px) {
+  //   transform: scale3d(0.8, 0.8, 0.8);
+  // }
+  // @media (min-width: 1023px) {
+  //   transform: scale3d(1, 1, 1);
+  // }
+  // @media (min-width: 1899px) {
+  //   transform: scale3d(1.6, 1.6, 1.6);
+  // }
+  // @media (min-width: 2559px) {
+  //   transform: scale3d(2, 2, 2);
+  // }
+  // @media (min-width: 4559px) {
+  //   transform: scale3d(4, 4, 4);
+  // }
 `;
 
 class Animation extends React.Component {
