@@ -7,6 +7,15 @@ import Button from '../Bits/Button';
 import Textarea from '../Bits/Textarea';
 import SinglePostWrap from './SinglePostWrap';
 import sanitizeHtml from 'sanitize-html';
+import styled from 'react-emotion';
+
+const EditOptionsWrapper = styled('div')`
+  height: 40px;
+  width: 223px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+`;
 
 export default class Post extends React.Component {
   state = {
@@ -211,22 +220,24 @@ export default class Post extends React.Component {
         ) : (
           undefined
         )}
-        {!isEditing ? (
-          <Button onClick={this._handleEdit}>Edit Post</Button>
-        ) : (
-          undefined
-        )}
-        {isEditing ? (
-          <Button onClick={this._handleCancel}>Cancel</Button>
-        ) : (
-          undefined
-        )}
-        {isEditing ? (
-          <Button onClick={this._handleSave}>Save</Button>
-        ) : (
-          undefined
-        )}
-        <Button onClick={this._handleDelete}>Delete</Button>
+        <EditOptionsWrapper>
+          {!isEditing ? (
+            <Button onClick={this._handleEdit}>Edit Post</Button>
+          ) : (
+            undefined
+          )}
+          {isEditing ? (
+            <Button onClick={this._handleCancel}>Cancel</Button>
+          ) : (
+            undefined
+          )}
+          {isEditing ? (
+            <Button onClick={this._handleSave}>Save</Button>
+          ) : (
+            undefined
+          )}
+          <Button onClick={this._handleDelete}>Delete</Button>
+        </EditOptionsWrapper>
       </SinglePostWrap>
     );
   };
