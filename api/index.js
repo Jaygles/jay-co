@@ -40,8 +40,8 @@ module.exports = (app) => {
   // app.post('/api/users', user.create);
   // app.get('/api/users', user.list);
   // app.get('/api/users/:userId', user.get);
-  app.put('/api/users/:userId', authMiddleware, user.update);
-  app.delete('/api/viewer/delete', authMiddleware, user.deleteViewer);
+  // app.put('/api/users/:userId', authMiddleware, user.update);
+  // app.delete('/api/viewer/delete', authMiddleware, user.deleteViewer);
 
   app.post('/api/posts', authMiddleware, post.create);
   app.get('/api/posts', post.list);
