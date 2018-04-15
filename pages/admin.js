@@ -11,7 +11,6 @@ class Admin extends React.Component {
       <Document>
         <AdminGrid>
           <LoginForm />
-          <SignupForm />
         </AdminGrid>
       </Document>
     );

@@ -33,11 +33,11 @@ module.exports = (app) => {
     });
   });
 
-  app.post('/api/signup', user.create);
+  // app.post('/api/signup', user.create);
   app.post('/api/login', user.auth);
   app.post('/api/logout', authMiddleware, user.logout);
 
-  app.post('/api/users', user.create);
+  // app.post('/api/users', user.create);
   // app.get('/api/users', user.list);
   // app.get('/api/users/:userId', user.get);
   app.put('/api/users/:userId', authMiddleware, user.update);

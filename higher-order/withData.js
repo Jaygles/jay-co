@@ -7,9 +7,6 @@ const skipMerge = ['initialState', 'initialProps', 'isServer', 'store'];
 const storeKey = '__NEXT_REDUX_STORE__';
 
 const getInitialStateData = async (ctx) => {
-  const usersRequest = await HTTP.getAllUsers();
-  const users = await usersRequest.json();
-
   const postsRequest = await HTTP.getAllPosts();
   const posts = await postsRequest.json();
 
@@ -28,7 +25,6 @@ const getInitialStateData = async (ctx) => {
 
   return {
     post,
-    users,
     posts,
     comments,
     portfolios,
