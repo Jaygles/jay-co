@@ -16,5 +16,6 @@ export default styled('div')`
   }
   p {
     font-size: 21px;
+    line-height: 140%;
   }
 `;
