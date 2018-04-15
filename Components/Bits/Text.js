@@ -7,6 +7,10 @@ export const PortfolioBody = styled('div')`
   line-height: 24px;
   font-weight: 400;
   color: rgb(220, 220, 220);
+  @media (max-width: 650px) {
+    margin: 0;
+    padding: 20px;
+  }
 `;
 
 export const PostBody = styled('div')`
@@ -22,6 +26,10 @@ export const Heading1 = styled('h1')`
   line-height: 48px;
   font-weight: 600;
   color: rgb(220, 220, 220);
+  @media (max-width: 650px) {
+    margin: 0;
+    padding: 20px;
+  }
 `;
 
 export const Heading2 = styled('h1')`
@@ -64,6 +72,9 @@ export const MainDescription = styled('p')`
   font-weight: 600;
   line-height: 28px;
   font-size: 24px;
+  @media (max-width: 650px) {
+    font-size: 16px;
+  }
 `;
 
 export const Anchor = (props) => {

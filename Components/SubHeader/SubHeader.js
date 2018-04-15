@@ -9,6 +9,9 @@ const Top = styled('header')`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @media (max-width: 650px) {
+    justify-content: center;
+  }
 `;
 
 const title = css`
@@ -20,9 +23,7 @@ class SubHeader extends Component {
   render() {
     return (
       <Top>
-        <Text.Heading1 className={title}>
-          <p>{this.props.activePage}</p>
-        </Text.Heading1>
+        <Text.Heading1 className={title}>{this.props.activePage}</Text.Heading1>
       </Top>
     );
   }

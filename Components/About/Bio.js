@@ -46,7 +46,7 @@ class Bio extends React.Component {
           References available upon request.
           <br />
           <br />
-          <ResumeLink href="./static/Resume.pdf" target="_blank" download>
+          <ResumeLink href="./static/pdf/Resume.pdf" target="_blank">
             Download Resume (PDF)
           </ResumeLink>
         </BioText>

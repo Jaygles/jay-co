@@ -14,12 +14,12 @@ const AnimationBackdrop = styled('div')`
     translateX(40px);
 
   @media (max-width: 359px) {
-    height: 200px;
-    width: 200px;
+    height: 150px;
+    width: 150px;
   }
   @media (min-width: 360px) {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
   }
   @media (min-width: 600px) {
     height: 350px;

@@ -48,23 +48,33 @@ class Resume extends React.Component {
     }
   };
   render() {
-    return (
-      <DocWrap>
-        <div className={divStyle}>
-          <PDF
-            file="./static/pdf/Resume.pdf"
-            scale={this.state.scale}
-            page={1}
-          />
+    const withPDF = () => {
+      return (
+        <div>
+          <div className={divStyle}>
+            <PDF
+              file="./static/pdf/Resume.pdf"
+              scale={this.state.scale}
+              page={1}
+            />
+          </div>
+          <div className={divStyle}>
+            <PDF
+              file="./static/pdf/Resume.pdf"
+              scale={this.state.scale}
+              page={2}
+            />
+          </div>
         </div>
-        <div className={divStyle}>
-          <PDF
-            file="./static/pdf/Resume.pdf"
-            scale={this.state.scale}
-            page={2}
-          />
-        </div>
-      </DocWrap>
+      );
+    };
+    const withoutPDF = () => {
+      return <span />;
+    };
+    return this.state.scale < 0.85 ? (
+      <DocWrap>{withoutPDF()}</DocWrap>
+    ) : (
+      <DocWrap>{withPDF()}</DocWrap>
     );
   }
 }
