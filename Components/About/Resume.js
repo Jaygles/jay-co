@@ -51,10 +51,18 @@ class Resume extends React.Component {
     return (
       <DocWrap>
         <div className={divStyle}>
-          <PDF file="./static/Resume.pdf" scale={this.state.scale} page={1} />
+          <PDF
+            file="./static/pdf/Resume.pdf"
+            scale={this.state.scale}
+            page={1}
+          />
         </div>
         <div className={divStyle}>
-          <PDF file="./static/Resume.pdf" scale={this.state.scale} page={2} />
+          <PDF
+            file="./static/pdf/Resume.pdf"
+            scale={this.state.scale}
+            page={2}
+          />
         </div>
       </DocWrap>
     );

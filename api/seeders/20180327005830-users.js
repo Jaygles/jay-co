@@ -2,16 +2,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.bulkInsert('Users', [
-      {
-        username: 'jay',
-        password:
-          '$2a$10$jsLMW34me7CKyqTRnXUWPeHo5KEIKfcoMBbkBp2QmdJyGteLytumy',
-        salt: '$2a$10$jsLMW34me7CKyqTRnXUWPe',
-        createdAt: new Date(),
-        updatedAt: new Date(),
-      },
-    ]);
+    return queryInterface.bulkInsert('Users', []);
     /*
       Add altering commands here.
       Return a promise to correctly handle asynchronicity.
