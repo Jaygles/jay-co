@@ -2,7 +2,7 @@ import styled from 'react-emotion';
 
 export default styled('div')`
   width: 100%;
-  min-height: calc(100vh - 200px);
+  min-height: calc(100vh - 100px);
   max-width: 99.9vw;
   display: grid;
   grid-template-columns: 200px 1fr;

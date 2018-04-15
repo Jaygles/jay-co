@@ -3,6 +3,7 @@ import styled from 'react-emotion';
 import FooterIcon from './FooterIcon';
 
 const FooterWrapper = styled('footer')`
+  padding-bottom: 5px;
   width: 100%;
   font-size: 16px;
   grid-area: footer;
@@ -13,9 +14,11 @@ const FooterWrapper = styled('footer')`
 
 class Footer extends React.Component {
   render() {
+    const date = new Date();
+    const year = date.getFullYear();
     return (
       <FooterWrapper>
-        <span>&copy; Jacob Sullivan</span>
+        <span>&copy;{year} Jacob Sullivan</span>
         <FooterIcon
           img="./static/linkedin-icon.png"
           href="https://www.linkedin.com/in/the-jay-sullivan/"
