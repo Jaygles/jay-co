@@ -6,7 +6,7 @@ export const main = styled('div')`
   grid-area: main;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(600px, 1fr);
+  grid-template-rows: repeat(auto-fill, minmax(600px, 1fr));
   grid-gap: 20px;
 `;
 
