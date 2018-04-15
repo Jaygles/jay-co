@@ -1,7 +1,7 @@
 import { css } from 'react-emotion';
 
 const buttonStyle = css`
-  font-size: 12px;
+  font-size: 16px;
   font-weight: 600;
   outline: 0;
   margin-right: 10px;

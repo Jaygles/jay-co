@@ -3,6 +3,14 @@ import Textarea from '../Bits/Textarea';
 import Button from '../Bits/Button';
 import * as Actions from '../../common/actions';
 import { connect } from 'react-redux';
+import styled from 'react-emotion';
+
+const PostFormWrapper = styled('div')`
+  width: 90%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+`;
 
 class PostForm extends React.Component {
   state = {
@@ -30,7 +38,7 @@ class PostForm extends React.Component {
 
   render() {
     return (
-      <div style={this.props.style}>
+      <PostFormWrapper style={this.props.style}>
         <Textarea
           onChange={this._handleTitleChange}
           value={this.state.title}
@@ -47,7 +55,7 @@ class PostForm extends React.Component {
           value={this.state.content}
         />
         <Button onClick={this._handleSave}>Save</Button>
-      </div>
+      </PostFormWrapper>
     );
   }
 }

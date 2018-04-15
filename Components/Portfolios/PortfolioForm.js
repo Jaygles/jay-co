@@ -4,6 +4,14 @@ import Button from '../Bits/Button';
 import Input from '../Bits/Input';
 import * as Actions from '../../common/actions';
 import { connect } from 'react-redux';
+import styled from 'react-emotion';
+
+const PortfolioFormWrapper = styled('div')`
+  width: 90%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+`;
 
 class PortfolioForm extends React.Component {
   state = {
@@ -43,7 +51,7 @@ class PortfolioForm extends React.Component {
 
   render() {
     return (
-      <div style={this.props.style}>
+      <PortfolioFormWrapper style={this.props.style}>
         <Textarea
           onChange={this._handleTitleChange}
           value={this.state.title}
@@ -70,7 +78,7 @@ class PortfolioForm extends React.Component {
           placeholder="link"
         />
         <Button onClick={this._handleSave}>Save</Button>
-      </div>
+      </PortfolioFormWrapper>
     );
   }
 }

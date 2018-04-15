@@ -7,6 +7,15 @@ import Textarea from '../Bits/Textarea';
 import Link from '../Bits/Link';
 import Img from '../Bits/Img';
 import * as PortfolioGrid from '../Grids/PortfolioGrid';
+import styled from 'react-emotion';
+
+const EditOptionsWrapper = styled('div')`
+  height: 40px;
+  width: 255px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+`;
 
 export default class Portfolio extends React.Component {
   state = {
@@ -77,7 +86,7 @@ export default class Portfolio extends React.Component {
     const { isEditing } = this.state;
     return (
       <PortfolioGrid.single>
-        <div>
+        <EditOptionsWrapper>
           {!isEditing ? (
             <Button onClick={this._handleEdit}>Edit Portfolio Item</Button>
           ) : (
@@ -94,7 +103,7 @@ export default class Portfolio extends React.Component {
             undefined
           )}
           <Button onClick={this._handleDelete}>Delete</Button>
-        </div>
+        </EditOptionsWrapper>
         {isEditing ? (
           <Textarea
             value={this.state.title}

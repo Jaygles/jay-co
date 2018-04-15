@@ -14,6 +14,7 @@ const inputStyles = css`
   border-bottom: 1px dashed #ececec;
   padding: 40px 0 16px 0;
   font-family: 'IBM Plex Serif', serif;
+  font-size: 16px;
   background-color: #f9f9f9;
   &:focus {
     border: 0;
