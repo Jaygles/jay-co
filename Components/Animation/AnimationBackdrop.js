@@ -30,16 +30,16 @@ const AnimationBackdrop = styled('div')`
     width: 400px;
   }
   @media (min-width: 1899px) {
+    height: 500px;
+    width: 500px;
+  }
+  @media (min-width: 2559px) {
     height: 600px;
     width: 600px;
   }
-  @media (min-width: 2559px) {
-    height: 800px;
-    width: 800px;
-  }
   @media (min-width: 4559px) {
-    height: 1000px;
-    width: 1000px;
+    height: 600px;
+    width: 600px;
   }
 `;
 
