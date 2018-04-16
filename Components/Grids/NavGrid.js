@@ -11,7 +11,7 @@ export default styled('nav')`
   grid-template-rows: repeat(auto-fill, 50px);
   grid-gap: 10px;
   @media (max-width: 650px) {
-    width: 96vw;
+    width: 100%;
     margin: 0;
     grid-template-columns: 1fr 1fr 1fr;
     align-items: center;

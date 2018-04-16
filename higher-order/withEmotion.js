@@ -25,8 +25,10 @@ const injectGlobalStyles = () => injectGlobal`
   footer, header, hgroup, menu, nav, section {
     display: block;
   }
-  html, body {
-    width: calc(100vw - 20px);
+  html {
+    margin: 0;
+    width: 100vw;
+    max-width: 100%;
     background-color: #001b47;
     color: rgb(220, 220, 220);
     font-family: 'IBM Plex Serif', serif;
@@ -34,6 +36,7 @@ const injectGlobalStyles = () => injectGlobal`
     scroll-behavior: smooth;
   }
   body {
+    margin: 0;
     border-top: 4px solid #83d18f;
     border-left: 4px solid #83d18f;
   }

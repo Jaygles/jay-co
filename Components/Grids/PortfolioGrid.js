@@ -9,7 +9,6 @@ export const main = styled('div')`
   grid-template-rows: repeat(auto-fill, minmax(600px, 1fr));
   grid-gap: 20px;
   @media (max-width: 650px) {
-    width: 96vw;
   }
 `;
 

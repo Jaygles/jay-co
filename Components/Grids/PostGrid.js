@@ -7,7 +7,6 @@ export default styled('section')`
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   @media (max-width: 650px) {
-    width: 96vw;
     justify-items: center;
   }
 `;
