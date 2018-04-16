@@ -38,7 +38,18 @@ app.prepare().then(() => {
 
   server.get('*', (req, res) => {
     const parsedUrl = url.parse(req.url, true);
-    return nextRequestHandler(req, res, parsedUrl);
+    const rootStaticFiles = [
+      '/robots.txt',
+      '/sitemap.xml',
+      '/favicon.ico',
+      '/sw.js',
+    ];
+    if (rootStaticFiles.indexOf(parsedUrl.pathname) > -1) {
+      const path = join(__dirname, 'static', parsedUrl.pathname);
+      app.serveStatic(req, res, path);
+    } else {
+      return nextRequestHandler(req, res, parsedUrl);
+    }
   });
 
   server.listen(port, (err) => {
