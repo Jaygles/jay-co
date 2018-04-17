@@ -1,6 +1,7 @@
 import styled from 'react-emotion';
 
 export default styled('div')`
+  max-width: 100vw;
   width: 90%;
   margin-bottom: 30px;
   word-wrap: break-word;
