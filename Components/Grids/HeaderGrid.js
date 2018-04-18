@@ -29,12 +29,12 @@ export default styled('div')`
   }
   @media (min-width: 768px) {
     grid-template-rows:
-      minmax(100px, 8vw) minmax(450px, 40vh) minmax(350px, 45vh)
+      minmax(100px, 8vw) minmax(400px, 40vh) minmax(300px, 45vh)
       auto;
   }
   @media (min-width: 1899px) {
     grid-template-rows:
-      minmax(150px, 8vw) minmax(700px, 40vh) minmax(115px, 45vh)
+      minmax(150px, 8vw) minmax(700px, 40vh) minmax(505px, 45vh)
       auto;
   }
   @media (min-width: 2559px) {
