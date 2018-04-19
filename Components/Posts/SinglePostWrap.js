@@ -22,10 +22,10 @@ export default styled('div')`
   }
   .figure-row {
     width: 100%;
-    max-width: 1200px;
+    max-width: 66vw;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     align-items: center;
     justify-content: center;
   }
