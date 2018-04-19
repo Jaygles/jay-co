@@ -39,13 +39,19 @@ export default styled('div')`
   @media (min-width: 1899px) {
     min-height: 1355px;
     grid-template-rows:
-      minmax(150px, 8vw) minmax(700px, 40vh) minmax(505px, 45vh)
+      minmax(100px, 8vw) minmax(500px, 40vh) minmax(200px, 30vh)
       auto;
   }
   @media (min-width: 2559px) {
-    min-height: 2065px;
+    min-height: 1600px;
     grid-template-rows:
-      minmax(260px, 8vw) minmax(900px, 40vh) minmax(905px, 30vh)
+      minmax(260px, 8vw) minmax(500px, 40vh) minmax(600px, 30vh)
+      auto;
+  }
+  @media (min-width: 3839px) {
+    min-height: 2160px;
+    grid-template-rows:
+      minmax(260px, 8vw) minmax(850px, 40vh) minmax(850px, 30vh)
       auto;
   }
   @media (min-width: 4559px) {

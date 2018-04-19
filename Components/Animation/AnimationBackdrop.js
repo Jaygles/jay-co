@@ -35,17 +35,28 @@ const AnimationBackdrop = styled('div')`
     width: 300px;
   }
   @media (min-width: 1899px) {
+    margin-top: 8vh;
+    height: 400px;
+    width: 400px;
+  }
+  @media (min-width: 2559px) {
+    margin-top: 5vh;
     height: 500px;
     width: 500px;
   }
-  @media (min-width: 2559px) {
-    margin-top: 8vh;
-    height: 700px;
-    width: 700px;
+  @media (min-width: 3839px) {
+    margin-top: 5vh;
+    height: 900px;
+    width: 900px;
   }
   @media (min-width: 4559px) {
     height: 1000px;
     width: 1000px;
+  }
+  @media (min-width: 7679px) {
+    margin-top: 9vh;
+    height: 1200px;
+    width: 1200px;
   }
 `;
 

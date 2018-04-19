@@ -75,6 +75,13 @@ export const MainDescription = styled('p')`
   @media (max-width: 650px) {
     font-size: 16px;
   }
+  @media (min-width: 2559px) {
+    font-size: 32px;
+  }
+  @media (min-width: 4559px) {
+    font-size: 96px;
+    line-height: 96px;
+  }
 `;
 
 export const Anchor = (props) => {
@@ -89,6 +96,12 @@ export const Anchor = (props) => {
     &:hover {
       color: #377c79;
       cursor: pointer;
+    }
+    @media (min-width: 2559px) {
+      font-size: 32px;
+    }
+    @media (min-width: 4559px) {
+      font-size: 96px;
     }
   `;
 

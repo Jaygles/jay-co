@@ -17,4 +17,9 @@ export default styled('nav')`
     align-items: center;
     text-align: center;
   }
+  @media (min-width: 4559px) {
+    padding-top: 100px;
+    margin-left: 80px;
+    grid-template-rows: repeat(auto-fit, 250px);
+  }
 `;

@@ -18,4 +18,9 @@ export default styled('div')`
       '  main  '
       ' footer ';
   }
+  @media (min-width: 2559px) {
+    grid-template-columns: 400px 1fr;
+  }
+  @media (min-width: 4559px) {
+    grid-template-columns: 800px 1fr;
 `;

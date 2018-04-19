@@ -17,6 +17,13 @@ const Top = styled('header')`
 const title = css`
   min-width: 130px;
   margin-left: 20px;
+  @media (min-width: 2559px) {
+    font-size: 48px;
+  }
+  @media (min-width: 4559px) {
+    margin-left: 80px;
+    font-size: 128px;
+  }
 `;
 
 class SubHeader extends Component {
