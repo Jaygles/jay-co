@@ -22,8 +22,8 @@ export default styled('div')`
   }
   .figure-row {
     width: 100%;
-    margin-top: 20px;
-    margin-bottom: 15px;
+    max-width: 1200px;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
@@ -41,6 +41,8 @@ export default styled('div')`
   figure {
     display: table;
     img {
+      height: 375px;
+      width: 375px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       border-radius: 1px;
     }
