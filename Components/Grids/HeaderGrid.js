@@ -13,36 +13,43 @@ export default styled('div')`
     'description'
     '   arrow   ';
   @media (max-width: 359px) {
+    min-height: 350px;
     grid-template-rows:
       minmax(20px, 8vw) minmax(200px, 40vh) minmax(130px, 45vh)
       auto;
   }
   @media (min-width: 360px) {
+    min-height: 620px;
     grid-template-rows:
       minmax(50px, 8vw) minmax(270px, 40vh) minmax(300px, 45vh)
       auto;
   }
   @media (min-width: 600px) {
+    min-height: 620px;
     grid-template-rows:
       minmax(70px, 8vw) minmax(350px, 40vh) minmax(200px, 45vh)
       auto;
   }
   @media (min-width: 768px) {
+    min-height: 800px;
     grid-template-rows:
       minmax(100px, 8vw) minmax(400px, 40vh) minmax(300px, 45vh)
       auto;
   }
   @media (min-width: 1899px) {
+    min-height: 1355px;
     grid-template-rows:
       minmax(150px, 8vw) minmax(700px, 40vh) minmax(505px, 45vh)
       auto;
   }
   @media (min-width: 2559px) {
+    min-height: 2065px;
     grid-template-rows:
       minmax(260px, 8vw) minmax(900px, 40vh) minmax(905px, 30vh)
       auto;
   }
   @media (min-width: 4559px) {
+    min-height: 2350px;
     grid-template-rows:
       minmax(350px, 8vw) minmax(1000px, 40vh) minmax(1000px, 40vh)
       auto;

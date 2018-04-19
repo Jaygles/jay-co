@@ -17,7 +17,7 @@ export default styled('div')`
     }
   }
   p {
-    font-size: 21px;
+    font-size: calc(12px + 1vw);
     line-height: 140%;
   }
   .figure-row {
