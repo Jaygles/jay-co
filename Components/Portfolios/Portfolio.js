@@ -8,6 +8,7 @@ import Link from '../Bits/Link';
 import Img from '../Bits/Img';
 import * as PortfolioGrid from '../Grids/PortfolioGrid';
 import styled, { css } from 'react-emotion';
+import * as gtag from '../../utils/gtag';
 
 const imgAlign = css`
   align-self: end;
@@ -66,6 +67,16 @@ export default class Portfolio extends React.Component {
     );
   };
 
+  _handleOutlink = (portfolio) => {
+    if (typeof window !== 'undefined') {
+      gtag.event({
+        action: 'view_portfolio',
+        category: 'Portfolio',
+        label: portfolio,
+      });
+    }
+  };
+
   renderLoggedOut = () => {
     const { portfolio } = this.props;
     return (
@@ -74,7 +85,12 @@ export default class Portfolio extends React.Component {
           {portfolio.title ? portfolio.title : null}
         </Text.Heading1>
         <Text.PortfolioBody>{portfolio.description}</Text.PortfolioBody>
-        <Link target="_blank" className={imgAlign} href={portfolio.link}>
+        <Link
+          onClick={() => this._handleOutlink(portfolio.title)}
+          target="_blank"
+          className={imgAlign}
+          href={portfolio.link}
+        >
           <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>
@@ -132,7 +148,12 @@ export default class Portfolio extends React.Component {
             {portfolio.description ? portfolio.description : null}
           </Text.PortfolioBody>
         )}
-        <Link className={imgAlign} target="_blank" href={portfolio.link}>
+        <Link
+          onClick={() => this._handleOutlink(portfolio.title)}
+          className={imgAlign}
+          target="_blank"
+          href={portfolio.link}
+        >
           <Img src={portfolio.img} />
         </Link>
       </PortfolioGrid.single>

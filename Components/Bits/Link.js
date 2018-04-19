@@ -6,13 +6,15 @@ export default class CustomLink extends React.Component {
     const { target } = this.props;
     if (this.props.onClick) {
       return (
-        <span
+        <a
+          href={this.props.href}
+          target={target}
           className={this.props.className}
           style={this.props.style}
           onClick={this.props.onClick}
         >
           {this.props.children}
-        </span>
+        </a>
       );
     }
 

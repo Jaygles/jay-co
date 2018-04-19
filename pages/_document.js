@@ -22,6 +22,19 @@ export default class MyDocument extends Document {
         <Head>
           <title>Jay's Blog</title>
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
+          <script
+            async
+            src={`https://www.googletagmanager.com/gtag/js?id=UA-109570220-1`}
+          />
+          <script
+            dangerouslySetInnerHTML={{
+              __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'UA-109570220-1');
+          `}}
+          />
         </Head>
         <body>
           <Main />

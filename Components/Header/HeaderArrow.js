@@ -1,5 +1,6 @@
 import * as React from 'react';
 import styled from 'react-emotion';
+import * as gtag from '../../utils/gtag';
 
 const ArrowGrid = styled('div')`
   width: 100%;
@@ -21,6 +22,13 @@ const ArrowWrap = styled('span')`
 class HeaderArrow extends React.Component {
   _handleClick = () => {
     window.scrollTo(0, window.innerHeight);
+    if (typeof window !== 'undefined') {
+      gtag.event({
+        action: 'used_arrow',
+        category: 'Arrow',
+        label: 'arrow',
+      });
+    }
   };
   render() {
     return (

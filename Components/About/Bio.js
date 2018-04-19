@@ -5,6 +5,7 @@ import AboutGrid from '../Grids/AboutGrid';
 import Resume from './Resume';
 import * as Text from '../Bits/Text';
 import * as Actions from '../../common/actions';
+import * as gtag from '../../utils/gtag';
 
 const BioImg = styled('img')`
   width: 100%;
@@ -35,6 +36,17 @@ class Bio extends React.Component {
   componentWillMount() {
     this.props.dispatch(Actions.setActivePage('Resume'));
   }
+
+  _handleOutlink = () => {
+    if (typeof window !== 'undefined') {
+      gtag.event({
+        action: 'download_resume',
+        category: 'Resume',
+        label: 'resume-dl',
+      });
+    }
+  };
+
   render() {
     return (
       <AboutGrid>
@@ -46,7 +58,11 @@ class Bio extends React.Component {
           References available upon request.
           <br />
           <br />
-          <ResumeLink href="./static/pdf/Resume.pdf" target="_blank">
+          <ResumeLink
+            onClick={() => this._handleOutlink()}
+            href="./static/pdf/Resume.pdf"
+            target="_blank"
+          >
             Download Resume (PDF)
           </ResumeLink>
         </BioText>

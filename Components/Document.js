@@ -1,6 +1,12 @@
 import Head from 'next/head';
 import * as React from 'react';
+import Router from 'next/router';
 import withEmotion from '../higher-order/withEmotion';
+import * as gtag from '../utils/gtag';
+
+Router.onRouteChangeComplete = (url) => {
+  gtag.pageview(url);
+};
 
 class Document extends React.Component {
   static defaultProps = {
