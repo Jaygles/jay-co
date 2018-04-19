@@ -32658,7 +32658,7 @@ module.exports = function(hash, moduleMap, options) {
 /***/ (function(module, exports, __webpack_require__) {
 
 if (false) {
-  navigator.serviceWorker.register('/static/sw.js').then(function (reg) {}).catch(function (e) {
+  navigator.serviceWorker.register('/sw.js').then(function (reg) {}).catch(function (e) {
     console.error('Error during service worker registration:', e);
   });
 }

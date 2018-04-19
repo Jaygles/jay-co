@@ -8,6 +8,7 @@ import compression from 'compression';
 import cookieParser from 'cookie-parser';
 import passport from 'passport';
 import bodyParser from 'body-parser';
+import { join } from 'path';
 import setupAuth from './api/auth';
 import setupApi from './api';
 
