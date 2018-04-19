@@ -93,10 +93,13 @@ export default class Post extends React.Component {
         'td',
         'pre',
         'img',
+        'figure',
+        'figcaption',
       ],
       allowedAttributes: {
         a: ['href', 'name', 'target'],
-        img: ['src'],
+        img: ['src', 'alt', 'width', 'height'],
+        div: ['class'],
       },
       selfClosing: [
         'img',
@@ -165,10 +168,13 @@ export default class Post extends React.Component {
         'td',
         'pre',
         'img',
+        'figure',
+        'figcaption',
       ],
       allowedAttributes: {
         a: ['href', 'name', 'target'],
-        img: ['src'],
+        img: ['src', 'alt', 'width', 'height'],
+        div: ['class'],
       },
       selfClosing: [
         'img',

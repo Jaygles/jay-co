@@ -91,7 +91,7 @@ export default class Portfolio extends React.Component {
           className={imgAlign}
           href={portfolio.link}
         >
-          <Img src={portfolio.img} />
+          <Img src={portfolio.img} alt={portfolio.title} />
         </Link>
       </PortfolioGrid.single>
     );
