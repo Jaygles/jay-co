@@ -23,7 +23,7 @@ export default styled('div')`
   .figure-row {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
@@ -33,18 +33,21 @@ export default styled('div')`
     width: auto;
     height: auto;
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
   }
   figure {
+    display: table;
     img {
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       border-radius: 1px;
     }
   }
   figcaption {
+    caption-side: bottom;
+    display: table-caption;
     padding: 1px;
     font-style: italic;
     text-align: center;
