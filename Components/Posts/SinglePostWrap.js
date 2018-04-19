@@ -23,7 +23,7 @@ export default styled('div')`
   .figure-row {
     width: 100%;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     align-items: center;
@@ -33,7 +33,7 @@ export default styled('div')`
     width: auto;
     height: auto;
     margin-top: 20px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
