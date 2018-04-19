@@ -25,7 +25,7 @@ export default styled('div')`
     margin-top: 20px;
     margin-bottom: 20px;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     align-items: center;
     justify-content: center;
   }
