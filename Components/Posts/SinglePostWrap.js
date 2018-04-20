@@ -5,6 +5,8 @@ export default styled('div')`
   width: 90%;
   margin-bottom: 30px;
   word-wrap: break-word;
+  display: flex;
+  flex-direction: column;
   a {
     color: #72b597;
     text-decoration: none;
@@ -57,6 +59,7 @@ export default styled('div')`
     }
   }
   code {
+    justify-self: center;
     @media (max-width: 359px) {
       font-size: 14px;
       line-height: 160%;
@@ -96,11 +99,10 @@ export default styled('div')`
   .figure-row {
     width: 100%;
     max-width: 66vw;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
-    grid-template-columns: repeat(auto-fill, minmax(275px, 1fr));
+    display: flex;
+    flex-wrap: wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-around;
   }
   .figure-wrap {
     width: auto;
@@ -118,6 +120,10 @@ export default styled('div')`
       width: 375px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       border-radius: 1px;
+      @media (max-width: 599px) {
+        height: 200px;
+        width: 200px;
+      }
       @media (min-width: 600px) {
         height: 250px;
         width: 250px;
