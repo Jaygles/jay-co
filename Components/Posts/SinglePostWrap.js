@@ -23,12 +23,12 @@ export default styled('div')`
     @media (max-width: 359px) {
       font-size: 24px;
       line-height: 160%;
-      text-align: center;
+      text-align: justify;
     }
     @media (min-width: 360px) {
       font-size: 24px;
       line-height: 140%;
-      text-align: center;
+      text-align: justify;
     }
     @media (min-width: 600px) {
       font-size: 24px;
@@ -98,7 +98,7 @@ export default styled('div')`
     max-width: 66vw;
     margin: 20px auto;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
     align-items: center;
     justify-content: center;
   }
@@ -118,6 +118,10 @@ export default styled('div')`
       width: 375px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       border-radius: 1px;
+      @media (min-width: 600px) {
+        height: 250px;
+        width: 250px;
+      }
       @media (min-width: 3839px) {
         height: 700px;
         width: 700px;
