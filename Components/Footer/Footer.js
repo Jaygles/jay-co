@@ -3,9 +3,9 @@ import styled from 'react-emotion';
 import FooterIcon from './FooterIcon';
 
 const FooterWrapper = styled('footer')`
-  padding-bottom: 5px;
-  width: 100vw;
+  width: 100%;
   max-width: 100%;
+  padding-bottom: 5px;
   font-size: 16px;
   grid-area: footer;
   display: flex;
