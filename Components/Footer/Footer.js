@@ -4,7 +4,8 @@ import FooterIcon from './FooterIcon';
 
 const FooterWrapper = styled('footer')`
   padding-bottom: 5px;
-  width: 100%;
+  width: 100vw;
+  max-width: 100%;
   font-size: 16px;
   grid-area: footer;
   display: flex;
