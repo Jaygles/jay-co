@@ -10,6 +10,9 @@ const DescriptionWrap = styled('div')`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 650px) {
+    width: 95%;
+  }
 `;
 
 class HeaderDescription extends React.Component {

@@ -56,6 +56,43 @@ export default styled('div')`
       text-align: left;
     }
   }
+  code {
+    @media (max-width: 359px) {
+      font-size: 14px;
+      line-height: 160%;
+      text-align: center;
+    }
+    @media (min-width: 360px) {
+      font-size: 14px;
+      line-height: 140%;
+      text-align: center;
+    }
+    @media (min-width: 600px) {
+      font-size: 18px;
+      line-height: 140%;
+      text-align: left;
+    }
+    @media (min-width: 768px) {
+      font-size: 24px;
+      line-height: 140%;
+      text-align: left;
+    }
+    @media (min-width: 1899px) {
+      font-size: 24px;
+      line-height: 140%;
+      text-align: left;
+    }
+    @media (min-width: 2559px) {
+      font-size: 32px;
+      line-height: 150%;
+      text-align: left;
+    }
+    @media (min-width: 4559px) {
+      font-size: 76px;
+      line-height: 140%;
+      text-align: left;
+    }
+  }
   .figure-row {
     width: 100%;
     max-width: 66vw;
@@ -81,6 +118,14 @@ export default styled('div')`
       width: 375px;
       box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
       border-radius: 1px;
+      @media (min-width: 3839px) {
+        height: 700px;
+        width: 700px;
+      }
+      @media (min-width: 4559px) {
+        height: 1200px;
+        width: 1200px;
+      }
     }
   }
   figcaption {
@@ -105,10 +150,10 @@ export default styled('div')`
       font-size: 24px;
     }
     @media (min-width: 2559px) {
-      font-size: 26px;
+      font-size: 30px;
     }
     @media (min-width: 4559px) {
-      font-size: 30px;
+      font-size: 48px;
     }
   }
 `;

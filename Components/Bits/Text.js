@@ -30,6 +30,14 @@ export const Heading1 = styled('h1')`
     margin: 0;
     padding: 20px;
   }
+  @media (min-width: 3839px) {
+    font-size: 96px;
+    line-height: 104px;
+  }
+  @media (min-width: 4559px) {
+    font-size: 128px;
+    line-height: 140px;
+  }
 `;
 
 export const Heading2 = styled('h1')`

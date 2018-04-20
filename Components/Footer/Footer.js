@@ -10,6 +10,12 @@ const FooterWrapper = styled('footer')`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (min-width: 3839px) {
+    font-size: 32px;
+  }
+  @media (min-width: 4559px) {
+    font-size: 80px;
+  }
 `;
 
 class Footer extends React.Component {

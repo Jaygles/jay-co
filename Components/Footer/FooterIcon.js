@@ -13,6 +13,12 @@ const FooterIcon = (props) => {
     margin-left: 10px;
     background-image: url(${img});
     background-size: 32px;
+    @media (min-width: 4559px) {
+      width: 64px;
+      height: 64px;
+      margin-left: 20px;
+      background-size: 64px;
+    }
   `;
   return (
     <Icon>

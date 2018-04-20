@@ -20,7 +20,9 @@ export default styled('div')`
   }
   @media (min-width: 2559px) {
     grid-template-columns: 400px 1fr;
+    grid-template-rows: 1fr 100px;
   }
   @media (min-width: 4559px) {
     grid-template-columns: 800px 1fr;
+    grid-template-rows: 1fr 200px;
 `;

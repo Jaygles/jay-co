@@ -13,15 +13,15 @@ export default styled('div')`
     'description'
     '   arrow   ';
   @media (max-width: 359px) {
-    min-height: 350px;
+    min-height: 568px;
     grid-template-rows:
-      minmax(20px, 8vw) minmax(200px, 40vh) minmax(130px, 45vh)
+      minmax(20px, 8vw) minmax(250px, 40vh) minmax(280px, 45vh)
       auto;
   }
   @media (min-width: 360px) {
     min-height: 620px;
     grid-template-rows:
-      minmax(50px, 8vw) minmax(270px, 40vh) minmax(300px, 45vh)
+      minmax(40px, 8vw) minmax(200px, 37vh) minmax(220px, 45vh)
       auto;
   }
   @media (min-width: 600px) {
