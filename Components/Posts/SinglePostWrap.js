@@ -98,7 +98,7 @@ export default styled('div')`
   }
   .figure-row {
     width: 100%;
-    max-width: 66vw;
+    max-width: 2000px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
