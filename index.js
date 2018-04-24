@@ -47,8 +47,6 @@ app.prepare().then(() => {
     ];
     if (rootStaticFiles.indexOf(parsedUrl.pathname) > -1) {
       const path = join(__dirname, 'static', parsedUrl.pathname);
-      console.log('What is getting passed here?');
-      console.log(path);
       app.serveStatic(req, res, path);
     } else {
       return nextRequestHandler(req, res, parsedUrl);
