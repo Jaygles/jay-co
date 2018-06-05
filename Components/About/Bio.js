@@ -51,8 +51,7 @@ class Bio extends React.Component {
     return (
       <AboutGrid>
         <BioText>
-          See my resume below. I am currently looking for new opportunities in
-          the Kansas City metro area and in Boulder, Colorado.
+          See my resume below. I am currently looking for new opportunities in the Denver area close to Boulder, Colorado.
           <br />
           <br />
           References available upon request.
