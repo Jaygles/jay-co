@@ -20,7 +20,7 @@ class HeaderDescription extends React.Component {
     return (
       <DescriptionWrap>
         <Text.MainDescription>
-          Hi, I'm a Kansas City based Web Developer. Feel free to check out my
+          Hi, I'm a Boulder, CO based Web Developer. Feel free to check out my
           work or see what I know below.
           <br />
           <br />
