@@ -19,26 +19,26 @@ export default styled('div')`
     }
   }
   p {
-    font-size: 24px;
+    font-size: 20px;
     line-height: 140%;
     text-align: left;
     @media (max-width: 359px) {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 160%;
       text-align: justify;
     }
     @media (min-width: 360px) {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 140%;
       text-align: justify;
     }
     @media (min-width: 600px) {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 140%;
       text-align: left;
     }
     @media (min-width: 768px) {
-      font-size: 32px;
+      font-size: 24px;
       line-height: 140%;
       text-align: left;
     }
@@ -76,17 +76,17 @@ export default styled('div')`
       text-align: left;
     }
     @media (min-width: 768px) {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 140%;
       text-align: left;
     }
     @media (min-width: 1899px) {
-      font-size: 24px;
+      font-size: 20px;
       line-height: 140%;
       text-align: left;
     }
     @media (min-width: 2559px) {
-      font-size: 32px;
+      font-size: 28px;
       line-height: 150%;
       text-align: left;
     }
